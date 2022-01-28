@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.banner-text {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.banner-text ul {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.banner-text ul li {
+    display: inline-block;
+    padding: 40px 15px;
+}
+.banner-text ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.banner-text ul li a:hover {
+    border-bottom: solid 3px white; 
+    transition: all 0.2s ease-out;
+    /*    background: #fff;
+    color: #000;*/
+}
+.banner-text h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 15%;
+    margin-bottom: 15px;
+}
+.banner-text p {
+    text-align: center;
+    font-size: 18px;
+    width: 35%;
+    margin: auto;
+    color: #ddd;
+    line-height: 1.7;
+}
+.animation-area {
+    background: linear-gradient(to right, #159957, #155799);
+    width: 100%;
+    height: 100vh;
+}
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+    border-radius: 50%;
+}
+.box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+.about{  
+    font-family: Poppins; 
+    padding: 7rem 30rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(110, 110, 110);
+}
+.about img {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12%;
+    display: block;
+}
+.about h1{
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.about hr{
+    border: solid 0.5px black;
+    width: 5%;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 10rem;
+}
+
+.projects {
+    font-family: Poppins;
+    background-color: #ddd;
+}
+.projects h1{
+    padding-top: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-item {
+    width: 100%;
+    margin: 1.5rem;
+    min-height: 200px;
+}
+
+.flexbox-container > div {
+    flex: 50%;
+}
+
+.flexbox-list-item {
+    list-style-type: none;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.flexbox-list-item h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.flexbox-list-item p, 
+.flexbox-list-item span,
+.fas.fa-link {
+    margin-left: 2rem;
+}
+.flexbox-list-item span {
+    width: 100%;
+    max-width: 55%;
+    display: block;
+}
+
+.flexbox-list-item p {
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 80%;
+}
+
+.flexbox-list-item a {
+    font-size: 14px;
+    text-decoration: none;
+}
+.flexbox-list-item a:hover {
+    color: #246bb3;
+}
+.flexbox-list-item i {
+    margin-right: 0.5rem;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scale(0);
+    }
+    100% {
+        transform: translateY(-800px) scale(2);
+        opacity: 0;
+    }
+}
