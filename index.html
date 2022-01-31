@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -17,12 +19,12 @@
         <ul>
             <li><a href="#">Home</a></li>            
             <li><a href="#about">About</a></li>            
-            <li><a href="#">Projects</a></li>           
+            <li><a href="#projects">Projects</a></li>           
             <li><a href="#">Contact</a></li>            
         </ul>
         
         <h2>Hello, I'm Pedro</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, eveniet, explicabo cumque incidunt saepe praesentium?</p>
+        <p>I've worked with <span class="element"></span></p>
     </div>
     
     <div class="animation-area">
@@ -37,7 +39,7 @@
         </ul>
     </div>
 
-    <div class="section-about">
+    <div class="section-about" id="about">
         <img src="profile.jpg" alt="Profile Pic">
         <h1>Hello there!</h1>
         <hr>
@@ -53,7 +55,7 @@
         <span>You can find details <a href="https://www.linkedin.com/in/pedromonteiro01/">here</a>.</span>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <h1>Projects</h1>
         <div class="flexbox-container">
             <div class="flexbox-item">
@@ -143,5 +145,28 @@
           </ul>
         <span style="display: block;">2022 Pedro Monteiro<br>Made with HTML,CSS and Font Awesome</span>
     </div>
+    <script>
+        $(function(){
+	      $(".element").typed({
+	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","AngularJS","ReactJS","Django", "C#"],
+	        typeSpeed: 0,
+    		// time before typing starts
+			startDelay: 2,
+			// backspacing speed
+			backSpeed: 0,
+			// time before backspacing
+			backDelay: 1600,
+			// loop
+			loop: true,
+			// false = infinite
+			loopCount: false,
+			// show cursor
+			showCursor: true,
+			// character for cursor
+			cursorChar: "|",
+
+	      });
+	  });
+    </script>
 </body>
 </html>
