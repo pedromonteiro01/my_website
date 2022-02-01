@@ -168,6 +168,7 @@ body {
     padding-top: 2rem;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 0;
 }
 .flexbox-container{
     display: flex;
@@ -202,14 +203,14 @@ body {
 }
 .flexbox-list-item span {
     width: 100%;
-    max-width: 55%;
+    max-width: 60%;
     display: block;
 }
 
 .flexbox-list-item p {
     margin-top: 0.5rem;
     width: 100%;
-    max-width: 85%;
+    max-width: 90%;
 }
 
 .flexbox-list-item a {
@@ -221,6 +222,73 @@ body {
 }
 .flexbox-list-item i {
     margin-right: 0.5rem;
+}
+
+.contacts {
+    /*background-color: #F5F5F5;*/
+    background-color: #FFFFFF;
+    font-family: Poppins;
+    height: 60vh;
+    max-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-message, 
+.contacts-cv{
+    text-align: center;
+}
+
+.contacts-message h3,
+.contacts-message .far.fa-paper-plane,
+.contacts-cv h3{
+    color: #454545;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.contacts-message h3{
+    margin-bottom: 1rem;
+}
+
+.contacts-cv h3{
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacts-message p {
+    color: #808080;
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
+
+.contacts-message button,
+.contacts-cv button {
+    font-family: Poppins;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.6rem 1rem;
+    color: rgb(122, 122, 122);
+    border: solid 1px #ccc;
+}
+
+.contacts-message button{
+    font-size: 19px;
+}
+
+.contacts-cv button{
+    font-size: 24px;
+}
+
+.contacts-message button:hover,
+.contacts-cv button:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease-in-out;
 }
 
 .footer{
