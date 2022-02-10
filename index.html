@@ -20,14 +20,15 @@
 <body>
     <div class="banner-text">
         <ul>
-            <li><a href="#">Home</a></li>            
-            <li><a href="#about">About</a></li>            
+            <li><a href="#">Home</a></li>         
+            <li><a href="#about">About</a></li>    
+            <li><a href="#about">My Background</a></li>           
             <li><a href="#projects">Projects</a></li>           
             <li><a href="#contacts">Contact</a></li>            
         </ul>
         
         <h2>Hello, I'm Pedro</h2>
-        <p>I've worked with <span class="element"></span></p>
+        <p>I like <span class="intro"></span></p>
     </div>
     
     <div class="animation-area">
@@ -43,7 +44,7 @@
     </div>
 
     <div class="section-about" id="about">
-        <img src="profile.jpg" alt="Profile Pic">
+        <img src="img/profile.jpg" alt="Profile Pic">
         <h1>Hello there!</h1>
         <hr>
         <div class="paragraphs">
@@ -56,6 +57,124 @@
                 CSS, JavaScript, React, Python/Django, PHP, SQL/SQLite/MySQL.</p>
         </div>
         <span>You can find details <a href="https://www.linkedin.com/in/pedromonteiro01/">here</a>.</span>
+    </div>
+
+    <div class="what-i-do">
+        <h3>My Background</h3>
+            <div class="development">
+                <div class="development-content">
+                    <div class="education-section">
+                        <img src="img/graduation-cap.png" alt="">
+                        <p class="main-p">Education</p>
+                        <ul>
+                            <li>
+                                <div class="li-content">
+                                <img src="img/aveiro.png" alt="">
+                                <p>
+                                    &bull; Software Engineering Bachelor's Degree
+                                    <br>
+                                    <span>Nov 2021 - Present</span>
+                                </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-content">
+                                <img src="img/aese.jpg" alt="">
+                                <p>
+                                    &bull; Scientific High School Degree
+                                    <br>
+                                    <span>Sep 2016 - Jul 2019</span>
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="development-content-skills">
+                        <img src="img/code.png" alt="">
+                        <p class="main-p">Skills</p>
+                        <p class="element-p">I've worked with <span class="element"></span></p>
+                        <ul>
+                            <li>
+                                <label for="lang1">Python</label>
+                                <progress id="lang1" value="85" max="100" style="color: black;"> 85% </progress>
+                            </li>
+                            <li>
+                                <label for="lang2">Java</label>
+                                <progress id="lang2" value="65" max="100"> 65% </progress>
+                            </li>
+                            <li>
+                                <label for="lang3">Docker</label>
+                                <progress id="lang1" value="75" max="100"> 75% </progress>
+                            </li>
+                            <li>
+                                <label for="lang4">HTML/CSS/JavaScript</label>
+                                <progress id="lang4" value="95" max="100"> 95% </progress>
+                            </li>
+                            <li>
+                                <label for="lang5">PHP</label>
+                                <progress id="lang5" value="70" max="100"> 70% </progress>
+                            </li>
+                            <li>
+                                <label for="lang6">SQL/MySQL</label>
+                                <progress id="lang6" value="85" max="100" style="margin-bottom: 0;"> 85% </progress>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    <div class="education">
+        <div class="education-content">
+            <img src="img/skill.png" alt="">
+                <h5>Experience</h5>
+                <ul style="list-style-type:none;">
+                    <li>
+                        <div class="li-content">
+                            <img src="img/nei.png" alt="">
+                            <p>
+                                &bull; Núcleo de Estudantes de Informática AAUAv
+                                <br>
+                                Internal Management Section Member
+                                <br>
+                                <span>Nov 2021 - Present</span>
+                            </p>
+                            <br>
+                            <p>
+                                &bull; Núcleo de Estudantes de Informática AAUAv
+                                <br>
+                                External Colaborator
+                                <br>
+                                <span>Oct 2019 - Nov 2021</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-content">
+                        <img src="img/aveiro.png" alt="">
+                        <p>
+                            &bull; Universidade de Aveiro
+                            <br>
+                            Mentor in the Tutoring Program
+                            <br>
+                            <span>Oct 2021 - Present</span>
+                        </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-content">
+                        <img src="img/aauav.jpg" alt="">
+                        <p>
+                            &bull; Associação Académica da Universidade de Aveiro
+                            <br>
+                            External Colaborator 
+                            <br>
+                            <span>Dec 2019 - Feb 2020</span>
+                        </p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
     </div>
 
     <div class="projects" id="projects">
@@ -118,7 +237,7 @@
             <i class="far fa-paper-plane"></i>
             <h3>Are you interested?</h3>
             <p>Feel free to send me a message.</p>
-            <a href="mailto:pmapm@ua.pt"><button>Say Hi! <i class="far fa-comment-dots"></i></button></a>
+            <a href="mailto:pmapm@ua.pt"><button>Email Me</i></button></a>
         </div>
         <div class="contacts-cv">
             <h3>Here is my CV</h3>
@@ -154,6 +273,28 @@
         $(function(){
 	      $(".element").typed({
 	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","AngularJS","ReactJS","Django", "C#"],
+	        typeSpeed: 0,
+    		// time before typing starts
+			startDelay: 2,
+			// backspacing speed
+			backSpeed: 0,
+			// time before backspacing
+			backDelay: 1600,
+			// loop
+			loop: true,
+			// false = infinite
+			loopCount: false,
+			// show cursor
+			showCursor: true,
+			// character for cursor
+			cursorChar: "|",
+
+	      });
+	  });
+
+      $(function(){
+	      $(".intro").typed({
+	        strings: ["programming", "play games", "run in the morning", "all about web development"],
 	        typeSpeed: 0,
     		// time before typing starts
 			startDelay: 2,

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -115,6 +116,7 @@ body {
     animation-delay: 3.5s;
 }
 .section-about{
+    background-color: #F5F5F5;
     font-family: Poppins;
     height: 100vh;
     max-height: 100vh;
@@ -156,6 +158,92 @@ body {
 
 .section-about span{
     margin-bottom: 0;
+}
+
+.what-i-do {
+    background-color: #fff;
+}
+
+.what-i-do h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: normal;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.education {
+    height: 70vh;
+    max-height: 70vh;
+}
+.education-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.what-i-do .education ul,
+.what-i-do .development ul{
+    list-style-type: none;
+}
+
+.li-content {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.li-content img{
+    float: left;
+    width: 80px;
+    height: auto;
+}
+
+.li-content p {
+    margin-top: 1rem;
+    display: inline-block;
+}
+.development {
+    min-height: 75vh;
+    max-height: 75vh;
+}
+
+.development-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.development-content-skills h5,
+.education-content h5,
+.main-p {
+    margin-top: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.development-content-skills {
+    width: 30%;
+}
+
+.element-p {
+    margin: 1rem 0;
+}
+
+.development-content-skills ul li label {
+    display: block;
+    float: left;
+}
+
+.development-content-skills ul li progress{
+    height: 20px;
+    width: 100%;
+    margin-bottom: 0.8rem;
 }
 
 .projects {
