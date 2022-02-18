@@ -22,7 +22,7 @@
         <ul>
             <li><a href="#">Home</a></li>         
             <li><a href="#about">About</a></li>    
-            <li><a href="#about">My Background</a></li>           
+            <li><a href="#background">My Background</a></li>           
             <li><a href="#projects">Projects</a></li>           
             <li><a href="#contacts">Contact</a></li>            
         </ul>
@@ -59,7 +59,7 @@
         <span>You can find details <a href="https://www.linkedin.com/in/pedromonteiro01/">here</a>.</span>
     </div>
 
-    <div class="what-i-do">
+    <div class="what-i-do" id="background">
         <h3>My Background</h3>
             <div class="development">
                 <div class="development-content">
@@ -100,7 +100,7 @@
                             </li>
                             <li>
                                 <label for="lang2">Java</label>
-                                <progress id="lang2" value="65" max="100"> 65% </progress>
+                                <progress id="lang2" value="60" max="100"> 60% </progress>
                             </li>
                             <li>
                                 <label for="lang3">Docker</label>
@@ -108,7 +108,7 @@
                             </li>
                             <li>
                                 <label for="lang4">HTML/CSS/JavaScript</label>
-                                <progress id="lang4" value="95" max="100"> 95% </progress>
+                                <progress id="lang4" value="90" max="100"> 90% </progress>
                             </li>
                             <li>
                                 <label for="lang5">PHP</label>
@@ -133,17 +133,17 @@
                         <div class="li-content">
                             <img src="img/nei.png" alt="">
                             <p>
-                                &bull; Núcleo de Estudantes de Informática AAUAv
+                                &bull; Internal Management Section Member
                                 <br>
-                                Internal Management Section Member
+                                Núcleo de Estudantes de Informática AAUAv
                                 <br>
                                 <span>Nov 2021 - Present</span>
                             </p>
                             <br>
                             <p>
-                                &bull; Núcleo de Estudantes de Informática AAUAv
+                                &bull; External Colaborator
                                 <br>
-                                External Colaborator
+                                Núcleo de Estudantes de Informática AAUAv
                                 <br>
                                 <span>Oct 2019 - Nov 2021</span>
                             </p>
@@ -153,9 +153,9 @@
                         <div class="li-content">
                         <img src="img/aveiro.png" alt="">
                         <p>
-                            &bull; Universidade de Aveiro
+                            &bull; Mentor in the Tutoring Program
                             <br>
-                            Mentor in the Tutoring Program
+                            Universidade de Aveiro
                             <br>
                             <span>Oct 2021 - Present</span>
                         </p>
@@ -165,9 +165,9 @@
                         <div class="li-content">
                         <img src="img/aauav.jpg" alt="">
                         <p>
-                            &bull; Associação Académica da Universidade de Aveiro
+                            &bull; External Colaborator
                             <br>
-                            External Colaborator 
+                            Associação Académica da Universidade de Aveiro
                             <br>
                             <span>Dec 2019 - Feb 2020</span>
                         </p>
@@ -178,63 +178,169 @@
     </div>
 
     <div class="projects" id="projects">
-        <h1>Projects</h1>
-        <div class="flexbox-container">
-            <div class="flexbox-item">
-                <ul>
-                    <li class="flexbox-list-item"> 
-                        <h3>Supermarket Database</h3>
-                        <p><i class="fas fa-info-circle"></i>System that allows managing a supermarket, with emphasis on the 
-                            development of its database.
-                        </p>
-                        <span><i class="fas fa-laptop-code"></i>SQL Server/C#</span>
-                        <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/supermarket_database">https://github.com/pedromonteiro01/supermarket_database</a>
-                    </li>
-                    <li class="flexbox-list-item"> 
-                        <h3>Tetris Ai Game</h3>
-                        <p><i class="fas fa-info-circle"></i>Tetris game implemented according to heuristics, such as the 
-                            number of holes or the number of complete lines, where the objective is to score as many points as possible.
-                        </p>
-                        <span><i class="fas fa-code"></i>Python</span>
-                        <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/tetris_ai">https://github.com/pedromonteiro01/tetris_ai</a>
-                    </li>
-                    <li class="flexbox-list-item"> 
-                        <h3>Existence of Vulnerabilities</h3>
-                        <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
-                        <span><i class="fas fa-code"></i>HTML/CSS/JavaScript/PHP/MySQL/Docker</span>
-                        <i class="fas fa-link"></i><a href="">Link Github</a>
-                    </li>
-                </ul>
+        <div class="carousel__item carousel__item--selected">
+            <h1>Projects</h1>
+            <div class="flexbox-container">
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>Tetris Ai Game</h3>
+                            <p><i class="fas fa-info-circle"></i>Tetris game implemented according to heuristics, such as the 
+                                number of holes or the number of complete lines, where the objective is to score as many points as possible.
+                            </p>
+                            <span><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/tetris_ai">https://github.com/pedromonteiro01/tetris_ai</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Supermarket Database</h3>
+                            <p><i class="fas fa-info-circle"></i>System that allows managing a supermarket, with emphasis on the 
+                                development of its database.
+                            </p>
+                            <span><i class="fas fa-code"></i>SQL Server/C#</span>
+                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/supermarket_database">https://github.com/pedromonteiro01/supermarket_database</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Existence of Vulnerabilities</h3>
+                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
+                            <span><i class="fas fa-code"></i>HTML/CSS/JavaScript/PHP/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>beStrong</h3>
+                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
+                            central processing, long term storage, service API and a web portal.</p>
+                            <span style="max-width: 75%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Python/SpringBoot/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/beStrong</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Process Resources</h3>
+                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
+                            <span><i class="fas fa-code"></i>Bash</span>
+                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/process_resources</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Secure Authentication</h3>
+                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
+                            <span style="max-width: 65%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Flask/PHP/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flexbox-item">
-                <ul>
-                    <li class="flexbox-list-item"> 
-                        <h3>beStrong</h3>
-                        <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
-                        central processing, long term storage, service API and a web portal.</p>
-                        <span style="max-width: 75%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Python/SpringBoot/MySQL/Docker</span>
-                        <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/beStrong</a>
-                    </li>
-                    <li class="flexbox-list-item"> 
-                        <h3>Process Resources</h3>
-                        <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
-                        <span><i class="fas fa-code"></i>Bash</span>
-                        <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/process_resources</a>
-                    </li>
-                    <li class="flexbox-list-item"> 
-                        <h3>Secure Authentication</h3>
-                        <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
-                        <span style="max-width: 65%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Flask/PHP/MySQL/Docker</span>
-                        <i class="fas fa-link"></i><a href="">Link Github</a>
-                    </li>
-                </ul>
+        </div>
+        <div class="carousel__item carousel__item">
+            <h1>Projects</h1>
+            <div class="flexbox-container">
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>Chat Server</h3>
+                            <p><i class="fas fa-info-circle"></i>Chat server that allows multiple clients to connect to it, using TCP sockets and Python selectors, following a certain protocol.</p>
+                            <span><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/chat_server</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>CSV Table Compiler</h3>
+                            <p><i class="fas fa-info-circle"></i>Small project that aims to create a language, using ANTLR4, to manipulate tables or databases.</p>
+                            <span><i class="fas fa-code"></i>ANTLR4/Java</span>
+                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/csv_table_compiler">https://github.com/pedromonteiro01/csv_table_compiler</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Distributed Password Cracker</h3>
+                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
+                            <span><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>CHORD (DHT)</h3>
+                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
+                            central processing, long term storage, service API and a web portal.</p>
+                            <span style="max-width: 75%;"><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Message Broker</h3>
+                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
+                            <span><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Load Balancer</h3>
+                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
+                            <span style="max-width: 65%;"><i class="fas fa-code"></i>Python</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__item carousel__item">
+            <h1>Projects</h1>
+            <div class="flexbox-container">
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>OS Semaphore</h3>
+                            <p><i class="fas fa-info-circle"></i>Tetris game implemented according to heuristics, such as the 
+                                number of holes or the number of complete lines, where the objective is to score as many points as possible.
+                            </p>
+                            <span><i class="fas fa-code"></i>C</span>
+                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/tetris_ai">Link Github</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Supermarket Database</h3>
+                            <p><i class="fas fa-info-circle"></i>System that allows managing a supermarket, with emphasis on the 
+                                development of its database.
+                            </p>
+                            <span><i class="fas fa-code"></i>SQL Server/C#</span>
+                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/supermarket_database">https://github.com/pedromonteiro01/supermarket_database</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Existence of Vulnerabilities</h3>
+                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
+                            <span><i class="fas fa-code"></i>HTML/CSS/JavaScript/PHP/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flexbox-item">
+                    <ul>
+                        <li class="flexbox-list-item"> 
+                            <h3>beStrong</h3>
+                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
+                            central processing, long term storage, service API and a web portal.</p>
+                            <span style="max-width: 75%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Python/SpringBoot/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/beStrong</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Process Resources</h3>
+                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
+                            <span><i class="fas fa-code"></i>Bash</span>
+                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/process_resources</a>
+                        </li>
+                        <li class="flexbox-list-item"> 
+                            <h3>Secure Authentication</h3>
+                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
+                            <span style="max-width: 65%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Flask/PHP/MySQL/Docker</span>
+                            <i class="fas fa-link"></i><a href="">Link Github</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="contacts" id="contacts">
         <div class="contacts-message">
-            <i class="far fa-paper-plane"></i>
+            <img src="img/paper-plane.png" alt="Paper Plane" width="45px">
             <h3>Are you interested?</h3>
             <p>Feel free to send me a message.</p>
             <a href="mailto:pmapm@ua.pt"><button>Email Me</i></button></a>
@@ -314,5 +420,6 @@
 	      });
 	  });
     </script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>
