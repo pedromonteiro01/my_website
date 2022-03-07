@@ -347,7 +347,6 @@ progress::-webkit-progress-bar {
 
 .carousel__item{
     display: none;
-    opacity: 0;
 }
 
 .carousel__button--selected{
