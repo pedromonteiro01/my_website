@@ -26,22 +26,13 @@
             <li><a href="#projects">Projects</a></li>           
             <li><a href="#contacts">Contact</a></li>            
         </ul>
-        
-        <h2>Hello, I'm Pedro</h2>
-        <p>I like <span class="element"></span></p>
     </div>
-    
-    <div class="animation-area">
-        <ul class="box-area">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+        <div id="particles-js">
+            <section class="intro-text">
+                <h2>Hello, I'm Pedro</h2>
+                <p>I like <span class="element"></span></p>
+            </section>
+        </div>
 
     <div class="section-about" id="about">
         <img src="img/profile.jpg" alt="Profile Pic">
@@ -399,7 +390,7 @@
 	  });
 
       $(function(){
-	      $(".intro").typed({
+	      $(".intro2").typed({
 	        strings: ["programming", "play games", "web development"],
 	        typeSpeed: 0,
     		// time before typing starts
@@ -421,5 +412,11 @@
 	  });
     </script>
     <script type="text/javascript" src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function(){
+            console.log("particles.js loaded!");
+        });
+    </script>
 </body>
 </html>
