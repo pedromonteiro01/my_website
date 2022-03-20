@@ -3,6 +3,7 @@
 <!--divinectorweb.com-->
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Pedro Monteiro</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,74 +52,86 @@
 
     <div class="what-i-do" id="background">
         <h3>My Background</h3>
-            <div class="development">
-                <div class="development-content">
-                    <div class="education-section">
-                        <img src="img/graduation-cap.png" alt="">
-                        <p class="main-p">Education</p>
-                        <ul>
-                            <li>
-                                <div class="li-content">
-                                <img src="img/aveiro.png" alt="">
-                                <p>
-                                    &bull; Software Engineering Bachelor's Degree
-                                    <br>
-                                    <span>Nov 2021 - Present</span>
-                                </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-content">
-                                <img src="img/aese.jpg" alt="">
-                                <p>
-                                    &bull; Scientific High School Degree
-                                    <br>
-                                    <span>Sep 2016 - Jul 2019</span>
-                                </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="development-content-skills">
-                        <img src="img/code.png" alt="">
-                        <p class="main-p">Skills</p>
-                        <p class="element-p">I've worked with <span class="element"></span></p>
-                        <ul>
-                            <li>
-                                <label for="lang1">Python</label>
-                                <progress id="lang1" value="85" max="100" style="color: black;"> 85% </progress>
-                            </li>
-                            <li>
-                                <label for="lang2">Java</label>
-                                <progress id="lang2" value="60" max="100"> 60% </progress>
-                            </li>
-                            <li>
-                                <label for="lang3">Docker</label>
-                                <progress id="lang1" value="75" max="100"> 75% </progress>
-                            </li>
-                            <li>
-                                <label for="lang4">HTML/CSS/JavaScript</label>
-                                <progress id="lang4" value="90" max="100"> 90% </progress>
-                            </li>
-                            <li>
-                                <label for="lang5">PHP</label>
-                                <progress id="lang5" value="70" max="100"> 70% </progress>
-                            </li>
-                            <li>
-                                <label for="lang6">SQL/MySQL</label>
-                                <progress id="lang6" value="85" max="100" style="margin-bottom: 0;"> 85% </progress>
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
+        <div class="development">
+            <div class="development-content">
+                <div class="education-section">
+                    <img src="img/graduation-cap.png" alt="">
+                    <p class="main-p">Education</p>
+                    <ul>
+                        <li>
+                            <div class="li-content">
+                            <img src="img/aveiro.png" alt="">
+                            <p>
+                                &bull; Software Engineering Bachelor's Degree
+                                <br>
+                                <span>Nov 2021 - Present</span>
+                            </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-content">
+                            <img src="img/aese.jpg" alt="">
+                            <p>
+                                &bull; Scientific High School Degree
+                                <br>
+                                <span>Sep 2016 - Jul 2019</span>
+                            </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="development-content-skills">
+                    <img src="img/code.png" alt="">
+                    <p class="main-p">Skills</p>
+                    <p class="element-p">I've worked with <span class="element"></span></p>
+                    <ul>
+                        <li>
+                            <label for="lang1">Python</label>
+                            <progress id="lang1" value="85" max="100" style="color: black;"> 85% </progress>
+                        </li>
+                        <li>
+                            <label for="lang2">Java</label>
+                            <progress id="lang2" value="60" max="100"> 60% </progress>
+                        </li>
+                        <li>
+                            <label for="lang3">Docker</label>
+                            <progress id="lang1" value="75" max="100"> 75% </progress>
+                        </li>
+                        <li>
+                            <label for="lang4">HTML/CSS/JavaScript</label>
+                            <progress id="lang4" value="90" max="100"> 90% </progress>
+                        </li>
+                        <li>
+                            <label for="lang5">PHP</label>
+                            <progress id="lang5" value="70" max="100"> 70% </progress>
+                        </li>
+                        <li>
+                            <label for="lang6">SQL/MySQL</label>
+                            <progress id="lang6" value="85" max="100" style="margin-bottom: 0;"> 85% </progress>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
         </div>
+    </div>
 
     <div class="education">
         <div class="education-content">
             <img src="img/skill.png" alt="">
                 <h5>Experience</h5>
                 <ul style="list-style-type:none;">
+                    <li>
+                        <div class="li-content">
+                        <img src="img/scientifi.jpg" alt="">
+                        <p>
+                            &bull; Business Relations Section Member
+                            <br>
+                            Scientific Junior Value
+                            <br>
+                            <span>Mar 2022 - Present</span>
+                        </p>
+                        </div>
+                    </li>
                     <li>
                         <div class="li-content">
                             <img src="img/nei.png" alt="">
@@ -167,167 +180,6 @@
         </div>
     </div>
 
-    <div class="projects" id="projects">
-        <div class="carousel__item carousel__item--selected">
-            <h1>Projects</h1>
-            <div class="flexbox-container">
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>Tetris Ai Game</h3>
-                            <p><i class="fas fa-info-circle"></i>Tetris game implemented according to heuristics, such as the 
-                                number of holes or the number of complete lines, where the objective is to score as many points as possible.
-                            </p>
-                            <span><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/tetris_ai">https://github.com/pedromonteiro01/tetris_ai</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Supermarket Database</h3>
-                            <p><i class="fas fa-info-circle"></i>System that allows managing a supermarket, with emphasis on the 
-                                development of its database.
-                            </p>
-                            <span><i class="fas fa-code"></i>SQL Server/C#</span>
-                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/supermarket_database">https://github.com/pedromonteiro01/supermarket_database</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Existence of Vulnerabilities</h3>
-                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
-                            <span><i class="fas fa-code"></i>HTML/CSS/JavaScript/PHP/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>beStrong</h3>
-                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
-                            central processing, long term storage, service API and a web portal.</p>
-                            <span style="max-width: 75%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Python/SpringBoot/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/beStrong</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Process Resources</h3>
-                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
-                            <span><i class="fas fa-code"></i>Bash</span>
-                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/process_resources</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Secure Authentication</h3>
-                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
-                            <span style="max-width: 65%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Flask/PHP/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="carousel__item carousel__item">
-            <h1>Projects</h1>
-            <div class="flexbox-container">
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>Chat Server</h3>
-                            <p><i class="fas fa-info-circle"></i>Chat server that allows multiple clients to connect to it, using TCP sockets and Python selectors, following a certain protocol.</p>
-                            <span><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/chat_server</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>CSV Table Compiler</h3>
-                            <p><i class="fas fa-info-circle"></i>Small project that aims to create a language, using ANTLR4, to manipulate tables or databases.</p>
-                            <span><i class="fas fa-code"></i>ANTLR4/Java</span>
-                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/csv_table_compiler">https://github.com/pedromonteiro01/csv_table_compiler</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Distributed Password Cracker</h3>
-                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
-                            <span><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>CHORD (DHT)</h3>
-                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
-                            central processing, long term storage, service API and a web portal.</p>
-                            <span style="max-width: 75%;"><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Message Broker</h3>
-                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
-                            <span><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Load Balancer</h3>
-                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
-                            <span style="max-width: 65%;"><i class="fas fa-code"></i>Python</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="carousel__item carousel__item">
-            <h1>Projects</h1>
-            <div class="flexbox-container">
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>OS Semaphore</h3>
-                            <p><i class="fas fa-info-circle"></i>Tetris game implemented according to heuristics, such as the 
-                                number of holes or the number of complete lines, where the objective is to score as many points as possible.
-                            </p>
-                            <span><i class="fas fa-code"></i>C</span>
-                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/tetris_ai">Link Github</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Supermarket Database</h3>
-                            <p><i class="fas fa-info-circle"></i>System that allows managing a supermarket, with emphasis on the 
-                                development of its database.
-                            </p>
-                            <span><i class="fas fa-code"></i>SQL Server/C#</span>
-                            <i class="fas fa-link"></i><a href="https://github.com/pedromonteiro01/supermarket_database">https://github.com/pedromonteiro01/supermarket_database</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Existence of Vulnerabilities</h3>
-                            <p><i class="fas fa-info-circle"></i>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>
-                            <span><i class="fas fa-code"></i>HTML/CSS/JavaScript/PHP/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flexbox-item">
-                    <ul>
-                        <li class="flexbox-list-item"> 
-                            <h3>beStrong</h3>
-                            <p><i class="fas fa-info-circle"></i>Implementation of a multi-layer, enterprise-class application, including 
-                            central processing, long term storage, service API and a web portal.</p>
-                            <span style="max-width: 75%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Python/SpringBoot/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/beStrong</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Process Resources</h3>
-                            <p><i class="fas fa-info-circle"></i>Development of a bash script that displays statistics about the memory used by processes and the amount of I/O that a selection of processes are performing.</p>
-                            <span><i class="fas fa-code"></i>Bash</span>
-                            <i class="fas fa-link"></i><a href="">https://github.com/pedromonteiro01/process_resources</a>
-                        </li>
-                        <li class="flexbox-list-item"> 
-                            <h3>Secure Authentication</h3>
-                            <p><i class="fas fa-info-circle"></i>Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit).</p>
-                            <span style="max-width: 65%;"><i class="fas fa-code"></i>HTML/CSS/JavaScript/Flask/PHP/MySQL/Docker</span>
-                            <i class="fas fa-link"></i><a href="">Link Github</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="contacts" id="contacts">
         <div class="contacts-message">
             <img src="img/paper-plane.png" alt="Paper Plane" width="45px">
@@ -369,28 +221,6 @@
         $(function(){
 	      $(".element").typed({
 	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","AngularJS","ReactJS","Django", "C#"],
-	        typeSpeed: 0,
-    		// time before typing starts
-			startDelay: 2,
-			// backspacing speed
-			backSpeed: 0,
-			// time before backspacing
-			backDelay: 1600,
-			// loop
-			loop: true,
-			// false = infinite
-			loopCount: false,
-			// show cursor
-			showCursor: true,
-			// character for cursor
-			cursorChar: "|",
-
-	      });
-	  });
-
-      $(function(){
-	      $(".intro2").typed({
-	        strings: ["programming", "play games", "web development"],
 	        typeSpeed: 0,
     		// time before typing starts
 			startDelay: 2,

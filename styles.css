@@ -114,6 +114,7 @@ body {
 
 .what-i-do {
     background-color: #fff;
+    margin-bottom: 5rem;
 }
 
 .what-i-do h3 {
@@ -125,8 +126,7 @@ body {
     text-align: center;
 }
 .education {
-    height: 70vh;
-    max-height: 70vh;
+    padding-bottom: 5rem;
 }
 .education-content {
     display: flex;
@@ -157,10 +157,6 @@ body {
 .li-content p {
     margin-top: 1rem;
     display: inline-block;
-}
-.development {
-    min-height: 75vh;
-    max-height: 75vh;
 }
 
 .development-content {
@@ -478,4 +474,51 @@ li.github:hover a{
     text-align: center;
     font-family: Poppins;
     font-size: 14px;
+}
+
+@media all and (max-width: 960px) {
+    .banner-text{
+        display: none;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+    .section-about .paragraphs {
+        max-width: 85%;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-about .paragraphs p {
+        font-size: 16px;
+    }
+
+    .section-about img {
+        margin-top: 0;
+    }
+
+    .development-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .education-section {
+        margin-bottom: 1.2rem;
+    }
+
+    .development-content-skills {
+        width: 80%;
+    }
+
+    .contacts {
+        margin-bottom: 3rem;
+    }
+    
+    .footer {
+        height: 45vh;
+    }
 }
