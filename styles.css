@@ -246,18 +246,6 @@ progress::-webkit-progress-bar {
     border-radius: 12px;
 }
 
-.projects {
-    height: 100vh;
-    max-height: 100vh;
-    font-family: Poppins;
-    background-color: #ddd;
-}
-.projects h1{
-    padding-top: 1.5rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 0;
-}
 .flexbox-container{
     display: flex;
     flex-direction: row;
@@ -457,6 +445,87 @@ progress::-webkit-progress-bar {
   .row section .bottom a:hover{
     transform: scale(0.97);
   }
+
+
+  .projects-section {
+    height: 100vh;
+    background-color: #ccc;
+    padding: 50px;
+}
+
+.projects-section h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.projects-card {
+    position: relative;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+    width: 20rem;
+    height: 15rem;
+    transition: top ease 0.2s;
+}
+
+.projects-card:hover {
+    top: -8px;
+}
+
+.projects-wrapper .projects-card:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.projects-card .top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 30%;
+}
+
+.projects-card .card-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 50%;
+} 
+
+.projects-card .bottom-card {
+    max-width: 20rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.show-more {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.show-more button {
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: solid 1.8px black;
+    background: none;
+}
+
+.show-more button:hover {
+    cursor: pointer;
+    background: rgb(192, 192, 192);
+    transition: all 0.2s ease-in-out;
+}
 
 .contacts {
     /*background-color: #F5F5F5;*/
@@ -691,6 +760,20 @@ li.github:hover a{
 
     .row-1 section .icon{
     left: -60px;
+    }
+
+    .projects-section {
+        height: auto;
+    }
+
+    .projects-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .projects-card {
+        margin: 1rem 0;
     }
 
     .contacts {
