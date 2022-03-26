@@ -35,11 +35,11 @@
 
     <div class="navbar-scroll" id="navbar-scroll" style="display: none;">
         <ul>
-            <li><a id="nav-link" href="#">Home</a></li>
-            <li><a id="nav-link" href="#about">About</a></li>
-            <li><a id="nav-link" href="#background">My Background</a></li>
-            <li><a id="nav-link" href="#projects">Projects</a></li>
-            <li><a id="nav-link" href="#contacts">Contact</a></li>
+            <li><a id="nav-link" onclick="hide('navbar-scroll')" href="#">Home</a></li>
+            <li><a id="nav-link" onclick="hide('navbar-scroll')" href="#about">About</a></li>
+            <li><a id="nav-link" onclick="hide('navbar-scroll')" href="#background">My Background</a></li>
+            <li><a id="nav-link" onclick="hide('navbar-scroll')" href="#projects">Projects</a></li>
+            <li><a id="nav-link" onclick="hide('navbar-scroll')" href="#contacts">Contact</a></li>
         </ul>
     </div>
 
@@ -249,7 +249,7 @@
     <script>
         $(function(){
 	      $(".element").typed({
-	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","AngularJS","ReactJS","Django", "C#"],
+	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","AngularJS","ReactJS","Django", "C#", "Flutter", "Dart"],
 	        typeSpeed: 0,
     		// time before typing starts
 			startDelay: 2,

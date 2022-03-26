@@ -17,8 +17,10 @@ navbarIcon.onclick = function (){
         navbarAreaScroll.style.display = "none";
 }
 
-var navbarLink = document.getElementById("nav-link");
-navbarLink.onclick = function () {
-    navbarAreaScroll.style.display = "none";
-    console.log("hi");
+function hide(id) {
+	document.getElementById(id).style.display = "none";
 }
+
+var delay = 100;
+
+setTimeout( hide, delay )
