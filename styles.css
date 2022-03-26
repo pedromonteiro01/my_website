@@ -12,6 +12,18 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.navbar-icon {
+    z-index: 1000;
+    position: fixed;
+    top: 45px;
+    left: 25px;
+    display: none;
+}
+
+.navbar-icon i:hover {
+    cursor: pointer;
+}
+
 #particles-js {
     position: relative;
     margin: 0;
@@ -582,6 +594,12 @@ li.github:hover a{
 }
 
 @media all and (max-width: 960px) {
+
+    .navbar-icon{
+        display: block;
+        left: 15px;
+        top: 25px;
+    }
     .banner-text{
         display: none;
     }
