@@ -505,7 +505,7 @@ progress::-webkit-progress-bar {
 
 .projects-card .top-card i:hover {
     cursor: pointer;
-    color: #454545;
+    color: gray;
     transition: all 0.1s ease-in-out;
 }
 
