@@ -13,15 +13,50 @@ body {
 }
 
 .navbar-icon {
-    z-index: 1000;
+    z-index: 1001;
     position: fixed;
-    top: 45px;
+    top: 40px;
     left: 25px;
     display: none;
 }
 
+.navbar-icon i {
+    color: gray;
+}
+
 .navbar-icon i:hover {
     cursor: pointer;
+}
+
+.navbar-scroll {
+    position: fixed;
+    width: 12rem;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #ccc;
+    display: none;
+    flex-direction: column;
+}
+
+.navbar-scroll ul {
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.navbar-scroll ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.navbar-scroll ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-scroll ul li a:hover {
+    color: rgb(136, 112, 112);
+    transition: all 0.17s ease-in-out;
 }
 
 #particles-js {
