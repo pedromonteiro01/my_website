@@ -21,6 +21,22 @@ function hide(id) {
 	document.getElementById(id).style.display = "none";
 }
 
-var delay = 100;
+function show(id) {
+	document.getElementById(id).style.display = "block";
+}
 
-setTimeout( hide, delay )
+var btnMore = document.getElementById("btn-more");
+var btnLess = document.getElementById("btn-less");
+var moreProjects = document.getElementById("more-projects-wrapper");
+
+btnMore.onclick = function (){
+    moreProjects.style.display = "block";
+    btnLess.style.display = "block";
+    btnMore.style.display = "none";
+}
+
+btnLess.onclick = function (){
+    moreProjects.style.display = "none";
+    btnMore.style.display = "block";
+    btnLess.style.display = "none";
+}
