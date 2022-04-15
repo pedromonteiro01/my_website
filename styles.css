@@ -516,6 +516,14 @@ progress::-webkit-progress-bar {
     height: 40%;
 } 
 
+.card-content a {
+    color: black;
+}
+
+.card-content a:hover {
+    color: #023766;
+}
+
 .projects-card .bottom-card {
     max-width: 20rem;
     padding: 0 1rem;
