@@ -806,6 +806,10 @@ li.github:hover a{
         margin: 1rem 0;
     }
 
+    .projects-card:hover {
+        top: 0;
+    }
+
     .contacts {
         margin-bottom: 3rem;
     }
