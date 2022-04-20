@@ -8,13 +8,21 @@ $(window).on("scroll", function () {
 
 
 var navbarIcon = document.getElementById("navbar-icon");
+var barsicon = document.getElementById("icon-bars");
+var timesIcon = document.getElementById("icon-times");
 var navbarAreaScroll = document.getElementById("navbar-scroll");
 
 navbarIcon.onclick = function (){
-    if (navbarAreaScroll.style.display == "none")
+    if (navbarAreaScroll.style.display == "none") {
+        barsicon.style.display = "none";
+        timesIcon.style.display = "block";
         navbarAreaScroll.style.display = "flex";
-    else
+    }
+    else {
+        timesIcon.style.display = "none";
+        barsicon.style.display = "block";
         navbarAreaScroll.style.display = "none";
+    }
 }
 
 function hide(id) {
