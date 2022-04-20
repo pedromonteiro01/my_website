@@ -30,6 +30,7 @@ body {
 }
 
 .navbar-scroll {
+    left: 0;
     position: fixed;
     width: 12rem;
     height: 100vh;
@@ -37,6 +38,7 @@ body {
     background-color: #ccc;
     display: none;
     flex-direction: column;
+    animation: appear 0.2s linear;
 }
 
 .navbar-scroll ul {
@@ -837,3 +839,16 @@ li.github:hover a{
       margin: 10px 0;
     }
   }
+
+@keyframes appear {
+    from {
+        left: -20px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+}
