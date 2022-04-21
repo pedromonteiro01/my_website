@@ -50,7 +50,7 @@ body {
     list-style-type: none;
     text-transform: uppercase;
     margin-top: 2rem;
-    animation: projects_wrrapper_appear 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .navbar-scroll ul li a {
@@ -468,7 +468,7 @@ progress::-webkit-progress-bar {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    animation: projects_wrrapper_appear 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .projects-card {
@@ -687,7 +687,7 @@ progress::-webkit-progress-bar {
     display: block;
 }
 
-li.twitter a{
+li.instagram a{
     opacity: 0.7;
 }
 
@@ -704,14 +704,14 @@ li.github a{
     transition: all 0.2s ease-in-out;
 }
 
-li.twitter:hover p{
-    color: #1DA1F2;
+li.instagram:hover p{
+    color: #C13584;
     visibility: visible;
     transition: all 0.7s ease-in-out;
 
 }
-li.twitter:hover a{
-    color: #1DA1F2;
+li.instagram:hover a{
+    color: #C13584;
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }
@@ -864,7 +864,7 @@ li.github:hover a{
     }
 }
 
-@keyframes projects_wrrapper_appear {
+@keyframes fadeIn {
     from {
         visibility: hidden;
         opacity: 0;
