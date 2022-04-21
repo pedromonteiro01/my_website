@@ -48,3 +48,8 @@ btnLess.onclick = function (){
     btnMore.style.display = "block";
     btnLess.style.display = "none";
 }
+
+function toggleIcon(){ 
+    timesIcon.style.display = "none";
+    barsicon.style.display = "block";
+}
