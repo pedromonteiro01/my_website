@@ -467,6 +467,7 @@ progress::-webkit-progress-bar {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    animation: projects_wrrapper_appear 3s ease-in-out;
 }
 
 .projects-card {
@@ -547,6 +548,10 @@ progress::-webkit-progress-bar {
 .projects-card .bottom-card span:last-child {
     margin-left: 0;
 } 
+
+.more-projects-wrapper {
+    animation: projects_appear 0.5s ease-in-out;
+}
 
 .show-more {
     margin-top: 3rem;
@@ -841,12 +846,32 @@ li.github:hover a{
   }
 
 @keyframes appear {
-from {
-    height: 0;
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
 }
-to {
-    height: 100vh;
+
+@keyframes projects_appear {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
 }
+
+@keyframes projects_wrrapper_appear {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 /*@keyframes appear {
