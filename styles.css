@@ -467,7 +467,7 @@ progress::-webkit-progress-bar {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    animation: projects_wrrapper_appear 3s ease-in-out;
+    animation: projects_wrrapper_appear 2s ease-in-out;
 }
 
 .projects-card {
