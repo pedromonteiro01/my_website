@@ -847,7 +847,6 @@ li.github:hover a{
 
     .section-about {
         height: auto;
-        max-height: none;
     }
 
     .section-about .paragraphs {
@@ -860,8 +859,7 @@ li.github:hover a{
     }
 
     .section-about span{ 
-        padding-top: 1rem;
-        padding-bottom: 2rem;
+        padding: 2.5rem 0 2rem !important;
     }
 
     .section-about img {
