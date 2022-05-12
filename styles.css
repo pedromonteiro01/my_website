@@ -462,15 +462,10 @@ progress::-webkit-progress-bar {
   }
   .row section .bottom a{
     text-decoration: none;
-    background: #ff7979;
-    color: #fff;
-    padding: 7px 15px;
-    border-radius: 5px;
-    /* font-size: 17px; */
-    font-weight: 400;
     transition: all 0.3s ease;
   }
   .row section .bottom a:hover{
+      opacity: 0.85;
     transform: scale(0.97);
   }
 
