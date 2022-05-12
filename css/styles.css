@@ -178,7 +178,6 @@ body {
     background-color: #F5F5F5;
     font-family: Poppins;
     height: 100vh;
-    max-height: 100vh;
     color: rgb(110, 110, 110);
     display: flex;
     justify-content: center;
