@@ -236,7 +236,7 @@ body {
 
 .section-about span{
     font-weight: 300;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem !important;
 }
 
 .what-i-do {
