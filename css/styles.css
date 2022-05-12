@@ -219,7 +219,7 @@ body {
 .section-about .paragraphs{
     font-weight: 300;
     max-width: 42%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .section-about p {
@@ -236,7 +236,7 @@ body {
 
 .section-about span{
     font-weight: 300;
-    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .what-i-do {
