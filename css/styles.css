@@ -235,6 +235,7 @@ body {
 }
 
 .section-about span{
+    font-size: 15px;
     font-weight: 300;
     padding-top: 2.5rem !important;
     padding-bottom: 1rem !important;
