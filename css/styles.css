@@ -177,7 +177,8 @@ body {
 .section-about{
     background-color: #F5F5F5;
     font-family: Poppins;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     color: rgb(110, 110, 110);
     display: flex;
     justify-content: center;
