@@ -149,12 +149,18 @@ body {
     align-items: center;
 }
 
-.section-about img {
+.img-wrapper {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 12%;
-    display: block;
 }
 
 .section-about h1{
