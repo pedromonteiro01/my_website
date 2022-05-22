@@ -31,6 +31,8 @@ navbarIcon.onclick = function (){
 backdrop.onclick = function (){ 
     navbarAreaScroll.style.display = "none";
     backdrop.style.display = "none";
+    timesIcon.style.display = "none";
+    barsicon.style.display = "block";
 }
 
 function hide(id) {
