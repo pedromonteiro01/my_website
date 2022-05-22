@@ -12,6 +12,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
