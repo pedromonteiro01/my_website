@@ -11,22 +11,31 @@ var navbarIcon = document.getElementById("navbar-icon");
 var barsicon = document.getElementById("icon-bars");
 var timesIcon = document.getElementById("icon-times");
 var navbarAreaScroll = document.getElementById("navbar-scroll");
+var backdrop = document.getElementById("backdrop");
 
 navbarIcon.onclick = function (){
     if (navbarAreaScroll.style.display == "none") {
         barsicon.style.display = "none";
         timesIcon.style.display = "block";
         navbarAreaScroll.style.display = "flex";
+        backdrop.style.display = "block";
     }
     else {
         timesIcon.style.display = "none";
         barsicon.style.display = "block";
         navbarAreaScroll.style.display = "none";
+        backdrop.style.display = "none";
     }
+}
+
+backdrop.onclick = function (){ 
+    navbarAreaScroll.style.display = "none";
+    backdrop.style.display = "none";
 }
 
 function hide(id) {
 	document.getElementById(id).style.display = "none";
+    backdrop.style.display = "none";
 }
 
 function show(id) {
