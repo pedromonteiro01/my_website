@@ -215,6 +215,10 @@ a {
     border-radius: 12%;
 }
 
+.sendasnack-yt-icon {
+    margin-right: 1rem;
+}
+
 .dash {
     background-color: rgb(110, 110, 110);
     height: 0.3px;
