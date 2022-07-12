@@ -215,7 +215,7 @@ a {
     border-radius: 12%;
 }
 
-.sendasnack-yt-icon {
+.yt-icon {
     margin-right: 1rem;
 }
 
@@ -682,6 +682,10 @@ padding: 50px;
 
 .more-projects-wrapper .projects-wrapper:nth-child(3) {
     animation: fadeIn 4s ease-in-out;
+}
+
+.more-projects-wrapper .projects-wrapper:nth-child(4) {
+    animation: fadeIn 5s ease-in-out;
 }
 
 .contacts {
