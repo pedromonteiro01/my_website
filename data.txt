@@ -1,150 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--divinectorweb.com-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Pedro Monteiro - Personal Website">
-    <title>Pedro Monteiro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="img/tab-image.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400;500&family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    
-</head>
-<body>
-    <div class="backdrop" id="backdrop"></div>
-    <div class="banner-text">
-        <ul>
-            <li><a href="#">Home</a></li>         
-            <li><a href="#about">About</a></li>    
-            <li><a href="#background">My Background</a></li>           
-            <li><a href="#projects">Projects</a></li>           
-            <li><a href="#contacts">Contact</a></li>            
-        </ul>
-    </div>
-    <div class="navbar-icon" id="navbar-icon">
-        <i id="icon-bars" class="fas fa-bars fa-lg"></i>
-        <i id="icon-times" class="fas fa-times fa-lg" style="display: none;"></i>
-    </div>
-
-    <div class="navbar-scroll" id="navbar-scroll" style="display: none;">
-        <ul>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#">Home</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#about">About</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#background">My Background</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#projects">Projects</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#contacts">Contact</a></li>
-        </ul>
-    </div>
-
-    <section id="section05" class="demo">
-        <a href="#about"><span></span>Scroll Down</a>
-    </section>
-
-
-    <div id="particles-js">
-        <section class="intro-text">
-            <h2>Hello, I'm Pedro</h2>
-        </section>
-    </div>
-
-    <div class="section-about" id="about">
-        <div class="img-wrapper">
-            <img src="img/pedro_profile.JPG" alt="">
-        </div>
-        <h1>Hello there!</h1>
-        <div class="dash"></div>
-        <div class="paragraphs">
-            <p>My name is Pedro Monteiro.</p>
-            <p>I have recently graduated in Computer Science Engineering at Aveiro University.
-                I intend to continue studying by taking my masters degree next year.
-            </p>
-            <p>Consider myself motivated, dedicated and innovative. I am excited to work for a company and gain 
-                real-world experience. </p>
-            <p>Experience in web development having worked with HTML, CSS, JavaScript, React, Python/Django, PHP, SQL/SQLite/MySQL.</p>
-            <p>
-                I participate regularly in lectures and workshops and develop small projects and contributions to github. 
-                I am also eager to learn more about the cybersecurity area.</p>
-        </div>
-        <span>You can find details <a href="https://www.linkedin.com/in/pedromonteiro01/" target="_blank">here</a>.</span>
-    </div>
-
-    <div class="what-i-do" id="background">
-        <h3>My Background</h3>
-        <div class="development">
-            <div class="development-content">
-                <div class="education-section">
-                    <img src="img/graduation-cap.png" alt="">
-                    <p class="main-p">Education</p>
-                    <ul>
-                        <li>
-                            <div class="li-content">
-                            <img src="img/aveiro.png" alt="">
-                            <p>
-                                Software Engineering BSc Degree
-                                <br>
-                                <span>Sep 2019 - Jul 2022</span>
-                            </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="li-content">
-                            <img src="img/aese.jpg" alt="">
-                            <p>
-                                Scientific High School Degree
-                                <br>
-                                <span>Sep 2016 - Jul 2019</span>
-                            </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="development-content-skills">
-                    <img src="img/code.png" alt="">
-                    <p class="main-p">Skills</p>
-                    <p class="element-p">I've worked with <span class="element"></span></p>
-                    <ul>
-                        <li>
-                            <label for="lang1">Python</label>
-                            <progress id="lang1" value="85" max="100" style="color: black;"> 85% </progress>
-                        </li>
-                        <li>
-                            <label for="lang2">Java</label>
-                            <progress id="lang2" value="60" max="100"> 60% </progress>
-                        </li>
-                        <li>
-                            <label for="lang3">Docker</label>
-                            <progress id="lang1" value="75" max="100"> 75% </progress>
-                        </li>
-                        <li>
-                            <label for="lang4">HTML/CSS/JavaScript</label>
-                            <progress id="lang4" value="90" max="100"> 90% </progress>
-                        </li>
-                        <li>
-                            <label for="lang5">PHP</label>
-                            <progress id="lang5" value="70" max="100"> 70% </progress>
-                        </li>
-                        <li>
-                            <label for="lang6">SQL/MySQL</label>
-                            <progress id="lang6" value="85" max="100" style="margin-bottom: 0;"> 85% </progress>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="timeline">
+<div class="timeline">
         <h3>Experience</h3>
         <div class="wrapper" id="wrapper">
             <div class="center-line">
@@ -157,10 +11,9 @@
                         <span class="title">Research & Development</span>
                         <span>Jul 2022 - Present</span>
                     </div>
-                    <p>
-                        After successfully concluding my bachelor's degree final project with a classification of 19/20, 
-                        I was invited, along with my colleagues, to continue to work on this project with the intent to make it 
-                        closer to a production-ready product, set to be used by the university's community.
+                    <p>After a final degree project that ended up with a grade of 19/20, I was invited to continue the work together
+                        with my group and the IT services of Aveiro University, 
+                        in order to provide a fully functional and ready-to-use tool, that can be used by the entire university community.
                     </p>
                     <div class="bottom">
                         <span>Universidade de aveiro</span>
@@ -287,19 +140,18 @@
                 </div>
                 <div class="projects-card">
                     <div class="top-card">
-                        <h2>Professor Scheduler Assigner</h2>
-                        <a class="yt-icon" href="https://youtu.be/Nli68iJH7e8" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://github.com/zepedrotrigo/DSD_professor_schedule_assigner" target="_blank"><i class="fab fa-github"></i></a>
+                        <h2>Existence of Vulnerabilities</h2>
+                        <a href="https://github.com/pedromonteiro01/vulnerabilities" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="card-content">
-                        <p>Build a platform to plan the distribution of Professors across classes and 
-                            curricular units, in each department of the university, providing the necessary information.
-                        </p>    
+                        <p>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>    
                     </div>
                     <div class="bottom-card">
                         <ul>
-                            <li>ReactJS</li>
-                            <li>FastAPI</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
                             <li>MySQL</li>
                             <li>Docker</li>
                         </ul>
@@ -394,20 +246,17 @@
                     </div>
                     <div class="projects-card">
                         <div class="top-card">
-                            <h2>Existence of Vulnerabilities</h2>
-                            <a href="https://github.com/pedromonteiro01/vulnerabilities" target="_blank"><i class="fab fa-github"></i></a>
+                            <h2>Supermarket Database</h2>
+                            <a href="https://github.com/pedromonteiro01/supermarket_database" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                         <div class="card-content">
-                            <p>This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.</p>    
+                            <p>System that allows managing a supermarket, with emphasis on the 
+                                development of its database.</p>    
                         </div>
                         <div class="bottom-card">
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>Docker</li>
+                                <li>SQL Server</li>
+                                <li>C#</li>
                             </ul>
                         </div>
                     </div>
@@ -517,53 +366,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects-wrapper">
-                    <div class="projects-card">
-                        <div class="top-card">
-                            <h2>CSV Table Compiler</h2>
-                            <a href="https://github.com/pedromonteiro01/csv_table_compiler" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>Small project that aims to create a language, using ANTLR4, to manipulate tables or databases.</p>    
-                        </div>
-                        <div class="bottom-card">
-                            <ul>
-                                <li>ANTLR4</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="projects-card">
-                        <div class="top-card">
-                            <h2>Supermarket Database</h2>
-                            <a href="https://github.com/pedromonteiro01/supermarket_database" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>System that allows managing a supermarket, with emphasis on the 
-                                development of its database.</p>    
-                        </div>
-                        <div class="bottom-card">
-                            <ul>
-                                <li>SQL Server</li>
-                                <li>C#</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="projects-card">
-                        <div class="top-card">
-                            <h2>IP Tracker</h2>
-                            <a href="https://github.com/pedromonteiro01/iptracker" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>Simple program that uses an API and represents on a map, in an HTML page, the location of the IP address.</p>    
-                        </div>
-                        <div class="bottom-card">
-                            <ul>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="show-more">
                 <button id="btn-more">Show More</button>
@@ -571,76 +373,3 @@
             </div>
         </div>
     </div>
-
-    <div class="contacts" id="contacts">
-        <div class="contacts-message">
-            <img src="img/paper-plane.png" alt="Paper Plane" width="45px">
-            <h3>Want to Talk?</h3>
-            <p>Feel free to send me a message.</p>
-            <a href="mailto:pmapm@ua.pt" target="_blank"><button>Email Me</i></button></a>
-        </div>
-        <div class="contacts-cv">
-            <h3>Here is my CV</h3>
-            <div class="cv-buttons">
-                <a href="./files/Pedro_Monteiro_cv.pdf" target="_blank"><button>Download (PT) <i class="far fa-file-pdf"></i></button></a>
-                <a href="./files/Pedro_Monteiro_cv_en.pdf" target="_blank"><button>Download (EN) <i class="far fa-file-pdf"></i></button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <h2>STALK ME!</h2>
-        <ul class="icons">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/pedromonteiro01/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-                <p>Linkedin</p>
-              </a>
-            </li>
-            <li class="github">
-              <a href="https://github.com/pedromonteiro01" target="_blank">
-                <i class="fab fa-github"></i>
-                <p>GitHub</p>
-              </a>
-            </li>
-            <li class="instagram">
-              <a href="https://www.instagram.com/pedro_monteiro_01/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                <p>Instagram</p>
-              </a>
-            </li>
-          </ul>
-        <span style="display: block;">2022 Pedro Monteiro<br>Made with HTML,CSS and Font Awesome</span>
-    </div>
-    <script>
-        $(function(){
-	      $(".element").typed({
-	        strings: ["Python","Java","C/C++","HTML/CSS","Javascript","PHP","SQL","MySQL","Docker","Spring Boot","ReactJS","Django", "C#", "Flutter", "Dart"],
-	        typeSpeed: 0,
-    		// time before typing starts
-			startDelay: 2,
-			// backspacing speed
-			backSpeed: 0,
-			// time before backspacing
-			backDelay: 1600,
-			// loop
-			loop: true,
-			// false = infinite
-			loopCount: false,
-			// show cursor
-			showCursor: true,
-			// character for cursor
-			cursorChar: "|",
-
-	      });
-	  });
-    </script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function(){
-            console.log("particles.js loaded!");
-        });
-    </script>
-    <script src="scripts/show-navbar-icon.js"></script>
-</body>
-</html>
