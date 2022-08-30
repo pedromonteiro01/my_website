@@ -648,10 +648,6 @@ padding: 50px;
     margin-left: 0;
 } 
 
-.more-projects-wrapper {
-    animation: projects_appear 0.5s ease-in-out;
-}
-
 .show-more {
     margin-top: 3rem;
     display: flex;
@@ -672,19 +668,19 @@ padding: 50px;
 }
 
 .more-projects-wrapper .projects-wrapper:nth-child(1) {
-    animation: fadeIn 2s ease-in-out;
+    --animate-duration: 1s;
 }
 
 .more-projects-wrapper .projects-wrapper:nth-child(2) {
-    animation: fadeIn 3s ease-in-out;
+    --animate-duration: 2s;
 }
 
 .more-projects-wrapper .projects-wrapper:nth-child(3) {
-    animation: fadeIn 4s ease-in-out;
+    --animate-duration: 3s;
 }
 
 .more-projects-wrapper .projects-wrapper:nth-child(4) {
-    animation: fadeIn 5s ease-in-out;
+    --animate-duration: 4s;
 }
 
 .contacts {
@@ -985,26 +981,6 @@ li.github:hover a{
     }
     .wrapper .row{
     margin: 10px 0;
-    }
-}
-
-@keyframes projects_appear {
-    from {
-        height: 0;
-    }
-    to {
-        height: 100vh;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        visibility: hidden;
-        opacity: 0;
-    }
-    to {
-        visibility: visible;
-        opacity: 1;
     }
 }
 
