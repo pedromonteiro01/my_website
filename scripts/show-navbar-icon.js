@@ -14,22 +14,26 @@ var navbarAreaScroll = document.getElementById("navbar-scroll");
 var backdrop = document.getElementById("backdrop");
 
 navbarIcon.onclick = function (){
-    if (navbarAreaScroll.style.display == "none") {
+    if (barsicon.style.display == "block") {
         barsicon.style.display = "none";
         timesIcon.style.display = "block";
+        navbarAreaScroll.classList.add("animate__fadeInLeft");
+        navbarAreaScroll.classList.remove("animate__fadeOutLeft");
         navbarAreaScroll.style.display = "flex";
         backdrop.style.display = "block";
     }
     else {
         timesIcon.style.display = "none";
         barsicon.style.display = "block";
-        navbarAreaScroll.style.display = "none";
+        navbarAreaScroll.classList.add("animate__fadeOutLeft");
+        navbarAreaScroll.classList.remove("animate__fadeInLeft");
         backdrop.style.display = "none";
     }
 }
 
-backdrop.onclick = function (){ 
-    navbarAreaScroll.style.display = "none";
+backdrop.onclick = function (){
+    navbarAreaScroll.classList.add("animate__fadeOutLeft");
+    navbarAreaScroll.classList.remove("animate__fadeInLeft");
     backdrop.style.display = "none";
     timesIcon.style.display = "none";
     barsicon.style.display = "block";
