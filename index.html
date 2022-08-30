@@ -19,7 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="backdrop" id="backdrop"></div>
@@ -37,13 +40,13 @@
         <i id="icon-times" class="fas fa-times fa-lg" style="display: none;"></i>
     </div>
 
-    <div class="navbar-scroll" id="navbar-scroll" style="display: none;">
+    <div class="navbar-scroll animate__animated animate__fadeInLeft" id="navbar-scroll" style="display: none;">
         <ul>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#">Home</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#about">About</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#background">My Background</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#projects">Projects</a></li>
-            <li onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#contacts">Contact</a></li>
+            <li class="animate__animated animate__slideInLeft" onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#">Home</a></li>
+            <li class="animate__animated animate__slideInLeft" onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#about">About</a></li>
+            <li class="animate__animated animate__slideInLeft" onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#background">My Background</a></li>
+            <li class="animate__animated animate__slideInLeft" onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#projects">Projects</a></li>
+            <li class="animate__animated animate__slideInLeft" onclick="toggleIcon()"><a id="nav-link" onclick="hide('navbar-scroll')" href="#contacts">Contact</a></li>
         </ul>
     </div>
 
@@ -58,7 +61,7 @@
         </section>
     </div>
 
-    <div class="section-about" id="about">
+    <div class="section-about" id="about" >
         <div class="img-wrapper">
             <img src="img/pedro_profile.JPG" alt="">
         </div>

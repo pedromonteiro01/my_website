@@ -52,7 +52,6 @@ a {
     background-color: #ccc;
     display: none;
     flex-direction: column;
-    animation: appear 1s;
 }
 
 .navbar-scroll ul {
@@ -67,23 +66,23 @@ a {
 }
 
 .navbar-scroll ul li:nth-child(1) {
-    animation: fadeIn 1.5s ease-in-out;
+    --animate-duration: 1s;
 }
 
 .navbar-scroll ul li:nth-child(2) {
-    animation: fadeIn 2s ease-in-out;
+    --animate-duration: 1.5s;
 }
 
 .navbar-scroll ul li:nth-child(3) {
-    animation: fadeIn 2.5s ease-in-out;
+    --animate-duration: 2s;
 }
 
 .navbar-scroll ul li:nth-child(4) {
-    animation: fadeIn 3s ease-in-out;
+    --animate-duration: 2.5s;
 }
 
 .navbar-scroll ul li:nth-child(5) {
-    animation: fadeIn 3.5s ease-in-out;
+    --animate-duration: 3s;
 }
 
 .navbar-scroll ul li a {
@@ -986,15 +985,6 @@ li.github:hover a{
     }
     .wrapper .row{
     margin: 10px 0;
-    }
-}
-
-@keyframes appear {
-    from {
-        height: 0;
-    }
-    to {
-        height: 100vh;
     }
 }
 
