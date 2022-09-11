@@ -1,0 +1,8 @@
+.particles-background {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100vh;
+    z-index: -1;
+}
