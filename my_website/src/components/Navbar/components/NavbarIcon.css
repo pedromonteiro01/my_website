@@ -1,0 +1,22 @@
+.navbar-icon {
+    z-index: 10;
+    position: fixed;
+    top: 40px;
+    left: 25px;
+  }
+  
+  .navbar-icon i {
+    color: gray;
+    font-size: 25px;
+  }
+  
+  .navbar-icon i:hover {
+    cursor: pointer;
+  }
+  
+  @media all and (max-width: 960px) {
+    .navbar-icon {
+      left: 15px;
+      top: 25px;
+    }
+  }

@@ -4,7 +4,7 @@ import "./MyBackground.css";
 
 const MyBackground = () => {
   return (
-    <div className="my-background">
+    <div className="my-background" id="background">
       <h3 className="background-header">My Background</h3>
       <div className="background-wrapper">
         <Education />

@@ -51,7 +51,7 @@ return (
                     },
                     bounce: false,
                     random: false,
-                    speed: 2,
+                    speed: 2.5,
                     straight: false,
                     attract: {
                       enable: false,
