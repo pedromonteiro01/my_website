@@ -21,6 +21,7 @@ return (
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
+            fullScreen: false,
             background: {
                 color: {
                     value: "#000",
@@ -49,7 +50,7 @@ return (
                     },
                     bounce: false,
                     random: false,
-                    speed: 2.5,
+                    speed: 2,
                     straight: false,
                     attract: {
                       enable: false,

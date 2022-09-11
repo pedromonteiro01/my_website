@@ -1,0 +1,35 @@
+.education-section {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-section-header {
+    text-align: center;
+}
+
+.education-section li {
+    margin-bottom: 1rem;
+}
+
+.education-section li:first-child {
+    margin-top: 2rem;
+}
+
+.li-content {
+    display: flex;
+    align-items: center;
+}
+
+.li-content img{
+    float: left;
+    width: 80px;
+    height: auto;
+}
+
+.education-section ul {
+    list-style-type: none;
+}
+
