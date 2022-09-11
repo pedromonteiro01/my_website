@@ -1,5 +1,5 @@
 import "./Skills.css";
-import { skills_data } from "./skills-items.js";
+import { SkillsData } from "./skills-data.js";
 
 const Skills = () => {
   return (
@@ -12,7 +12,7 @@ const Skills = () => {
         </p>
       </div>
       <ul>
-        {skills_data.map((item) => {
+        {SkillsData.map((item) => {
           return (
             <li>
               <label key={item.id} htmlFor={item.label}>{item.language}</label>

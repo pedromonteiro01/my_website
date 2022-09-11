@@ -57,4 +57,9 @@
     .contacts {
         padding-bottom: 3rem;
     }
+
+    .contacts-message p {
+        width: 95%;
+        margin: 0 2.5% 1rem 2.5%;
+    }
 }

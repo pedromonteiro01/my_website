@@ -1,4 +1,4 @@
-export const skills_data = [
+export const SkillsData = [
   {
     id: 1,
     label: "lang1",

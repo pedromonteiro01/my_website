@@ -16,6 +16,7 @@ const particlesLoaded = useCallback(async (container) => {
 return (
   <div className="particles">
     <Particles
+    height="200vh"
     style={{zIndex: 1}}
         id="tsparticles"
         init={particlesInit}
