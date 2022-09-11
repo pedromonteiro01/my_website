@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import './ParticlesBackground.css';
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -13,6 +14,7 @@ const particlesLoaded = useCallback(async (container) => {
 }, []);
 
 return (
+  <div className="particles">
     <Particles
     style={{zIndex: 1}}
         id="tsparticles"
@@ -47,7 +49,7 @@ return (
                     },
                     bounce: false,
                     random: false,
-                    speed: 2,
+                    speed: 2.5,
                     straight: false,
                     attract: {
                       enable: false,
@@ -96,6 +98,7 @@ return (
             detectRetina: true,
         }}
     />
+    </div>
 );
 };
 

@@ -24,10 +24,6 @@
     text-align: center;
 }
 
-.icons .github {
-    margin: 0 5rem;
-}
-
 .icons i {
     font-size: 2.5em;
     margin-bottom: 1rem;
@@ -45,55 +41,9 @@
     display: block;
 }
 
-li.instagram a{
-    opacity: 0.7;
-}
-
-li.linkedin a{
-    opacity: 0.7;
-}
-
-li.github a{
-    opacity: 0.7;
-}
-
 .icons li a p {
     visibility: hidden;
     transition: all 0.2s ease-in-out;
-}
-
-li.instagram:hover p{
-    color: #C13584;
-    visibility: visible;
-    transition: all 0.7s ease-in-out;
-
-}
-li.instagram:hover a{
-    color: #C13584;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-}
-
-li.linkedin:hover p{
-    color: #0e76a8;
-    visibility: visible;
-    transition: all 0.7s ease-in-out;
-}
-li.linkedin:hover a{
-    color: #0e76a8;
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-}
-
-li.github:hover p{
-    color: black;
-    visibility: visible;
-    transition: all 0.7s ease-in-out;
-}
-li.github:hover a{
-    color: black;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
 }
 
 .footer span {

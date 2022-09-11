@@ -39,32 +39,6 @@
     margin-bottom: 1rem;
 }
 
-.contacts-message button,
-.contacts-cv button {
-    font-family: Poppins;
-    background-color: white;
-    border-radius: 3px;
-    padding: 0.6rem 1rem;
-    color: rgb(122, 122, 122);
-    border: solid 1px #ccc;
-}
-
-.contacts-message button{
-    font-size: 19px;
-}
-
-.contacts-cv button{
-    font-size: 22px;
-}
-
-.contacts-message button:hover,
-.contacts-cv button:hover {
-    background-color: gray;
-    cursor: pointer;
-    color: white;
-    transition: all 0.4s ease-in-out;
-}
-
 .cv-buttons {
     width: 32vw;
     display: flex;
@@ -78,12 +52,6 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-    }
-
-    .contacts-cv button{
-        width: 13rem;
-        padding: 0.5rem 1rem;
-        font-size: 18px;
     }
 
     .contacts {

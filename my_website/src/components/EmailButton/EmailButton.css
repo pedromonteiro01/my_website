@@ -1,0 +1,16 @@
+.email-button {
+    font-size: 19px;
+    font-family: Poppins;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.6rem 1rem;
+    color: rgb(122, 122, 122);
+    border: solid 1px #ccc;
+}
+
+.email-button:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}

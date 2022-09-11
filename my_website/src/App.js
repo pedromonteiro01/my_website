@@ -1,12 +1,14 @@
 import "./App.css";
-import Contacts from "./components/Contacts/Contacts";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
+import About from "./views/About/About";
+import Contacts from "./views/Contacts/Contacts";
+import Footer from "./views/Footer/Footer";
+import Intro from './views/Intro/Intro';
 
 function App() {
   return (
     <>
+      <Intro />
+      <About />
       <Contacts />
       <Footer />
     </>
