@@ -1,5 +1,7 @@
 import { data } from "./data";
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Experience = () => {
   return (
@@ -13,6 +15,8 @@ const Experience = () => {
         </div>
         {data.map((item) => {
           return (
+            <>
+            <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
             <ExperienceCard
             key={item.id}
               class={item.class}
@@ -23,6 +27,8 @@ const Experience = () => {
               link={item.link}
               img={item.img}
             />
+            </AnimationOnScroll>
+            </>
           );
         })}
       </div>
