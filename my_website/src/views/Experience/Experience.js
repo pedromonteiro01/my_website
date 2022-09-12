@@ -4,10 +4,10 @@ import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 const Experience = () => {
   return (
     <div className="timeline">
-      <h3>Experience</h3>
+      <h3 id="experienceHeader">Experience</h3>
       <div className="wrapper" id="wrapper">
         <div className="center-line">
-          <a href="#wrapper" class="scroll-icon">
+          <a href="#experienceHeader" class="scroll-icon">
             <i class="fas fa-caret-up"></i>
           </a>
         </div>
