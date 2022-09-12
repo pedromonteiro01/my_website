@@ -6,6 +6,7 @@ import Experience from "./views/Experience/Experience";
 import Footer from "./views/Footer/Footer";
 import Intro from './views/Intro/Intro';
 import MyBackground from "./views/MyBackground/MyBackground";
+import Projects from "./views/Projects/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <MyBackground />
       <Experience />
+      <Projects />
       <Contacts />
       <Footer />
     </>
