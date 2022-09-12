@@ -4,10 +4,12 @@ import { useState } from "react";
 
 const NavbarIcon = () => {
   const [active, setActive] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const [className, setClassName] = useState("");
 
   const handleShowNavbar = () => {
     setActive(false);
+    setShowNav(true);
     setClassName("animate__fadeInLeft");
   }
 
@@ -28,7 +30,7 @@ const NavbarIcon = () => {
       )}
       {!active && <i id="icon-times" class="fas fa-times fa-lg" onClick={handleHideNavbar}></i>}
     </div>
-    <div className={`navbar-scroll animate__animated ${className}`} id="navbar-scroll">
+    {showNav && <div className={`navbar-scroll animate__animated ${className}`} id="navbar-scroll">
         <ul>
           <li>
             <a id="nav-link" href="#">
@@ -56,7 +58,7 @@ const NavbarIcon = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> }
     </>
   );
 };
