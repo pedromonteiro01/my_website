@@ -30,7 +30,7 @@ const NavbarIcon = () => {
       )}
       {!active && <i id="icon-times" class="fas fa-times fa-lg" onClick={handleHideNavbar}></i>}
     </div>
-    {showNav && <div className={`navbar-scroll animate__animated ${className}`} id="navbar-scroll">
+    {showNav && <div className={`navbar-scroll animate__animated ${className}`} style={{zIndex: 9}} id="navbar-scroll">
         <ul>
           <li>
             <a id="nav-link" href="#">

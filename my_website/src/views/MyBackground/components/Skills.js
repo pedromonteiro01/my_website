@@ -14,8 +14,8 @@ const Skills = () => {
       <ul>
         {SkillsData.map((item) => {
           return (
-            <li>
-              <label key={item.id} htmlFor={item.label}>{item.language}</label>
+            <li key={item.id}>
+              <label htmlFor={item.label}>{item.language}</label>
               <progress
                 id={item.label}
                 value={item.progress}
