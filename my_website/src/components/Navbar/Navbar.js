@@ -1,6 +1,5 @@
 import './Navbar.css';
 import { useEffect, useState } from 'react';
-import NavbarScroll from './components/NavbarScroll';
 import FullNavbar from './components/FullNavbar';
 import NavbarIcon from './components/NavbarIcon';
 
@@ -25,7 +24,6 @@ const Navbar = () => {
         { !active && 
         <>
         <NavbarIcon />
-        <NavbarScroll />
         </>}
         </>
     )
