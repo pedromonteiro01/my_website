@@ -1,10 +1,20 @@
 import "./NavbarIcon.css";
+import 'animate.css';
 import { useState } from "react";
 
 const NavbarIcon = () => {
   const [active, setActive] = useState(true);
+  const [className, setClassName] = useState("");
 
-  const handleActiveIcon = () => setActive(!active);
+  const handleShowNavbar = () => {
+    setActive(false);
+    setClassName("animate__fadeInLeft");
+  }
+
+  const handleHideNavbar = () => {
+    setActive(true);
+    setClassName("animate__fadeOutLeft");
+  }
 
   return (
     <>
@@ -13,12 +23,12 @@ const NavbarIcon = () => {
         <i
           id="icon-bars"
           class="fas fa-bars fa-lg"
-          onClick={handleActiveIcon}
+          onClick={handleShowNavbar}
         ></i>
       )}
-      {!active && <i id="icon-times" class="fas fa-times fa-lg" onClick={handleActiveIcon}></i>}
+      {!active && <i id="icon-times" class="fas fa-times fa-lg" onClick={handleHideNavbar}></i>}
     </div>
-    {!active &&<div className="navbar-scroll" id="navbar-scroll">
+    <div className={`navbar-scroll animate__animated ${className}`} id="navbar-scroll">
         <ul>
           <li>
             <a id="nav-link" href="#">
@@ -46,7 +56,7 @@ const NavbarIcon = () => {
             </a>
           </li>
         </ul>
-      </div>}
+      </div>
     </>
   );
 };
