@@ -1,0 +1,54 @@
+.skills ul {
+    list-style-type: none;
+}
+
+.skills {
+    width: 30%;
+}
+
+.skills-header {
+    text-align: center;
+}
+
+.element-p {
+    margin: 1rem 0;
+}
+
+.skills ul li label {
+    display: block;
+    float: left;
+}
+
+.skills ul li progress{
+    height: 10px;
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-value {
+    background: black;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+progress::-webkit-progress-bar {
+    background: lightgray;
+    border-radius: 12px;
+}
+
+.main-p {
+    margin-top: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@media all and (max-width: 960px) {
+    .skills {
+        width: 90%;
+        margin: 0 5%;
+    }
+}

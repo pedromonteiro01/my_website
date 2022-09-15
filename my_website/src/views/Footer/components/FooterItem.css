@@ -1,0 +1,49 @@
+li.instagram a{
+    opacity: 0.7;
+}
+
+li.linkedin a{
+    opacity: 0.7;
+}
+
+li.github a{
+    opacity: 0.7;
+}
+
+.github {
+    margin: 0 5rem;
+}
+
+li.instagram:hover p{
+    color: #C13584;
+    visibility: visible;
+    transition: all 0.7s ease-in-out;
+
+}
+li.instagram:hover a{
+    color: #C13584;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+li.linkedin:hover p{
+    color: #0e76a8;
+    visibility: visible;
+    transition: all 0.7s ease-in-out;
+}
+li.linkedin:hover a{
+    color: #0e76a8;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+li.github:hover p{
+    color: black;
+    visibility: visible;
+    transition: all 0.7s ease-in-out;
+}
+li.github:hover a{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}

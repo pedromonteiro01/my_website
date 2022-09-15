@@ -1,0 +1,25 @@
+.my-background {
+    background-color: #fff;
+    padding-bottom: 5rem;
+}
+
+.background-header {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: normal;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.background-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 960px) {
+    .background-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
