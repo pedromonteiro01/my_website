@@ -1,8 +1,28 @@
+import { useState } from "react";
 import Button from "../../components/Button/Button";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import MoreProjects from "./components/MoreProjects";
 import "./Projects.css";
 
 const Projects = () => {
+  const [showMoreBtn, setShowMoreBtn] = useState(true);
+  const [showLessBtn, setLessMoreBtn] = useState(false);
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
+  const [className, setClassName] = useState("");
+
+  const handleShowProjects = () => {
+    setLessMoreBtn(true);
+    setShowMoreBtn(false);
+    setShowMoreProjects(true);
+    setClassName("animate__animated animate__zoomIn");
+  };
+
+  const handleHideProjects = () => {
+    setLessMoreBtn(false);
+    setShowMoreBtn(true);
+    setShowMoreProjects(false);
+  };
+
   return (
     <div className="projects-section">
       <h3>Projects</h3>
@@ -75,7 +95,7 @@ Include 2 main sub-projects - deliveries platform (engine) and specific applicat
             "Docker",
           ]}
         />
-                <ProjectCard
+        <ProjectCard
           title="Secure Authentication"
           git="https://github.com/pedromonteiro01/secure_authentication"
           text="Robust authentication protocol. Running the authentication protocol N times, and providing in each run the minimum set of information (1 bit)."
@@ -90,8 +110,10 @@ Include 2 main sub-projects - deliveries platform (engine) and specific applicat
           ]}
         />
       </div>
+      {showMoreProjects && <MoreProjects class={className} />}
       <div className="show-more-buttons">
-        <Button text="Show More" />
+        { showMoreBtn && <Button text="Show More" onClick={handleShowProjects} /> }
+        { showLessBtn && <Button text="Show Less" onClick={handleHideProjects} /> } 
       </div>
     </div>
   );

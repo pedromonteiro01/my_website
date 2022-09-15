@@ -22,7 +22,8 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="card-content">
-        <p>{props.text}</p>
+        {props.text && <p>{props.text}</p>}
+        {props.textLink && props.textLink}
       </div>
       <div className="bottom-card">
         <ul>
