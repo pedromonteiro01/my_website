@@ -6,20 +6,24 @@ const NavbarIcon = () => {
   const [active, setActive] = useState(true);
   const [showNav, setShowNav] = useState(false);
   const [className, setClassName] = useState("");
+  const [showBackdrop, setShowBackdrop] = useState(false);
 
   const handleShowNavbar = () => {
     setActive(false);
     setShowNav(true);
+    setShowBackdrop(true);
     setClassName("animate__fadeInLeft");
   }
 
   const handleHideNavbar = () => {
     setActive(true);
+    setShowBackdrop(false);
     setClassName("animate__fadeOutLeft");
   }
 
   return (
     <>
+    {showBackdrop && <div class="backdrop" id="backdrop" onClick={handleHideNavbar}></div>}
     <div className="navbar-icon" id="navbar-icon">
       {active && (
         <i
@@ -33,27 +37,27 @@ const NavbarIcon = () => {
     {showNav && <div className={`navbar-scroll animate__animated ${className}`} style={{zIndex: 9}} id="navbar-scroll">
         <ul>
           <li>
-            <a id="nav-link" href="#">
+            <a id="nav-link" href="#" onClick={handleHideNavbar}>
               Home
             </a>
           </li>
           <li>
-            <a id="nav-link" href="#about">
+            <a id="nav-link" href="#about" onClick={handleHideNavbar}>
               About
             </a>
           </li>
           <li>
-            <a id="nav-link" href="#background">
+            <a id="nav-link" href="#background" onClick={handleHideNavbar}>
               My Background
             </a>
           </li>
           <li>
-            <a id="nav-link" href="#projects">
+            <a id="nav-link" href="#projects" onClick={handleHideNavbar}>
               Projects
             </a>
           </li>
           <li>
-            <a id="nav-link" href="#contacts">
+            <a id="nav-link" href="#contacts" onClick={handleHideNavbar}>
               Contact
             </a>
           </li>
