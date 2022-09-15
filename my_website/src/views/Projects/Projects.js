@@ -24,7 +24,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-section">
+    <div className="projects-section" id="projects">
       <h3>Projects</h3>
       <div className="projects-wrapper">
         <ProjectCard
