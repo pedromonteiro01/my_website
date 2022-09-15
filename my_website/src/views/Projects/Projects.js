@@ -14,7 +14,7 @@ const Projects = () => {
     setLessMoreBtn(true);
     setShowMoreBtn(false);
     setShowMoreProjects(true);
-    setClassName("animate__animated animate__zoomIn");
+    setClassName("animate__animated animate__jackInTheBox");
   };
 
   const handleHideProjects = () => {
