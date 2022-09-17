@@ -1,7 +1,9 @@
+import { Col } from "react-bootstrap";
 import "./ProjectCard.css";
 
 const ProjectCard = (props) => {
   return (
+    <Col size={12} sm={6} md={4}>
     <div className="projects-card">
       <div className="top-card">
         <h2>{props.title}</h2>
@@ -33,6 +35,7 @@ const ProjectCard = (props) => {
         </ul>
       </div>
     </div>
+    </Col>
   );
 };
 
