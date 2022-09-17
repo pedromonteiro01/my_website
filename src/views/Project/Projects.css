@@ -16,7 +16,6 @@
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
   font-family: 'Poppins';
 }
@@ -38,6 +37,7 @@
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+  font-family: 'Poppins';
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
@@ -54,19 +54,19 @@
     width: 100% !important;
 }
 .project .nav.nav-pills .nav-link.active {
-    border: 2px solid rgba(255, 255, 255, 1);
-    color: #fff;
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    color: #fff;;
 }
 .nav-link#projects-tabs-tab-first {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 0.5px solid rgba(255, 255, 255, 1);
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-top: 0.5px solid rgba(255, 255, 255, 1);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 1);
 }
 .nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 0.5px solid rgba(255, 255, 255, 1);
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
