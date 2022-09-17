@@ -35,7 +35,7 @@ const Skills = () => {
       </span>
         </p>
       </div>
-      <ul>
+      <ul className="skills-list">
         {SkillsData.map((item) => {
           return (
             <li key={item.id}>
