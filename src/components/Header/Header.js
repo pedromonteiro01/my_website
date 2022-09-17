@@ -1,9 +1,17 @@
+import Typed from "react-typed";
 import './Header.css';
 
 const Header = () => {
     return (
         <section class="intro-text">
-            <h2>Hello, I'm Pedro</h2>
+            <h2><Typed
+      strings={[
+            "Hello, I'm Pedro",
+          ]}
+          typeSpeed={150}
+          backSpeed={100}
+          loop
+        /></h2>
         </section>
     )
 }
