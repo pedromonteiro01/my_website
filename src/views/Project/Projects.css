@@ -15,7 +15,7 @@
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 55px;
   overflow: hidden;
   font-family: 'Poppins';
 }
@@ -44,7 +44,8 @@
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #5c3bd5 -5.91%, #210696 111.58%);
+    filter: saturate(70%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -55,7 +56,7 @@
 }
 .project .nav.nav-pills .nav-link.active {
     border: 0.5px solid rgba(255, 255, 255, 1);
-    color: #fff;;
+    color: #fff;
 }
 .nav-link#projects-tabs-tab-first {
   border: 0.5px solid rgba(255, 255, 255, 1);
