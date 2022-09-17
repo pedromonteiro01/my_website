@@ -6,6 +6,8 @@ import TrackVisibility from "react-on-screen";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Projects.css";
 import { Container } from "react-bootstrap";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Projects = () => {
@@ -15,12 +17,7 @@ const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
                   <h2>Projects</h2>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -39,11 +36,7 @@ const Projects = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__fadeInUp" : ""
-                      }
-                    >
+                      id="slideInUp">
                       <Tab.Pane eventKey="first">
                         <Row>
                           <ProjectCard
@@ -234,8 +227,7 @@ Include 2 main sub-projects - deliveries platform (engine) and specific applicat
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
-                </div>
-              )}
+                </AnimationOnScroll>
             </TrackVisibility>
           </Col>
         </Row>
