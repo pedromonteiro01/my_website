@@ -8,7 +8,7 @@ const Header = () => {
       strings={[
             "Hello, I'm Pedro",
           ]}
-          typeSpeed={150}
+          typeSpeed={112}
           backSpeed={100}
           loop
         /></h2>
