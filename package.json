@@ -13,6 +13,7 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.2.4",
     "react-typed": "^1.2.0",
+    "react-typist": "^2.0.5",
     "tsparticles": "^2.2.4",
     "tsparticles-slim": "^2.2.4"
   },
