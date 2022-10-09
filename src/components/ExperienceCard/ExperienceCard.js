@@ -7,7 +7,7 @@ const ExperienceCard = (props) => {
       <i className="icon fas fa-star"></i>
       <div className="details">
         <span className="title">{props.title}</span>
-        <span>{props.date}</span>
+        <span className="date">{props.date}</span>
       </div>
       <p>
         {props.text}

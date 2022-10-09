@@ -101,6 +101,10 @@
     left: -60px;
 }
 
+.details .date {
+    font-size: 0.9em;
+}
+
 .row section .details,
 .row section .bottom{
     display: flex;
@@ -108,7 +112,7 @@
     justify-content: space-between;
 }
 .row section .details .title{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 .row section p{
