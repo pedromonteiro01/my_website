@@ -6,12 +6,12 @@ export const data = [
   {
     id: 2,
     content:
-      "I have recently graduated in Computer Science Engineering at Aveiro University. I intend to continue studying by taking my masters degree next year.",
+      "Currently in the 1st year of Computer Science Engineering MSc Degree at Aveiro University.",
   },
   {
     id: 3,
     content:
-      "Consider myself motivated, dedicated and innovative. I am excited to work for a company and gain real-world experience.",
+      "Consider myself motivated, dedicated, innovative and I like to work in team.",
   },
   {
     id: 4,
