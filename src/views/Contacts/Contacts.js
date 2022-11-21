@@ -20,7 +20,7 @@ const Contacts = () => {
             <h3>Here is my CV</h3>
             <div className="cv-buttons">
                 <DownloadButton path="/files/Pedro_Monteiro_cv.pdf" desc="Download (PT) " />
-                <DownloadButton path="/files/Pedro_Monteiro_cv_en.pdf" desc="Download (EN) " />
+                <DownloadButton path="/files/Pedro_Monteiro_en_cv.pdf" desc="Download (EN) " />
             </div>
         </div>
     </div>
