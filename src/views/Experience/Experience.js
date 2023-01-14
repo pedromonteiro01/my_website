@@ -18,7 +18,8 @@ const Experience = () => {
             <>
             <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
             <ExperienceCard
-            key={item.id}
+              icon={item.icon}
+              key={item.id}
               class={item.class}
               title={item.title}
               date={item.date}

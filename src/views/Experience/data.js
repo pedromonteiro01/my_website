@@ -1,6 +1,9 @@
+import { FaStar } from "react-icons/fa";
+
 export const data = [
   {
     id: 1,
+    icon: <FaStar />,
     class: "row row-1",
     title: "Research & Development",
     date: "Jul 2022 - Present",
@@ -11,6 +14,7 @@ export const data = [
   },
   {
     id: 2,
+    icon: <FaStar />,
     class: "row row-2",
     title: "Internal Management Member",
     date: "Nov 2021 - Present",
@@ -21,16 +25,18 @@ export const data = [
   },
   {
     id: 3,
+    icon: <FaStar />,
     class: "row row-1",
     title: "Business Relations Member",
     date: "Mar 2022 - Oct 2022",
     text: "Contact companies, speakers and individual entities in order to organize events. Also connected to the IT part, responsible for the website development, using ReactJS and GraphQL.",
     local: "Scientific Junior Value",
     link: "https://www.scientific.pt/",
-    img: "/img/scientifi.jpg",
+    img: "/img/scientifi.png",
   },
   {
     id: 4,
+    icon: <FaStar />,
     class: "row row-2",
     title: "External Collaborator",
     date: "Oct 2019 - Nov 2021",
@@ -41,6 +47,7 @@ export const data = [
   },
   {
     id: 5,
+    icon: <FaStar />,
     class: "row row-1",
     title: "External Collaborator",
     date: "Dec 2019 - Fev 2020",
