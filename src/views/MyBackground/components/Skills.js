@@ -24,7 +24,8 @@ const Skills = () => {
         'C#', 
         'SQL',  
         'MYSQL',  
-        'Docker',  
+        'Docker', 
+        'Kubernetes', 
         'Flutter',  
         'Dart',  
           ]}
