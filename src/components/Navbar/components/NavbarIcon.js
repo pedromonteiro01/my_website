@@ -52,6 +52,11 @@ const NavbarIcon = () => {
             </a>
           </li>
           <li>
+            <a id="nav-link" href="#experience" onClick={handleHideNavbar}>
+              Experience
+            </a>
+          </li>
+          <li>
             <a id="nav-link" href="#project" onClick={handleHideNavbar}>
               Projects
             </a>

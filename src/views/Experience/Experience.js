@@ -5,7 +5,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Experience = () => {
   return (
-    <div className="timeline">
+    <div className="timeline" id="experience">
       <h3 id="experienceHeader">Experience</h3>
       <div className="wrapper" id="wrapper">
         <div className="center-line">
