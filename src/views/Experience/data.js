@@ -1,70 +1,40 @@
-import { FaStar } from "react-icons/fa";
+import { data } from "./data";
+import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-export const data = [
-  {
-    id: 1,
-    icon: <FaStar />,
-    class: "row row-1",
-    title: "Software Engineer",
-    date: "Feb 2023 - Present",
-    text: "As a software engineer at STIC, I am responsible for developing and maintaining software applications using agile and scrum methodologies. I work collaboratively with a team of developers, project managers, and stakeholders to deliver scalable and reusable code that meets the University's needs. Currently, the project is running on the university's Kubernetes cluster and will be integrated into the university's platform, PACO.",
-    local: "STIC - Aveiro University",
-    link: "https://www.ua.pt/pt/stic",
-    img: "/img/aveiro.png",
-  },
-  {
-    id: 2,
-    icon: <FaStar />,
-    class: "row row-2",
-    title: "Platform Management Team Leader",
-    date: "Jan 2023 - Present",
-    text: "Responsible for developing and leading the team in charge of creating the web application that supports Portugal's national meeting of computer science students in Aveiro, working with React, FastApi, PostgreSQL and Docker. The application allows attendees to sign up for challenges and workshops, and provides access to event information.",
-    local: "Computer Science Students National Meeting",
-    link: "https://www.enei23.pt/",
-    img: "/img/enei.jpeg",
-  },
-  {
-    id: 3,
-    icon: <FaStar />,
-    class: "row row-1",
-    title: "Research & Development",
-    date: "Jul 2022 - Feb 2023",
-    text: "After successfully concluding my bachelor's degree final project with a classification of 19/20, I was invited, along with my colleagues, to continue to work on this project with the intent to make it closer to a production-ready product, set to be used by the university's community.",
-    local: "Aveiro University",
-    link: "https://www.ua.pt/",
-    img: "/img/aveiro.png",
-  },
-  {
-    id: 4,
-    icon: <FaStar />,
-    class: "row row-2",
-    title: "Internal Management Member",
-    date: "Nov 2021 - Present",
-    text: "Responsible for maintaining and creating new features on the course website, working with technologies such as ReactJS, PHP and MySQL.",
-    local: "Núcleo de Estudantes de Informática AAUAV",
-    link: "https://nei.web.ua.pt/",
-    img: "/img/nei.png",
-  },
-  {
-    id: 5,
-    icon: <FaStar />,
-    class: "row row-1",
-    title: "Business Relations Member",
-    date: "Mar 2022 - Oct 2022",
-    text: "Contact companies, speakers and individual entities in order to organize events. Also connected to the IT part, responsible for the website development, using ReactJS and GraphQL.",
-    local: "Scientific Junior Value",
-    link: "https://www.scientific.pt/",
-    img: "/img/scientifi.png",
-  },
-  {
-    id: 6,
-    icon: <FaStar />,
-    class: "row row-2",
-    title: "External Collaborator",
-    date: "Oct 2019 - Nov 2021",
-    text: "Helping with tasks, such as organizing events, games or student meetings.",
-    local: "Núcleo de Estudantes de Informática AAUAV",
-    link: "https://nei.web.ua.pt/",
-    img: "/img/nei.png",
-  },
-];
+const Experience = () => {
+  return (
+    <div className="timeline" id="experience">
+      <h3 id="experienceHeader">Experience</h3>
+      <div className="wrapper" id="wrapper">
+        <div className="center-line">
+          <a href="#experienceHeader" class="scroll-icon">
+            <i class="fas fa-caret-up"></i>
+          </a>
+        </div>
+        {data.map((item) => {
+          return (
+            <>
+            <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
+            <ExperienceCard
+              icon={item.icon}
+              key={item.id}
+              class={item.class}
+              title={item.title}
+              date={item.date}
+              text={item.text}
+              local={item.local}
+              link={item.link}
+              img={item.img}
+            />
+            </AnimationOnScroll>
+            </>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
