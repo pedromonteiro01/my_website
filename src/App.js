@@ -16,7 +16,7 @@ function App() {
       <About />
       <MyBackground />
       <Experience />
-<Projects />
+      <Projects />
       <Contacts />
       <Footer />
     </>

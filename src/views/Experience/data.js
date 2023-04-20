@@ -2,6 +2,17 @@ import { FaStar } from "react-icons/fa";
 
 export const data = [
   {
+    id: 6,
+    icon: <FaStar />,
+    class: "row row-2",
+    title: "Platform Management Team Leader",
+    date: "Jan 2023 - Present",
+    text: "Responsible for developing and leading the team in charge of creating the web application that supports Portugal's national meeting of computer science students in Aveiro. The application allows attendees to sign up for challenges and workshops, and provides access to event information.",
+    local: "Encontro Nacional de Estudantes de Informática",
+    link: "https://www.enei23.pt/",
+    img: "/img/enei.png",
+  },
+  {
     id: 1,
     icon: <FaStar />,
     class: "row row-1",
