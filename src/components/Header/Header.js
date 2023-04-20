@@ -8,8 +8,8 @@ const Header = () => {
       strings={[
             "Hello, I'm Pedro",
           ]}
-          typeSpeed={112}
-          backSpeed={100}
+          typeSpeed={80}
+          backSpeed={80}
           loop
         /></h2>
         </section>
