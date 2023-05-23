@@ -16,7 +16,7 @@ export const data = [
   {
     id: 4,
     content:
-      "Experience in web development having worked with HTML, CSS, JavaScript, React, Python/Django, PHP, SQL/SQLite/MySQL.",
+      "With a focus on web development, I have gained practical experience working with a range of technologies, including HTML, CSS, JavaScript, React, Python/Django, ASP .NET Core 6, Docker, Kubernetes, PHP, SQL/SQLite/MySQL in agile environments, Agile (Scrum).",
   },
   {
     id: 5,
