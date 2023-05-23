@@ -63,8 +63,8 @@ export const data = [
     title: "External Collaborator",
     date: "Dec 2019 - Fev 2020",
     text: "",
-    local: "Aveiro University",
+    local: "Associação Académica da Universidade de Aveiro",
     link: "https://www.ua.pt/",
-    img: "/img/aveiro.png",
+    img: "/img/aauav.jpg",
   },
 ];
