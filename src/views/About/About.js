@@ -25,7 +25,7 @@ const About = () => {
       <span>
         You can find details{" "}
         <a
-          href="https://www.linkedin.com/in/pedromonteiro1/"
+          href="https://www.linkedin.com/in/pedromonteiro01/"
           target="_blank"
           rel="noreferrer"
         >

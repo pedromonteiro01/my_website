@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    link: "https://www.linkedin.com/in/pedromonteiro1/",
+    link: "https://www.linkedin.com/in/pedromonteiro01/",
     class: "linkedin",
     icon: "fab fa-linkedin-in",
     text: "Linkedin"
