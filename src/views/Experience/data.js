@@ -2,6 +2,17 @@ import { FaStar } from "react-icons/fa";
 
 export const data = [
   {
+        id: 7,
+    icon: <FaStar />,
+    class: "row row-1",
+    title: "Software Engineer",
+    date: "Jul 2023 - Present",
+    text: "As a Software Engineer, I am part of a dynamic team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features, thereby ensuring our software effectively caters to user needs. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
+    local: "STIC @ Aveiro University",
+    link: "https://www.ua.pt/pt/stic",
+    img: "/img/aveiro.png",
+  },
+  {
     id: 6,
     icon: <FaStar />,
     class: "row row-2",
@@ -17,10 +28,10 @@ export const data = [
     icon: <FaStar />,
     class: "row row-1",
     title: "Research & Development",
-    date: "Jul 2022 - Present",
+    date: "Jul 2022 - Jul 2023",
     text: "After successfully concluding my bachelor's degree final project with a classification of 19/20, I was invited, along with my colleagues, to continue to work on this project with the intent to make it closer to a production-ready product, set to be used by the university's community.",
-    local: "Aveiro University",
-    link: "https://www.ua.pt/",
+    local: "STIC @ Aveiro University",
+    link: "https://www.ua.pt/pt/stic",
     img: "/img/aveiro.png",
   },
   {
@@ -28,7 +39,7 @@ export const data = [
     icon: <FaStar />,
     class: "row row-2",
     title: "Internal Management Member",
-    date: "Nov 2021 - Present",
+    date: "Nov 2021 - Jul 2023",
     text: "Responsible for maintaining and creating new features on the course website, working with technologies such as ReactJS, PHP and MySQL.",
     local: "Núcleo de Estudantes de Informática AAUAV",
     link: "https://nei.web.ua.pt/",
