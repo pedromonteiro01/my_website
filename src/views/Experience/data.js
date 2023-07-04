@@ -7,7 +7,7 @@ export const data = [
     class: "row row-1",
     title: "Software Engineer",
     date: "Jul 2023 - Present",
-    text: "As a Software Engineer, I am part of a innovative team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features, thereby ensuring our software effectively caters to user needs. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
+    text: "As a Software Engineer, I am part of a innovative team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
     local: "STIC @ Aveiro University",
     link: "https://www.ua.pt/pt/stic",
     img: "/img/aveiro.png",
