@@ -6,7 +6,7 @@ export const data = [
   {
     id: 2,
     content:
-      "Currently in the 1st year of Computer Science Engineering MSc Degree at Aveiro University.",
+      "Currently in the 2nd year of Computer Science Engineering MSc Degree at Aveiro University.",
   },
   {
     id: 3,
