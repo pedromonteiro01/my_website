@@ -16,7 +16,7 @@ const Experience = () => {
         {data.map((item) => {
           return (
             <>
-            <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
+            <AnimationOnScroll animateOnce={true} animateIn={item.animation}>
             <ExperienceCard
               icon={item.icon}
               key={item.id}
