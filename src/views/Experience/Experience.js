@@ -27,6 +27,7 @@ const Experience = () => {
               local={item.local}
               link={item.link}
               img={item.img}
+              techStack={item.techStack}
             />
             </AnimationOnScroll>
             </>

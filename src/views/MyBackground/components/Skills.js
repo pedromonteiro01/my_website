@@ -22,12 +22,14 @@ const Skills = () => {
         'Spring Boot', 
         'Django', 
         'C#', 
+        'ASP .NET Core 6',
         'SQL',  
         'MYSQL',  
         'Docker', 
         'Kubernetes', 
         'Flutter',  
-        'Dart',  
+        'Dart', 
+        'Nginx' 
           ]}
           typeSpeed={150}
           backSpeed={100}

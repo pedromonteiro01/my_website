@@ -3,16 +3,13 @@ import "./About.css";
 import profile from './pedro_profile.jpeg';
 import { data } from "./data";
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const About = () => {
   return (
     <div className="section-about" id="about">
-      <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
       <div className="img-wrapper">
         <img src={profile} alt="" />
       </div>
-      </AnimationOnScroll>
       <h1>Hello there!</h1>
       <LineBreak />
       <div className="paragraphs">

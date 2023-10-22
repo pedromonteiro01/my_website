@@ -2,13 +2,13 @@ export const EducationData = [
   {
     id: 1,
     img: "/img/aveiro.png",
-    text: "Software Engineering MSc Degree",
+    text: "Computer Science Engineering MSc Degree",
     date: "Sep 2022 - Present",
   },
   {
     id: 2,
     img: "/img/aveiro.png",
-    text: "Software Engineering BSc Degree",
+    text: "Computer Science Engineering BSc Degree",
     date: "Sep 2019 - Jul 2022",
   },
   {
