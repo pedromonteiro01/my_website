@@ -6,12 +6,13 @@ export const data = [
     icon: <FaStar />,
     class: "row row-1",
     animation:"animate__lightSpeedInLeft",
-    title: "Software Engineer",
+    title: "Information Systems and Technologies Specialist",
     date: "Jul 2023 - Present",
-    text: "As a Software Engineer, I am part of a innovative team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
+    text: "As a Information Systems and Technologies Specialist, I am part of a innovative team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
     local: "STIC @ Aveiro University",
     link: "https://www.ua.pt/pt/stic",
     img: "/img/aveiro.png",
+    techStack: ['React', 'TypeScript', 'ASP .NET Core 6', 'SQL Server', 'Kubernetes', 'Nginx', 'Azure DevOps'],
   },
   {
     id: 6,
@@ -24,6 +25,7 @@ export const data = [
     local: "Encontro Nacional de Estudantes de Informática",
     link: "https://www.enei23.pt/",
     img: "/img/enei.png",
+    techStack: ['React', 'Tailwind', 'FastAPI', 'PostgreSQL', 'Docker', 'Nginx'],
   },
   {
     id: 1,
@@ -36,6 +38,7 @@ export const data = [
     local: "STIC @ Aveiro University",
     link: "https://www.ua.pt/pt/stic",
     img: "/img/aveiro.png",
+    techStack: ['React', 'TypeScript', 'ASP .NET Core 6', 'SQL Server', 'Kubernetes', 'Nginx', 'Azure DevOps'],
   },
   {
     id: 2,
@@ -44,10 +47,12 @@ export const data = [
     animation:"animate__lightSpeedInRight",
     title: "Internal Management Member",
     date: "Nov 2021 - Jul 2023",
-    text: "Responsible for maintaining and creating new features on the course website, working with technologies such as ReactJS, PHP and MySQL.",
+    text: "Responsible for migrating the application technologies while also maintaining and creating new features for the course website.",
     local: "Núcleo de Estudantes de Informática AAUAV",
     link: "https://nei.web.ua.pt/",
     img: "/img/nei.png",
+    techStack: ['React', 'PHP', 'FastAPI', 'MySQL', 'PostgreSQL', 'Docker', 'Nginx'],
+
   },
   {
     id: 3,
@@ -56,10 +61,12 @@ export const data = [
     animation:"animate__lightSpeedInLeft",
     title: "Business Relations Member",
     date: "Mar 2022 - Oct 2022",
-    text: "Contact companies, speakers and individual entities in order to organize events. Also connected to the IT part, responsible for the website development, using ReactJS and GraphQL.",
+    text: "Contact companies, speakers and individual entities in order to organize events. Additionally, I played a pivotal role in IT, overseeing the development and maintenance of the website.",
     local: "Scientific Junior Value",
     link: "https://www.scientific.pt/",
     img: "/img/scientifi.png",
+    techStack: ['React', 'GraphQL'],
+
   },
   {
     id: 4,
@@ -72,6 +79,8 @@ export const data = [
     local: "Núcleo de Estudantes de Informática AAUAV",
     link: "https://nei.web.ua.pt/",
     img: "/img/nei.png",
+    techStack: [],
+
   },
   {
     id: 5,
@@ -84,5 +93,7 @@ export const data = [
     local: "Associação Académica da Universidade de Aveiro",
     link: "https://www.ua.pt/",
     img: "/img/aauav.jpg",
+    techStack: [],
+
   },
 ];

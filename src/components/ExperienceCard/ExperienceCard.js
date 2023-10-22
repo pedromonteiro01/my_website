@@ -1,6 +1,7 @@
 import "./ExperienceCard.css";
 
 const ExperienceCard = (props) => {
+
   return (
     <div class={props.class}>
       <section>
@@ -14,6 +15,13 @@ const ExperienceCard = (props) => {
         <p>
           {props.text}
         </p>
+        {props.techStack && (
+          <div className="tech-stack">
+            {props.techStack.map((tech, index) => (
+              <span key={index} className="tech-stack-item">{tech}</span>
+            ))}
+          </div>
+        )}
         <div className="bottom">
           <span>{props.local}</span>
           <a href={props.link} target="_blank" rel="noreferrer">
