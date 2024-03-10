@@ -9,7 +9,7 @@ export const SkillsData = [
     id: 2,
     label: "lang2",
     language: "Java",
-    progress: "60",
+    progress: "65",
   },
   {
     id: 3,
@@ -27,12 +27,12 @@ export const SkillsData = [
     id: 5,
     label: "lang5",
     language: "PHP",
-    progress: "70",
+    progress: "55",
   },
   {
     id: 6,
     label: "lang6",
     language: "SQL/MySQL",
-    progress: "85",
+    progress: "70",
   },
 ];
