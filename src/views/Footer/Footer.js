@@ -13,7 +13,7 @@ return (
             );
           })}
           </ul>
-        <span style={{display: 'block'}}>2022 Pedro Monteiro<br></br>Made with ReactJS and Font Awesome</span>
+        <span style={{display: 'block'}}>2022 Pedro Monteiro<br></br>Made with React and Font Awesome</span>
     </div>
 
 )
