@@ -6,7 +6,7 @@ export const data = [
   {
     id: 2,
     content:
-      "Currently in the 2nd year of Computer Science Engineering MSc Degree at Aveiro University, I'm developing my thesis, \"Real-Time Weapon Detection in Surveillance Video Footage\", while also working as an Information Systems and Technologies Specialist at the University's IT department.",
+      "Recently, I completed my Master's Degree in Computer Science Engineering at Aveiro University, and presented my thesis, \"Real-Time Weapon Detection in Surveillance Video Footage\". I currently work as an Information Systems and Technologies Specialist at the University's IT department.",
   },
   {
     id: 3,
