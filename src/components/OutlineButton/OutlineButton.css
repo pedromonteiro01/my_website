@@ -1,0 +1,22 @@
+.outline-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.outline-button:hover,
+.outline-button:focus {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+.outline-button:active {
+    transform: scale(0.98);
+}
