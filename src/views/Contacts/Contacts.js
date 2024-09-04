@@ -39,11 +39,9 @@ const Contacts = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Check if required fields are filled
         if (!validateForm()) return;
 
-        // Simulate sending the form (or you can replace it with your actual API call)
-        fetch(process.env.REACT_APP_FORMSPREE_ID, { // Example endpoint, replace with your own
+        fetch(process.env.REACT_APP_FORMSPREE_ID, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -135,7 +133,6 @@ const Contacts = () => {
                 </div>
             </div>
 
-            {/* Toast container to render notifications */}
             <ToastContainer />
         </div>
     );
