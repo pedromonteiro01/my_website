@@ -126,7 +126,7 @@ const Contacts = () => {
                         />
                         <div className='submit-button'>
                             <OutlineButton type="submit">
-                                Submit
+                                Send
                             </OutlineButton>
                         </div>
                     </form>
