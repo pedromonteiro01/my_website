@@ -14,6 +14,7 @@
     "react-icons": "^4.7.1",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
     "react-tsparticles": "^2.2.4",
     "react-typed": "^1.2.0",
     "react-typist": "^2.0.5",

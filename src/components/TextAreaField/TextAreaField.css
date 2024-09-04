@@ -1,0 +1,38 @@
+.textarea-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.textarea-field-label {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.textarea-field-required {
+    color: #c00;
+}
+
+.textarea-field-textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #eee;
+    color: #999;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+    min-height: 150px;
+    resize: none;
+}
+
+.textarea-field-textarea:focus {
+    border-color: #999;
+}
