@@ -64,6 +64,10 @@
     margin-top: 1.5rem;
 }
 
+.submit-button button {
+    font-weight: 400;
+}
+
 @media all and (max-width: 1200px) {
     .contact-form-wrapper {
         width: 70%;
