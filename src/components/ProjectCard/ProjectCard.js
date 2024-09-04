@@ -23,6 +23,7 @@ const ProjectCard = (props) => {
           </a>
         </div>
       </div>
+      <div className="card-content-wrapper">
       <div className="card-content">
         {props.text && <p>{props.text}</p>}
         {props.textLink && props.textLink}
@@ -33,6 +34,7 @@ const ProjectCard = (props) => {
             return <li key={item}>{item}</li>;
           })}
         </ul>
+      </div>
       </div>
     </div>
     </Col>
