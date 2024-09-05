@@ -26,13 +26,26 @@ const Contacts = () => {
         });
     };
 
+    // Function to validate email format
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
     // Function to validate required fields
     const validateForm = () => {
         const { name, email, message } = formData;
+
         if (!name || !email || !message) {
             toast.error('Please fill in all required fields.');
             return false;
         }
+
+        if (!validateEmail(email)) {
+            toast.warning('Please enter a valid email address.');
+            return false;
+        }
+
         return true;
     };
 
