@@ -25,7 +25,7 @@
 
 .img-wrapper {
     width: 300px;
-    height: 400px;
+    height: 380px;
     position: relative;
     z-index: 2;
 }
@@ -129,7 +129,7 @@
 
     .img-wrapper {
         width: 250px;
-        height: 330px;
+        height: 310px;
         margin: 0 auto;
     }
 
@@ -179,7 +179,7 @@
 
     .img-wrapper {
         width: 200px;
-        height: 280px;
+        height: 260px;
         margin: 0 auto; 
     }
 
