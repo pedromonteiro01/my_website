@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    content: "My name is Pedro Monteiro.",
+    content: "Hello there! My name is Pedro Monteiro.",
   },
   {
     id: 2,
