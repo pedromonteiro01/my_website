@@ -1,47 +1,78 @@
-.section-about{
+.section-about {
     background-color: #F5F5F5;
-    font-family: Poppins;
-    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     color: rgb(110, 110, 110);
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between !important;
+    gap: 10rem;
     align-items: center;
+    padding: 6rem 15%;
+}
+
+.section-about-content-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile-wrapper {
+    position: relative;
+    width: fit-content;
 }
 
 .img-wrapper {
-    margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
 }
 
-.img-wrapper img {
+.img-wrapper2 {
+    width: auto;
+    height: 400px;
+    position: absolute;
+    bottom: -2.5rem;
+    left: -4rem;
+    z-index: 1;
+}
+
+.img-wrapper img, .img-wrapper2 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 12%;
+    border-radius: 6px;
 }
 
-.section-about h1{
+.section-about h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 26px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 200;
-    margin-bottom: 0.7rem;
+    letter-spacing: 2px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-.section-about .paragraphs{
+.header-section-content h1::after {
+    content: '';
+    display: block;
+    width: 12%;
+    height: 3px; 
+    background-color: #0292b7; 
+    margin: 10px 0 20px 0;
+}
+
+.section-about .paragraphs {
     font-weight: 300;
-    max-width: 42%;
+    text-align: justify;
 }
 
 .section-about p {
     letter-spacing: 0.5px;
-    text-align: center;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0.5rem;
 }
 
@@ -49,18 +80,24 @@
     margin-bottom: 0;
 }
 
-.section-about span{
+.section-about span {
     text-align: center;
     width: 100%;
     font-size: 15px;
     font-weight: 300;
-    padding-top: 3rem !important;
-    padding-bottom: 1.5rem !important;
+}
+
+.header-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 @media all and (max-width: 960px) {
     .section-about {
         height: auto;
+        flex-direction: column;
+        gap: 5rem;
     }
 
     .section-about .paragraphs {
@@ -72,7 +109,7 @@
         font-size: 16px;
     }
 
-    .section-about span{ 
+    .section-about span {
         padding: 2.5rem 0 2rem !important;
     }
 
@@ -80,4 +117,39 @@
         margin-top: 0;
     }
 
+    .img-wrapper {
+        width: 250px;
+        height: 330px;
+    }
+
+    .img-wrapper2 {
+        bottom: -2rem;
+        left: -3rem;
+        height: 330px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .section-about {
+        padding: 4rem 10%;
+    }
+
+    .img-wrapper {
+        width: 200px;
+        height: 280px;
+    }
+
+    .img-wrapper2 {
+        bottom: -2rem;
+        left: -3rem;
+        height: 280px;
+    }
+
+    .section-about h1 {
+        font-size: 22px;
+    }
+
+    .section-about .paragraphs p {
+        font-size: 14px;
+    }
 }

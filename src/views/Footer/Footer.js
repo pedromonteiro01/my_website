@@ -5,7 +5,7 @@ import FooterItem from './components/FooterItem';
 const Footer = () => {
 return (
     <div className="footer">
-        <h2>STALK ME!</h2>
+        <h2>CONTACT ME!</h2>
         <ul className="icons">
         {data.map((item) => {
             return (
