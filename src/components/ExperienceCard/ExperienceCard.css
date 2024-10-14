@@ -12,7 +12,7 @@
 }
 
 .wrapper {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
     position: relative;
@@ -89,7 +89,7 @@
     line-height: 40px;
     font-size: 1.3rem;
     border-radius: 50%;
-    color: #023766;
+    color: #0292b7;
     box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -111,7 +111,7 @@
 }
 
 .details .date {
-    font-size: 0.9em;
+    font-size: 0.78em;
 }
 
 .row section .details,
@@ -122,6 +122,7 @@
 }
 
 .row section .details .title {
+    color: #0292b7;
     font-size: 16px;
     font-weight: 600;
 }
