@@ -5,7 +5,7 @@
     height: auto;
     color: rgb(110, 110, 110);
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between;
     gap: 10rem;
     align-items: center;
     padding: 6rem 15%;
@@ -97,16 +97,26 @@
     .section-about {
         height: auto;
         flex-direction: column;
+        justify-content: center;
         gap: 5rem;
+        width: 100%;
+        text-align: center;
     }
 
     .section-about .paragraphs {
         max-width: 85%;
         margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .section-about .paragraphs {
+        width: 100%;
     }
 
     .section-about .paragraphs p {
         font-size: 16px;
+        margin: 0;
+        width: 100%;
     }
 
     .section-about span {
@@ -120,36 +130,84 @@
     .img-wrapper {
         width: 250px;
         height: 330px;
+        margin: 0 auto;
     }
 
     .img-wrapper2 {
         bottom: -2rem;
-        left: -3rem;
+        left: -2rem; 
+        right: 0;
         height: 330px;
+        margin: 0 auto; 
+    }
+    .section-about-content-2 {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .header-section-content h1::after {
+        margin: 10px auto 20px auto;
+        width: 25px;
+    }
+    .section-about .paragraphs p {
+        margin-bottom: 0.5rem;
+    }
+
+    .section-about .paragraphs p:last-child {
+        margin-bottom: 0rem;
     }
 }
 
 @media all and (max-width: 600px) {
+    .header-section-content h1::after {
+        margin: 10px auto 20px auto;
+        width: 25px;
+    }
+
+    .section-about-content-2 {
+        justify-content: center !important;
+        align-items: center !important;
+    }
     .section-about {
         padding: 4rem 10%;
+        text-align: center;
+    }
+
+    .section-about .paragraphs {
+        text-align: center;
+        margin: 0;
     }
 
     .img-wrapper {
         width: 200px;
         height: 280px;
+        margin: 0 auto; 
     }
 
     .img-wrapper2 {
         bottom: -2rem;
-        left: -3rem;
+        left: -2rem;
+        right: 0;
         height: 280px;
+        margin: 0 auto;
     }
 
     .section-about h1 {
         font-size: 22px;
+        text-align: center;
     }
 
     .section-about .paragraphs p {
         font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-about .paragraphs p {
+        margin-bottom: 0.5rem;
+    }
+
+    .section-about .paragraphs p:last-child {
+        margin-bottom: 0rem;
     }
 }
+
