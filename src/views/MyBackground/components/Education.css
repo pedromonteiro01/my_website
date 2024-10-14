@@ -200,4 +200,12 @@
         height: 20px;
         font-size: 0.8rem;
     }
+
+    .right-1::before, .right-3::before {
+        right: -10px;
+    }
+
+    .left-2::before {
+        left: -12px;
+    }
 }
