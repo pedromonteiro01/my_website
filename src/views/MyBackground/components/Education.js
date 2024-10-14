@@ -11,14 +11,15 @@ const Education = () => {
       <ul>
         {EducationData.map((item) => {
           return (
-            <li key={item.id}>
+            <li key={item.id} className={`${item.class}-${item.id}`}>
               <div className="li-content">
+                <div>
                 <img src={item.img} alt="" />
-                <p>
-                  {item.text}
-                  <br></br>
+                </div>
+                <div className="education-item">
                   <span>{item.date}</span>
-                </p>
+                  {item.text}
+                </div>
               </div>
             </li>
           );
