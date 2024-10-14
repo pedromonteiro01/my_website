@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className="education-section">
       <div className="education-section-header">
-        <img src="img/graduation-cap.png" alt="" />
+        <img src="img/mortarboard.png" alt="" />
         <p className="main-p">Education</p>
       </div>
       <ul>
