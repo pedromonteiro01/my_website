@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="skills-header">
-        <img src="img/programming.png" alt="" />
+        <img src="img/coding.png" alt="" />
         <p className="main-p">Skills</p>
         <p className="element-p">
           I've worked with{" "}
