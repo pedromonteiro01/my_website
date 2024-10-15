@@ -1,137 +1,165 @@
-.projects-card {
+.project-card {
   position: relative;
-  top: 0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 6px;
-  width: 100%;
-  height: 16rem;
-  margin-top: 1rem;
-  transition: top ease 0.2s;
-}
-
-.projects-card:hover {
-  top: -8px;
-}
-
-.projects-card .top-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  height: 20%;
-}
-
-.projects-card .top-card h2 {
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
-}
-
-.projects-card .top-card i {
-  color: black;
-  font-size: 26px;
-}
-
-.projects-card .top-card i:hover {
-  cursor: pointer;
-  color: gray;
-  transition: all 0.1s ease-in-out;
-}
-
-.projects-card .card-content {
-  display: flex;
-  justify-content: center;
-  padding: 0 1rem;
-  height: auto;
-}
-
-.card-content a {
-  color: black;
-}
-
-.card-content-wrapper {
-  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.card-content a:hover {
-  color: #023766;
+.card-image {
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 2rem;
+  height: 24rem;
+  background: linear-gradient(135deg, #0292b7, #a7e7f7, #ffffff);
+  width: 100%;
+  max-width: 700px;
+  z-index: 0;
+  opacity: 0.7;
 }
 
-.projects-card .bottom-card {
-  max-width: 100%;
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-image:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 2;
+  width: 100%;
+  max-width: 650px;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tags-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
-  height: auto;
+  margin-top: 20px;
 }
 
-.projects-card .bottom-card ul {
-  margin: 0 !important;
-  padding: 0 1rem !important;
-  list-style-type: none;
+.project-card-icons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
 }
 
-.projects-card .bottom-card ul li {
-  display: inline-block;
-  font-family: 'Koho';
-  font-weight: 500;
-  font-size: 13px;
-  margin-right: 0.5rem;
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
-.yt-icon {
-  margin-right: 1rem;
+.btn-github {
+  font-size: 1.5rem;
 }
 
-/* Media Queries */
-@media all and (max-width: 768px) {
-  .projects-card {
+.icon-btn:hover, .btn-github :hover {
+  color: #0292b7;
+  transition: 0.12s color ease-in-out;
+}
+
+.view-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-more-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .card-image {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .card-image {
     width: 100%;
-    margin-top: 1rem;
-  }
-
-  .projects-card .top-card h2 {
-    font-weight: normal;
-    font-size: 17px;
-  }
-
-  .bottom-card {
-    padding-bottom: 1rem;
+    height: 22rem;
+    align-items: flex-start;
   }
 }
 
-@media all and (max-width: 1100px) {
-  .projects-card {
-    height: 24rem;
-  }
-}
-
-@media all and (max-width: 960px) {
-  .projects-card {
-    height: 24rem;
-  }
-}
-
-@media all and (max-width: 576px) {
-  .projects-card {
-    width: 95%;
-    height: 16rem;
+@media (max-width: 480px) {
+  .card-content {
+    padding: 15px;
+    max-width: 100%;
   }
 
-  .projects-card .top-card h2 {
-    font-size: 16px;
+  .card-title {
+    font-size: 1em;
   }
 
-  .bottom-card {
+  .card-description {
+    font-size: 0.8rem;
+  }
+
+  .card-footer {
     flex-direction: column;
-    align-items: flex-start !important;
   }
 
-  .projects-card .bottom-card ul li {
-    margin-bottom: 0.5rem; 
+  .card-image {
+    height: 18rem;
+    align-items: flex-start;
   }
 }
