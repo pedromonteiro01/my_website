@@ -2,6 +2,19 @@ import nexgen from './nexgen.png';
 
 export const projectData = [
   {
+    title: "Real-Time Weapon Detection in Surveillance Video Footage",
+    description: "My master thesis project, SafeGuard, improves CCTV systems by enhancing real-time weapon detection. It helps law enforcement quickly identify crimes and reduces the need for constant monitoring. SafeGuard also enables easier review of past footage, making surveillance more reliable.",
+    tags: [
+      "Django", "React", "MySQL", "RabbitMQ", "Docker", "Nginx", "YOLOv5"
+    ],
+    image: "projects/cctv.png",
+    websiteLink: null,
+    githubLink: "https://github.com/SendASnack",
+    videoLink: "https://www.youtube.com/watch?v=tj7jsxZRDIY&list=PLfvmLPkfn7XECYTxmKBVXHi-gQ6IJ_loZ&index=1",  // If you have a video link
+    onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
+    onViewMore: () => console.log('View More Clicked for SendASnack')
+  },
+  {
     title: "NEXGEN DIGITAL SOLUTIONS",
     description: "Personal project, focused on delivering innovative and customized digital solutions to help businesses grow in the digital era. From web development and app design to digital marketing strategies, NexGen aims to provide small and medium-sized enterprises with the tools they need to succeed online.",
     tags: ['React', 'Cloudflare'],
@@ -23,18 +36,4 @@ export const projectData = [
     onLinkClick: () => console.log('Website Link Clicked for Professor Scheduler'),
     onViewMore: () => console.log('View More Clicked for Professor Scheduler')
   },
-  {
-    title: "SendASnack",
-    description: "Implementation of a digital marketplace for 'last-mile' deliveries. Includes 2 main sub-projects - deliveries platform (engine) and specific application.",
-    tags: [
-      "ReactJS", "SpringBoot", "MariaDB", "CircleCI", "Codacy",
-      "Jira", "Cucumber", "Mockito", "JUnit", "Jest"
-    ],
-    image: "projects/sendasnack.png",
-    websiteLink: null,
-    githubLink: "https://github.com/SendASnack",
-    videoLink: "https://www.youtube.com/watch?v=tj7jsxZRDIY&list=PLfvmLPkfn7XECYTxmKBVXHi-gQ6IJ_loZ&index=1",  // If you have a video link
-    onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
-    onViewMore: () => console.log('View More Clicked for SendASnack')
-  }
 ];

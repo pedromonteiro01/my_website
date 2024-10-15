@@ -6,20 +6,29 @@ import Experience from "./views/Experience/Experience";
 import Footer from "./views/Footer/Footer";
 import Intro from './views/Intro/Intro';
 import MyBackground from "./views/MyBackground/MyBackground";
-import Projects from './views/Project/Projects'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProjectsList from "./views/ProjectsList/ProjectsList";
+import Projects from "./views/Project/Projects";
 
 function App() {
   return (
-    <>
-    <Intro />
-    <Navbar />
-      <About />
-      <MyBackground />
-      <Experience />
-      <Projects />
-      <Contacts />
-      <Footer />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Intro />
+            <About />
+            <MyBackground />
+            <Experience />
+            <Projects />
+            <Contacts />
+            <Footer />
+          </>
+        } />
+        <Route path="/projects" element={<ProjectsList />} />
+      </Routes>
+    </Router>
   );
 }
 
