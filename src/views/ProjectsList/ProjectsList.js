@@ -9,7 +9,7 @@ import "animate.css/animate.min.css";
 
 const ProjectsList = () => {
     const handleGoBack = () => {
-        window.open('/#projects');
+        window.location.href = '/';
       };
 
       
