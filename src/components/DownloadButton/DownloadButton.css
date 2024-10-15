@@ -1,11 +1,20 @@
 .download-button {
-    font-size: 22px;
-    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;    
     background-color: white;
-    border-radius: 3px;
     padding: 0.6rem 1rem;
     color: rgb(122, 122, 122);
     border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    outline: none;
+}
+
+.download-button-link {
+    text-decoration: none;
+    outline: none;
 }
 
 .download-button:hover {
