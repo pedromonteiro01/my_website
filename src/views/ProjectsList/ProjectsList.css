@@ -1,0 +1,318 @@
+.project-list-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #454545;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.projects-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-list {
+    padding: 8rem 4rem 6rem 4rem;
+    position: relative;
+    height: auto;
+}
+
+.projects-list-wrapper-1 .project-card,
+.projects-list-wrapper-2 .project-card {
+    width: 50%;
+}
+
+.projects-list-wrapper-1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.projects-list-wrapper-1 .card-content {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 2;
+    width: 90%;
+    height: auto;
+}
+
+.projects-list-wrapper-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.projects-list-wrapper-2 .card-content {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 2;
+    width: 90%;
+    height: auto;
+}
+
+.view-less-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1300px) {
+    .projects-list-wrapper .project-card {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    .projects-list-wrapper .project-card {
+        width: 90% !important;
+    }
+
+    .projects-list-wrapper-1 .card-content, 
+    .projects-list-wrapper-2 .card-content {
+        top: 25%;
+        left: 5%;
+        transform: translateY(0);
+        height: 350px !important;
+    }
+
+    .projects-list-wrapper-1 .card-content {
+        top: 25%;
+        left: 18% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper-2 .card-content {
+        top: 25%;
+        left: -10% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper {
+        gap: 5rem;
+    }
+
+    .view-less-container {
+        margin-top: 5rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .projects-list-wrapper .project-card {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .project-list {
+        padding-bottom: 7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .projects-list-wrapper-1,
+    .projects-list-wrapper-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-list-wrapper-1 .card-content, 
+    .projects-list-wrapper-2 .card-content {
+        height: 395px !important;
+    }
+
+    .projects-list-wrapper-1 .card-content {
+        top: 25%;
+        left: 5%;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper-2 .card-content {
+        top: 25%;
+        left: 5%;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper {
+        gap: 9rem;
+    }
+
+    .view-less-container {
+        margin-top: 10rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .projects-list-wrapper .project-card {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .project-list {
+        padding-bottom: 7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .projects-list-wrapper-1,
+    .projects-list-wrapper-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-list-wrapper-1 .card-content,
+    .projects-list-wrapper-2 .card-content {
+        height: 420px !important;
+    }
+
+    .projects-list-wrapper-1 .card-content {
+        top: 25%;
+        left: 15% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper-2 .card-content {
+        top: 25%;
+        left: -5% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper {
+        max-width: 100%;
+        gap: 10.5rem;
+    }
+
+    .view-less-container {
+        margin-top: 12rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-list {
+        padding-bottom: 10rem;
+    }
+
+    .project-list h2 {
+        font-size: 22px;
+    }
+
+    .projects-list-wrapper-1 .card-content,
+    .projects-list-wrapper-2 .card-content {
+        height: 380px !important;
+    }
+
+    .projects-list-wrapper-1 .card-content {
+        top: 25%;
+        left: 15% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper-2 .card-content {
+        top: 25%;
+        left: -5% !important;
+        transform: translateY(0);
+    }
+
+    .projects-list-wrapper {
+        max-width: 100%;
+        gap: 11rem;
+    }
+
+    .view-less-container {
+        margin-top: 12rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-list {
+        padding-bottom: 15rem;
+    }
+
+    .projects-list-wrapper-1 .card-content,
+    .projects-list-wrapper-2 .card-content {
+        height: 410px !important;
+    }
+
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .projects-list-wrapper {
+        max-width: 100%;
+        gap: 13rem;
+    }
+
+    .view-less-container {
+        margin-top: 15rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .project-list {
+        padding-bottom: 15rem;
+    }
+
+    .projects-list-wrapper-1 .card-content,
+    .projects-list-wrapper-2 .card-content {
+        height: 480px !important;
+    }
+
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .projects-list-wrapper {
+        max-width: 100%;
+        gap: 18rem;
+    }
+
+    .view-less-container {
+        margin-top: 19rem;
+    }
+
+    .project-list {
+        padding-bottom: 4rem;
+    }
+}

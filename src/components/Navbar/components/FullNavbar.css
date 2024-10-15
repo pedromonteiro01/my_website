@@ -5,6 +5,12 @@
     top: 0;
     z-index: 1;
 }
+
+.projects-navbar {
+  height: 6rem;
+  background: linear-gradient(to bottom, #171616, #464444);
+}
+
 .banner-text ul {
     height: 50px;
     display: flex;
