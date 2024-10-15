@@ -126,23 +126,39 @@
 }
 
 .details .date {
-    font-size: 0.78em;
+    color: rgb(110, 110, 110);
+    font-size: 0.85em;
+}
+
+.row section .bottom span {
+    font-size: 0.85em;
+}
+
+.row section .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
 }
 
 .row section .details,
 .row section .bottom {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
 .row section .details .title {
+    font-family: "Montserrat", sans-serif;
     color: #0292b7;
     font-size: 16px;
     font-weight: 600;
 }
 
 .row section p {
+    font-family: "Montserrat", sans-serif;
     margin: 10px 0 17px 0;
 }
 
@@ -170,6 +186,7 @@
 }
 
 .tech-stack-item {
+    font-family: "Montserrat", sans-serif;
     margin: 5px;
     padding: 5px 10px;
     border: 1px solid #eee;
@@ -201,6 +218,18 @@
 }
 
 @media (max-width: 468px) {
+    .row section .details .title {
+        font-size: 14px;
+    }
+
+    .details .date {
+        font-size: 0.75em;
+    }
+
+    .row section p {
+        font-size: 13px;
+    }
+
     .row-1 section .icon {
         left: -50px !important;
     }
