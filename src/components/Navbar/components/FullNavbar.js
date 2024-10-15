@@ -3,7 +3,7 @@ import './FullNavbar.css';
 
 const FullNavbar = () => {
   const location = useLocation();
-  const isProjectsPage = location.pathname === "/projects/";
+  const isProjectsPage = location.pathname === "https://pedromonteiro01.pt/projects";
 
   return (
     <div className={`banner-text ${isProjectsPage ? 'projects-navbar' : ''}`}>
