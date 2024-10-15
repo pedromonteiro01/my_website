@@ -90,6 +90,10 @@
   gap: 10px;
 }
 
+.icon-btn, .btn-github {
+  color: #000;
+}
+
 .icon-btn {
   background: none;
   border: none;
@@ -98,7 +102,8 @@
 }
 
 .btn-github {
-  font-size: 1.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
 }
 
 .icon-btn:hover, .btn-github :hover {
