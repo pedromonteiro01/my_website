@@ -4,7 +4,7 @@ export const EducationData = [
     class: "right",
     img: "/img/aveiro.png",
     text: "Computer Science Engineering MSc Degree",
-    date: "Sep 2022 - Present",
+    date: "Sep 2022 - Jul 2024",
   },
   {
     id: 2,
