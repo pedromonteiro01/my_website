@@ -93,6 +93,27 @@
     justify-content: flex-end;
 }
 
+.linkedin-wrapper {
+    margin: 0;
+    padding: 0;
+    color: rgb(110, 110, 110);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    text-align: center;
+    height: 3rem;
+}
+
+.linkedin-wrapper a {
+    color: #0292b7;
+    margin-left: 0.3rem;
+}
+
+.linkedin-wrapper a:hover {
+    color: #08c5f5;
+}
+
 @media all and (max-width: 960px) {
     .section-about {
         height: auto;
@@ -104,12 +125,9 @@
     }
 
     .section-about .paragraphs {
-        max-width: 85%;
+        max-width: 95%;
         margin-bottom: 1.5rem;
         text-align: center;
-    }
-
-    .section-about .paragraphs {
         width: 100%;
     }
 
