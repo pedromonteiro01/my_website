@@ -2,129 +2,229 @@
   height: auto;
   padding: 35px 0;
   position: relative;
-  background-color: #ECECEC;
+  background-color: #f1f5f8;
 }
+
 .project h2 {
   font-family: 'Poppins';
-	font-size: 26px;
-	font-weight: normal;
+  font-size: 26px;
+  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
 }
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 55px;
-  overflow: hidden;
-  font-family: 'Poppins';
-}
 
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #000;
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-  font-family: 'Poppins';
+  padding: 0 10px;
 }
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #5c3bd5 -5.91%, #210696 111.58%);
-    filter: saturate(70%);
+
+.projects-wrapper-1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.projects-wrapper-1 .card-content {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 2;
+  width: 90%;
+  height: auto;
+}
+
+.projects-wrapper-2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.projects-wrapper-2 .card-content {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 2;
+  width: 90%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #f1f1f1;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.icon-btn:hover {
+  color: #007bff;
+}
+
+.view-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-more-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .card-content {
+    position: relative;
     top: 0;
     left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-    border: 0.5px solid rgba(255, 255, 255, 1);
-    color: #fff;
-}
-.nav-link#projects-tabs-tab-first {
-  border: 0.5px solid rgba(255, 255, 255, 1);
-  border-radius: 55px 0px 0px 55px;
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 0.5px solid rgba(255, 255, 255, 1);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 0.5px solid rgba(255, 255, 255, 1);
-  border-radius: 0 55px 55px 0;
-}
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
+    transform: none;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .projects-wrapper-1 .card-content , .projects-wrapper-2 .card-content {
+    top: 25%;
+    left: 5%;
+    transform: translateY(0);
+  }
+  .projects-wrapper {
+    gap: 5rem;
+  }
+
 }
 
-@media all and (max-width: 960px) {
+@media (max-width: 768px) {
   .project {
-    height: auto;
+    padding-bottom: 7rem;
+  }
+
+  .projects-wrapper-1,
+  .projects-wrapper-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .projects-wrapper-1 .card-content , .projects-wrapper-2 .card-content {
+    top: 25%;
+    left: 5%;
+    transform: translateY(0);
+  }
+  .projects-wrapper {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding-bottom: 10rem;
+  }
+  .project h2 {
+    font-size: 22px;
+  }
+
+  .card-content {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+  }
+
+  .projects-wrapper-1 .card-content , .projects-wrapper-2 .card-content {
+    top: 10%;
+    left: 5%;
+    transform: translateY(0);
+  }
+  .projects-wrapper {
+    max-width: 100%;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .project {
+    padding-bottom: 15rem;
+  }
+
+  .card-title {
+    font-size: 0.9em;
+  }
+
+  .projects-wrapper {
+    max-width: 100%;
+    gap: 5rem;
   }
 }
