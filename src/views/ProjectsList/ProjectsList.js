@@ -47,7 +47,7 @@ const ProjectsList = () => {
                                     <AnimationOnScroll
                                         animateOnce={true}
                                         animateIn={animationDuration}
-                                        delay={index * 50} // Stagger effect
+                                        delay={index * 30} // Stagger effect
                                         key={index}
                                     >
                                         <div className={`projects-list-wrapper-${index % 2 === 0 ? '1' : '2'}`}>

@@ -33,7 +33,7 @@ const Projects = () => {
                       <AnimationOnScroll
                         animateOnce={true}
                         animateIn={animationDuration}
-                        delay={index * 50}
+                        delay={index * 30}
                         key={index}
                       >
                         <div className={`projects-wrapper-${index % 2 === 0 ? '1' : '2'}`}>

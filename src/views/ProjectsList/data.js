@@ -2,6 +2,7 @@ import sendasnack from './imgs/sendasnack.png';
 import cctv from './imgs/cctv.png';
 import dsd from './imgs/dsd2.png';
 import nexgen from '../Project/nexgen.png';
+import covidInfo from './imgs/covidInfo.png';
 
 export const projectData = [
     {
@@ -50,6 +51,26 @@ export const projectData = [
         websiteLink: null,
         githubLink: "https://github.com/SendASnack",
         videoLink: "https://www.youtube.com/watch?v=tj7jsxZRDIY&list=PLfvmLPkfn7XECYTxmKBVXHi-gQ6IJ_loZ&index=1",  // If you have a video link
+        onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
+        onViewMore: () => console.log('View More Clicked for SendASnack')
+    },
+    {
+        title: "CovidInfo",
+        description: "Multi-layer web application that provide details on COVID incidence data for a certain country, supplied with automated tests. A cache and logging strategy were also implemented.",
+        tags: [
+            "Html",
+            "CSS",
+            "JavaScript",
+            "SpringBoot",
+            "JUnit",
+            "Selenium",
+            "Cucumber",
+            "RapidAPI",
+          ],
+        image: covidInfo,
+        websiteLink: null,
+        githubLink: "https://github.com/pedromonteiro01/CovidInfo",
+        videoLink: "https://youtu.be/49rQX63-IeY",  // If you have a video link
         onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
         onViewMore: () => console.log('View More Clicked for SendASnack')
     },
