@@ -157,6 +157,13 @@
         transform: translateY(0);
     }
 
+    .projects-list-wrapper-1 .project-card .tag,
+  .projects-list-wrapper-2 .project-card .tag {
+    font-size: 0.65rem;
+    text-transform: none;
+    padding: 5px 8px;
+  }
+
     .projects-list-wrapper {
         gap: 9rem;
     }
