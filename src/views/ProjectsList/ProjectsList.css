@@ -116,8 +116,8 @@
 
     .project-list {
         padding-bottom: 4rem;
+        padding-top: 3rem;
     }
-
 }
 
 @media (max-width: 768px) {
