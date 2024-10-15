@@ -9,8 +9,8 @@ export const projectData = [
     ],
     image: "projects/cctv.png",
     websiteLink: null,
-    githubLink: "https://github.com/SendASnack",
-    videoLink: "https://www.youtube.com/watch?v=tj7jsxZRDIY&list=PLfvmLPkfn7XECYTxmKBVXHi-gQ6IJ_loZ&index=1",  // If you have a video link
+    githubLink: null,
+    videoLink: "https://youtu.be/sIQEXOfVPVE",  // If you have a video link
     onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
     onViewMore: () => console.log('View More Clicked for SendASnack')
   },
