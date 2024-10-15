@@ -4,6 +4,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-family: "Raleway", sans-serif;
 }
 .intro-text h2 { 
     text-align: center;
