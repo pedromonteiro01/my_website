@@ -1,4 +1,3 @@
-// Projects.js
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import TrackVisibility from "react-on-screen";
@@ -23,31 +22,42 @@ const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
                 <h2>Projects</h2>
                 <div className="projects-wrapper">
-                  {projectData.map((project, index) => (
-                    <div key={index} className={`projects-wrapper-${index % 2 === 0 ? '1' : '2'}`}>
-                      <ProjectCard
-                        image={project.image}
-                        title={project.title}
-                        description={project.description}
-                        tags={project.tags}
-                        githubLink={project.githubLink}
-                        videoLink={project.videoLink}
-                        websiteLink={project.websiteLink}
-                        onLinkClick={project.onLinkClick}
-                      />
-                    </div>
-                  ))}
+                  {projectData.map((project, index) => {
+                    // Alternate animation effects for project cards
+                    const animationEffect = index % 2 === 0 ? "animate__fadeIn" : "animate__fadeIn";
+                    const animationDuration = "animate__animated " + animationEffect; // Slow effect
+
+                    return (
+                      <AnimationOnScroll
+                        animateOnce={true}
+                        animateIn={animationDuration}
+                        delay={index * 50}
+                        key={index}
+                      >
+                        <div className={`projects-wrapper-${index % 2 === 0 ? '1' : '2'}`}>
+                          <ProjectCard
+                            image={project.image}
+                            title={project.title}
+                            description={project.description}
+                            tags={project.tags}
+                            githubLink={project.githubLink}
+                            videoLink={project.videoLink}
+                            websiteLink={project.websiteLink}
+                            onLinkClick={project.onLinkClick}
+                          />
+                        </div>
+                      </AnimationOnScroll>
+                    );
+                  })}
                 </div>
-              </AnimationOnScroll>
             </TrackVisibility>
             <div className="view-more-container">
               <Button className="fancy-outline-btn" onClick={handleViewMore}>
-                View More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-</svg>
+                View More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
               </Button>
             </div>
           </Col>
