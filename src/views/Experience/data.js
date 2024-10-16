@@ -82,18 +82,4 @@ export const data = [
     techStack: [],
 
   },
-  {
-    id: 5,
-    icon: <FaStar />,
-    class: "row row-1",
-    animation:"animate__bounceIn",
-    title: "External Collaborator",
-    date: "Dec 2019 - Fev 2020",
-    text: "",
-    local: "Associação Académica da Universidade de Aveiro",
-    link: "https://www.ua.pt/",
-    img: "/img/aauav.jpg",
-    techStack: [],
-
-  },
 ];
