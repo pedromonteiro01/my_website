@@ -44,7 +44,7 @@
 }
 
 .stats-wrapper-item:last-child {
-    border-right: none;
+    border-right: none !important;
 }
 
 @media (max-width: 768px) {
