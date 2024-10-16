@@ -1,5 +1,5 @@
 .footer{
-    height: 37vh;
+    height: auto;
     background-color: #ECECEC;
 }
 
@@ -47,13 +47,12 @@
 }
 
 .footer span {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Montserrat';
+    font-weight: 500;
     font-size: 14px;
-}
-
-@media all and (max-width: 960px) {
-    .footer {
-        height: 40vh;
-    }
+    padding-bottom: 0.5rem;
+    color: #494040;
 }
