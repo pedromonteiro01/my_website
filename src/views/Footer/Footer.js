@@ -13,7 +13,7 @@ return (
             );
           })}
           </ul>
-        <span style={{display: 'block'}}>2022 Pedro Monteiro<br></br>Made with React and Font Awesome</span>
+        <span>&copy; 2024 Pedro Monteiro</span>
     </div>
 
 )
