@@ -3,6 +3,8 @@ import cctv from './imgs/cctv.png';
 import dsd from './imgs/dsd2.png';
 import nexgen from '../Project/nexgen.png';
 import covidInfo from './imgs/covidInfo.png';
+import beStrong from './imgs/beStrong.png';
+import secure from './imgs/vul4.png';
 
 export const projectData = [
     {
@@ -15,8 +17,8 @@ export const projectData = [
         websiteLink: null,
         githubLink: null,
         videoLink: "https://youtu.be/sIQEXOfVPVE",
-        onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
-        onViewMore: () => console.log('View More Clicked for SendASnack')
+        onLinkClick: () => console.log('Website Link Clicked for cctv'),
+        onViewMore: () => console.log('View More Clicked for cctv')
     },
     {
         title: "NEXGEN DIGITAL SOLUTIONS",
@@ -71,7 +73,45 @@ export const projectData = [
         websiteLink: null,
         githubLink: "https://github.com/pedromonteiro01/CovidInfo",
         videoLink: "https://youtu.be/49rQX63-IeY",  // If you have a video link
-        onLinkClick: () => console.log('Website Link Clicked for SendASnack'),
-        onViewMore: () => console.log('View More Clicked for SendASnack')
+        onLinkClick: () => console.log('Website Link Clicked for CovidInfo'),
+        onViewMore: () => console.log('View More Clicked for CovidInfo')
+    },
+    {
+        title: "Existence of Vulnerabilities",
+        description: "This project focus on the existence of vulnerabilities in software projects, their exploration and avoidance.",
+        tags: [
+            "Html",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "MySQL",
+            "Docker",
+          ],
+        image: secure,
+        websiteLink: null,
+        githubLink: "https://github.com/pedromonteiro01/vulnerabilities",
+        videoLink: null,  // If you have a video link
+        onLinkClick: () => console.log('Website Link Clicked for Vulnerabilities'),
+        onViewMore: () => console.log('View More Clicked for Vulnerabilities')
+    },
+    {
+        title: "beStrong",
+        description: "Implementation of a multi-layer, enterprise-class application, including generation of data streams, central processing, long term storage, service API and a web portal.",
+        tags: [
+            "Html",
+            "CSS",
+            "JavaScript",
+            "Python",
+            "SpringBoot",
+            "MySQL",
+            "RabbitMQ",
+            "Docker",
+          ],
+        image: beStrong,
+        websiteLink: null,
+        githubLink: "https://github.com/pedromonteiro01/beStrong",
+        videoLink: null,  // If you have a video link
+        onLinkClick: () => console.log('Website Link Clicked for beStrong'),
+        onViewMore: () => console.log('View More Clicked for beStrong')
     },
 ];
