@@ -58,7 +58,7 @@
 .projects-list-wrapper-2 .card-content {
     position: absolute;
     top: 50%;
-    left: -60px;
+    left: -250px;
     transform: translateY(-50%);
     background-color: white;
     border-radius: 15px;
