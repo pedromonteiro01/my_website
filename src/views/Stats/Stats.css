@@ -55,7 +55,7 @@
     }
 
     .stats-wrapper-item:nth-child(1), .stats-wrapper-item:nth-child(3) {
-        border-right: solid 1px #ccc;
+        border-right: solid 1px #f4eded;
     }
 }
 
