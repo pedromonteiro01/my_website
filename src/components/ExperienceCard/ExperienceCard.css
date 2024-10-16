@@ -237,4 +237,8 @@
     .tech-stack {
         flex-wrap: nowrap;
     }
+
+    .tech-stack-item {
+        font-size: 0.8em;
+    }
 }
