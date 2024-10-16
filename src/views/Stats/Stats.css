@@ -19,8 +19,8 @@
 
 .stats-wrapper-item {
     font-family: "Montserrat", sans-serif;
-    border-top: solid 1px #f4eded;
-    border-right: solid 1px #f4eded;
+    border-top: solid 1px #f4eded !important;
+    border-right: solid 1px #f4eded !important;
     padding-top: 3rem;
     padding-bottom: 2%;
     width: 17%;
