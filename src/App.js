@@ -9,6 +9,7 @@ import MyBackground from "./views/MyBackground/MyBackground";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProjectsList from "./views/ProjectsList/ProjectsList";
 import Projects from "./views/Project/Projects";
+import Stats from "./views/Stats/Stats";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Intro />
             <About />
             <MyBackground />
+            <Stats />
             <Experience />
             <Projects />
             <Contacts />
