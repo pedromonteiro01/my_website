@@ -50,12 +50,11 @@
 @media (max-width: 768px) {
     .stats-wrapper-item {
         width: 45%;
-        border-right: none;
         margin-bottom: 1rem;
     }
 
-    .stats-wrapper-item:nth-child(1), .stats-wrapper-item:nth-child(3) {
-        border-right: solid 1px #f4eded;
+    .stats-wrapper-item:nth-child(2), .stats-wrapper-item:nth-child(4) {
+        border-right: none !important;
     }
 }
 
