@@ -1,0 +1,4 @@
+[site]
+bucket = "./build"
+entry-point = "workers-site"
+exclude = [".yarn/cache/**"]
