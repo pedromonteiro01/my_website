@@ -9,13 +9,13 @@ export const SkillsData = [
     id: 2,
     label: "lang2",
     language: "Java",
-    progress: "65",
+    progress: "75",
   },
   {
     id: 3,
     label: "lang3",
     language: "Docker",
-    progress: "75",
+    progress: "80",
   },
   {
     id: 4,
