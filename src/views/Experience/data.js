@@ -1,9 +1,7 @@
-import { FaStar } from "react-icons/fa";
 
 export const data = [
   {
         id: 7,
-    icon: <FaStar />,
     class: "row row-1",
     animation:"animate__bounceIn",
     title: "Information Systems and Technologies Specialist",
@@ -16,7 +14,6 @@ export const data = [
   },
   {
     id: 6,
-    icon: <FaStar />,
     class: "row row-2",
     animation:"animate__bounceIn",
     title: "Platform Management Team Leader",
@@ -29,7 +26,6 @@ export const data = [
   },
   {
     id: 1,
-    icon: <FaStar />,
     class: "row row-1",
     animation:"animate__bounceIn",
     title: "Research & Development",
@@ -42,7 +38,6 @@ export const data = [
   },
   {
     id: 2,
-    icon: <FaStar />,
     class: "row row-2",
     animation:"animate__bounceIn",
     title: "Internal Management Member",
@@ -56,7 +51,6 @@ export const data = [
   },
   {
     id: 3,
-    icon: <FaStar />,
     class: "row row-1",
     animation:"animate__bounceIn",
     title: "Business Relations Member",
@@ -70,7 +64,6 @@ export const data = [
   },
   {
     id: 4,
-    icon: <FaStar />,
     class: "row row-2",
     animation:"animate__bounceIn",
     title: "External Collaborator",
