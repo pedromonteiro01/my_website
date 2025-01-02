@@ -1,11 +1,23 @@
 
 export const data = [
   {
+    id: 8,
+class: "row row-2",
+animation:"animate__bounceIn",
+title: "Software Engineer",
+date: "Jan 2025 - Present",
+text: "As a Software Engineer at QubIT, I am excited to be part of a dynamic team where I contribute to the full lifecycle of application development. This includes designing, coding, and debugging Java applications, as well as ensuring software testing and quality assurance at every stage.",
+local: "Quorum Born IT",
+link: "https://www.linkedin.com/company/qub-it/posts/?feedView=all",
+img: "/img/qubit.png",
+techStack: ['Java', 'Docker', 'Software Design'],
+},
+  {
         id: 7,
     class: "row row-1",
     animation:"animate__bounceIn",
     title: "Information Systems and Technologies Specialist",
-    date: "Jul 2023 - Present",
+    date: "Jul 2023 - Dec 2024",
     text: "As a Information Systems and Technologies Specialist, I am part of a innovative team working in an Agile/Scrum environment to develop robust and scalable software applications. In this role, I am actively involved in all aspects of the software development lifecycle. I proactively collaborate with cross-functional teams, driving the definition and design of innovative features. With a keen focus on aligning technical objectives with business goals, the objective is to ensure that the developed software adequately meets the needs of its users.",
     local: "STIC @ Aveiro University",
     link: "https://www.ua.pt/pt/stic",
