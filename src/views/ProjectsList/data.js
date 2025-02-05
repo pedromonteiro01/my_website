@@ -1,7 +1,7 @@
 import sendasnack from './imgs/sendasnack.png';
 import cctv from './imgs/cctv.png';
 import dsd from './imgs/dsd2.png';
-import nexgen from '../Project/nexgen.png';
+import tecna from '../Project/tecna.png';
 import covidInfo from './imgs/covidInfo.png';
 import beStrong from './imgs/beStrong.png';
 import secure from './imgs/vul4.png';
@@ -21,15 +21,15 @@ export const projectData = [
         onViewMore: () => console.log('View More Clicked for cctv')
     },
     {
-        title: "NEXGEN DIGITAL SOLUTIONS",
-        description: "Personal project, focused on delivering innovative and customized digital solutions to help businesses grow in the digital era. From web development and app design to digital marketing strategies, NexGen aims to provide small and medium-sized enterprises with the tools they need to succeed online.",
+        title: "TECNA DIGITAL SOLUTIONS",
+        description: "Personal project, focused on delivering innovative and customized digital solutions to help businesses grow in the digital era. From web development and app design to digital marketing strategies, Tecna aims to provide small and medium-sized enterprises with the tools they need to succeed online.",
         tags: ['React', 'Cloudflare'],
-        image: nexgen,
-        websiteLink: "https://nexgensolutions.pt/",
+        image: tecna,
+        websiteLink: "https://tecnasolutions.pt/",
         githubLink: null, // If no GitHub link exists, keep it as null or undefined
         videoLink: null,
-        onLinkClick: () => console.log('Website Link Clicked for NEXGEN DIGITAL SOLUTIONS'),
-        onViewMore: () => console.log('View More Clicked for NEXGEN DIGITAL SOLUTIONS')
+        onLinkClick: () => console.log('Website Link Clicked for TECNA DIGITAL SOLUTIONS'),
+        onViewMore: () => console.log('View More Clicked for TECNA DIGITAL SOLUTIONS')
     },
     {
         title: "Professor Scheduler",
