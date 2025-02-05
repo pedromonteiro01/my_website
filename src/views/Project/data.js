@@ -15,15 +15,15 @@ export const projectData = [
     onViewMore: () => console.log('View More Clicked for SendASnack')
   },
   {
-    title: "NEXGEN DIGITAL SOLUTIONS",
-    description: "Personal project, focused on delivering innovative and customized digital solutions to help businesses grow in the digital era. From web development and app design to digital marketing strategies, NexGen aims to provide small and medium-sized enterprises with the tools they need to succeed online.",
+    title: "TECNA DIGITAL SOLUTIONS",
+    description: "Personal project, focused on delivering innovative and customized digital solutions to help businesses grow in the digital era. From web development and app design to digital marketing strategies, Tecna aims to provide small and medium-sized enterprises with the tools they need to succeed online.",
     tags: ['React', 'Cloudflare'],
     image: nexgen,
-    websiteLink: "https://nexgensolutions.pt/",
+    websiteLink: "https://tecnasolutions.pt/",
     githubLink: null, // If no GitHub link exists, keep it as null or undefined
     videoLink: null,
-    onLinkClick: () => console.log('Website Link Clicked for NEXGEN DIGITAL SOLUTIONS'),
-    onViewMore: () => console.log('View More Clicked for NEXGEN DIGITAL SOLUTIONS')
+    onLinkClick: () => console.log('Website Link Clicked for TECNA DIGITAL SOLUTIONS'),
+    onViewMore: () => console.log('View More Clicked for TECNA DIGITAL SOLUTIONS')
   },
   {
     title: "Professor Scheduler",
