@@ -2,6 +2,19 @@ import nexgen from './nexgen.png';
 
 export const projectData = [
   {
+        title: "Vila Fernando com Ambição",
+        description: "This project was developed for an electoral campaign to encourage voting, share the candidate’s plan, and present the team behind it. It provides clear information about the campaign’s goals and activities while offering an easy way for voters to get in touch with questions or feedback, promoting transparency, engagement, and participation.",
+        tags: [
+            "React", "Cloudflare"
+        ],
+        image: "projects/vilafernando.png",
+        websiteLink: null,
+        githubLink: null,
+        videoLink: "https://youtu.be/yXtdYAGwTgw",
+        onLinkClick: () => console.log('Website Link Clicked for cctv'),
+        onViewMore: () => console.log('View More Clicked for cctv')
+    },
+  {
     title: "Real-Time Weapon Detection in Surveillance Video Footage",
     description: "My master thesis project, SafeGuard, improves CCTV systems by enhancing real-time weapon detection. It helps law enforcement quickly identify crimes and reduces the need for constant monitoring. SafeGuard also enables easier review of past footage, making surveillance more reliable.",
     tags: [
@@ -24,16 +37,5 @@ export const projectData = [
     videoLink: null,
     onLinkClick: () => console.log('Website Link Clicked for TECNA DIGITAL SOLUTIONS'),
     onViewMore: () => console.log('View More Clicked for TECNA DIGITAL SOLUTIONS')
-  },
-  {
-    title: "Professor Scheduler",
-    description: "Build a platform to plan the distribution of Professors across classes and curricular units, in each department of the university, providing the necessary information.",
-    tags: ["ReactJS", "FastAPI", "MySQL", "Docker"],
-    image: "projects/dsd2.png",
-    websiteLink: null,
-    githubLink: "https://github.com/pedromonteiro01/DSD_professor_schedule_assigner",
-    videoLink: "https://youtu.be/Nli68iJH7e8",
-    onLinkClick: () => console.log('Website Link Clicked for Professor Scheduler'),
-    onViewMore: () => console.log('View More Clicked for Professor Scheduler')
   },
 ];

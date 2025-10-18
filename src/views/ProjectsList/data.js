@@ -5,8 +5,22 @@ import tecna from '../Project/tecna.png';
 import covidInfo from './imgs/covidInfo.png';
 import beStrong from './imgs/beStrong.png';
 import secure from './imgs/vul4.png';
+import vila from './imgs/vilafernando.png';
 
 export const projectData = [
+    {
+        title: "Vila Fernando com Ambição",
+        description: "This project was developed for an electoral campaign to encourage voting, share the candidate’s plan, and present the team behind it. It provides clear information about the campaign’s goals and activities while offering an easy way for voters to get in touch with questions or feedback, promoting transparency, engagement, and participation.",
+        tags: [
+            "React", "Cloudflare"
+        ],
+        image: vila,
+        websiteLink: null,
+        githubLink: null,
+        videoLink: "https://youtu.be/yXtdYAGwTgw",
+        onLinkClick: () => console.log('Website Link Clicked for cctv'),
+        onViewMore: () => console.log('View More Clicked for cctv')
+    },
     {
         title: "Real-Time Weapon Detection in Surveillance Video Footage",
         description: "My master thesis project, SafeGuard, improves CCTV systems by enhancing real-time weapon detection. It helps law enforcement quickly identify crimes and reduces the need for constant monitoring. SafeGuard also enables easier review of past footage, making surveillance more reliable.",
