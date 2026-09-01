@@ -27,6 +27,10 @@ return (
                 color: {
                     value: "#000",
                 },
+                image: "radial-gradient(ellipse at 50% 35%, #10202a 0%, #050708 55%, #000000 100%)",
+                position: "50% 50%",
+                repeat: "no-repeat",
+                size: "cover",
             },
             fpsLimit: 120,
             particles: {
@@ -34,10 +38,10 @@ return (
                     value: "#ffffff",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#4fb8d6",
                     distance: 150,
                     enable: true,
-                    opacity: 0.4,
+                    opacity: 0.3,
                     width: 1,
                 },
                 collisions: {
@@ -51,7 +55,7 @@ return (
                     },
                     bounce: false,
                     random: false,
-                    speed: 2.5,
+                    speed: 1.3,
                     straight: false,
                     attract: {
                       enable: false,
@@ -100,6 +104,7 @@ return (
             detectRetina: true,
         }}
     />
+    <div className="particles-fade"></div>
     </div>
 );
 };

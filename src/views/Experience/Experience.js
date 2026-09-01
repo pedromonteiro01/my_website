@@ -1,6 +1,5 @@
 import { data } from "./data";
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Experience = () => {
@@ -14,15 +13,14 @@ const Experience = () => {
           </a>
         </div>
         {data.map((item, index) => {
-          // Alternate animation effects for rows
-          const animationEffect = index % 2 === 0 ? "animate__fadeInLeft" : "animate__fadeInRight";
-          const animationDuration = "animate__animated " + animationEffect; // Slow effect
+          // Alternate reveal direction per row
+          const animationEffect = index % 2 === 0 ? "card-reveal-left" : "card-reveal-right";
 
           return (
             <AnimationOnScroll
               animateOnce={true}
-              animateIn={animationDuration}
-              delay={index * 30}
+              animateIn={animationEffect}
+              delay={index * 80}
               key={item.id}
             >
               <ExperienceCard

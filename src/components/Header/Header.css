@@ -1,22 +1,47 @@
 .intro-text {
     z-index: 2;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 6%;
+    text-align: center;
+    pointer-events: none;
     font-family: "Raleway", sans-serif;
 }
-.intro-text h2 { 
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    letter-spacing: 5px;
+
+.intro-kicker {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #0292b7;
+    margin: 0 0 1rem;
 }
-.intro-text p {
+
+.intro-text h2 {
     text-align: center;
-    font-size: 24px;
-    width: 100%;
-    margin: auto;
     color: #fff;
-    line-height: 1.7;
+    font-size: clamp(2rem, 6vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.intro-text .typed-cursor {
+    color: #0292b7;
+}
+
+@media all and (max-width: 600px) {
+    .intro-kicker {
+        font-size: 11px;
+        letter-spacing: 3px;
+        margin-bottom: 0.85rem;
+    }
 }

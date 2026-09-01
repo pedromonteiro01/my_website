@@ -14,13 +14,42 @@
     padding: 3rem 0;
 }
 
+.contact-icon-badge {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1.25rem;
+    border-radius: 50%;
+    background: rgba(2, 146, 183, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon-badge i {
+    font-size: 22px;
+    color: #0292b7;
+}
+
 .contacts-message h3,
-.contacts-message .far.fa-paper-plane,
 .contacts-cv h3 {
-    color: #454545;
-    font-size: 25px;
-    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
+    color: #1a1a1a;
+    position: relative;
+}
+
+.contacts-message h3::after,
+.contacts-cv h3::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 3px;
+    background: #0292b7;
 }
 
 .contacts-message h3 {
@@ -29,20 +58,30 @@
 
 .contacts-cv h3 {
     margin-top: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .contacts-message p {
+    font-family: "Montserrat", sans-serif;
+    color: #5b6472;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2.25rem;
+}
+
+.cv-subtitle {
     color: #808080;
-    font-size: 21px;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    max-width: 480px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.5;
 }
 
 .cv-buttons {
-    width: 40%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .contact-form-wrapper {
@@ -50,27 +89,29 @@
     flex-direction: column;
     width: 60%;
     margin: 0 auto;
+    background: #fff;
+    border: 1px solid #f1f4f7;
+    border-radius: 18px;
+    box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 24px 0px;
+    padding: 2.75rem 3rem;
+    box-sizing: border-box;
 }
 
 .form-item-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .form-item-wrapper > * {
-    flex-basis: calc(50% - 1rem); /* Allows for two inputs to be side by side with a small gap */
+    flex-basis: calc(50% - 0.75rem); /* Allows for two inputs to be side by side with a small gap */
 }
 
 /* Styling for the submit button */
 .submit-button {
     text-align: center;
-    margin-top: 1.5rem;
-}
-
-.submit-button button {
-    font-weight: 400;
+    margin-top: 0.75rem;
 }
 
 /* Media Queries */
@@ -85,19 +126,16 @@
         width: 50%;
     }
 
-    .contacts-message p {
-        font-size: 18px;
-    }
-
     .form-item-wrapper > * {
-        flex-basis: calc(50% - 1rem); /* Keep inputs side by side until smaller screens */
+        flex-basis: calc(50% - 0.75rem); /* Keep inputs side by side until smaller screens */
     }
 }
 
 /* For tablets and smaller screens */
 @media all and (max-width: 960px) {
     .contact-form-wrapper {
-        width: 80%;
+        width: 85%;
+        padding: 2.25rem 2rem;
     }
 
     .form-item-wrapper {
@@ -118,9 +156,8 @@
     }
 
     .contacts-message p {
-        font-size: 16px;
         width: 95%;
-        margin: 0 auto;
+        margin: 0 auto 2rem;
     }
 
     .form-item-wrapper > * {
@@ -138,12 +175,19 @@
         font-size: 14px;
     }
 
+    .cv-subtitle {
+        font-size: 14px;
+        padding: 0 1rem;
+    }
+
     .cv-buttons {
         width: 100%;
     }
 
     .contact-form-wrapper {
         width: 90%;
+        padding: 1.75rem 1.5rem;
+        border-radius: 14px;
     }
 
     .form-item-wrapper {
@@ -163,11 +207,13 @@
     }
 
     .contacts-message p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .contact-form-wrapper {
-        width: 90%;
+        width: 92%;
+        padding: 1.5rem 1.25rem;
+        border-radius: 14px;
     }
 
     .cv-buttons {

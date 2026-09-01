@@ -2,60 +2,54 @@
     list-style-type: none;
     margin-left: 0 !important;
     padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
 }
 
 .skills {
     width: 30%;
 }
 
-.skills-header {
-    text-align: center;
+.skills-list li {
+    list-style: none;
 }
 
-.element-p {
-    margin: 1rem 0;
+.skill-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
 }
 
-.skills ul li label {
-    display: block;
-    float: left;
+.skill-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
-.skills ul li .progress-container {
+.skill-percent {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0292b7;
+}
+
+.progress-track {
     position: relative;
     width: 100%;
-    margin-top: 0.4rem;
-    margin-bottom: 0.8rem;
+    height: 8px;
+    border-radius: 999px;
+    background-color: #eef1f4;
+    overflow: hidden;
 }
 
-.skills ul li .progress-container progress {
-    width: 100%;
-    height: 10px;
-    border-radius: 12px;
-    background-color: lightgray;
+.progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #0292b7, #08c5f5);
+    transition: width 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
-
-.skills ul li .progress-container progress::-webkit-progress-value {
-    background: #0292b7;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
-}
-
-.skills ul li .progress-container progress::-webkit-progress-bar {
-    background: lightgray;
-    border-radius: 12px;
-}
-
-.skills ul li .progress-circle {
-    position: absolute;
-    top: 75%;
-    transform: translate(-50%, -50%);
-    height: 14px;
-    width: 14px;
-    background-color: #0292b7;
-    border-radius: 50%;
-}
-
 
 @media all and (max-width: 960px) {
     .skills {

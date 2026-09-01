@@ -1,63 +1,82 @@
-#section05 {
+.scroll-down {
   position: absolute;
-  bottom: 5rem;
+  bottom: 3rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 
-#section05 a {
-  font-size: 14px;
-  color: #fff;
+.scroll-down-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.5rem;
   text-decoration: none;
-  letter-spacing: 2px;
-  font-family: "Poppins";
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-down-link:hover {
+  color: #0292b7;
+  transform: translateY(3px);
+}
+
+.scroll-down-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-#section05 a span {
-  position: absolute;
-  left: 50%;
+.scroll-down-mouse {
+  position: relative;
   width: 24px;
-  height: 24px;
-  bottom: -1.5rem;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb05 1.5s infinite;
-  animation: sdb05 1.5s infinite;
+  height: 38px;
+  border: 1.5px solid currentColor;
+  border-radius: 13px;
+  transition: border-color 0.3s ease;
 }
 
-#section05:hover {
-  transition: 0.2s ease-in-out;
+.scroll-down-dot {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: scroll-down-wheel 1.8s ease infinite;
 }
 
-@-webkit-keyframes sdb05 {
+@keyframes scroll-down-wheel {
   0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
+    transform: translateY(0);
     opacity: 1;
   }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+  65% {
+    transform: translateY(14px);
     opacity: 0;
+  }
+  66% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-@keyframes sdb05 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
+
+@media all and (max-width: 600px) {
+  .scroll-down {
+    bottom: 2rem;
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
+
+  .scroll-down-mouse {
+    width: 20px;
+    height: 32px;
   }
 }

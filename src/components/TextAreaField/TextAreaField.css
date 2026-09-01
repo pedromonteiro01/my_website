@@ -7,32 +7,44 @@
 }
 
 .textarea-field-label {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #555;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
     margin-bottom: 0.5rem;
     text-align: left;
 }
 
 .textarea-field-required {
-    color: #c00;
+    color: #e11d48;
 }
 
 .textarea-field-textarea {
     width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #eee;
-    color: #999;
+    padding: 0.85rem 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    border: 1.5px solid #e5e9ef;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    color: #1a1a1a;
     outline: none;
-    resize: vertical;
-    transition: border-color 0.3s ease;
-    min-height: 150px;
+    box-sizing: border-box;
+    min-height: 140px;
     resize: none;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.textarea-field-textarea::placeholder {
+    color: #a1a8b3;
+}
+
+.textarea-field-textarea:hover {
+    border-color: #d3dae3;
 }
 
 .textarea-field-textarea:focus {
-    border-color: #999;
+    border-color: #0292b7;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(2, 146, 183, 0.12);
 }

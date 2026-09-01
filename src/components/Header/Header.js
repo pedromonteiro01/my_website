@@ -1,9 +1,11 @@
 import Typed from "react-typed";
+import 'animate.css/animate.min.css';
 import './Header.css';
 
 const Header = () => {
     return (
-        <section class="intro-text">
+        <section className="intro-text animate__animated animate__fadeInUp">
+            <p className="intro-kicker">Software Engineer</p>
             <h2><Typed
       strings={[
             "Hello, I'm Pedro",

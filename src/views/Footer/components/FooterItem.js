@@ -1,10 +1,17 @@
 import './FooterItem.css';
 
 const FooterItem = (props) => {
+    const isExternal = !props.link.startsWith("mailto:");
+
     return (
-        <li className={props.class}>
-              <a href={props.link} target="_blank" rel="noreferrer">
-                <i class={props.icon}></i>
+        <li className="footer-item">
+              <a
+                href={props.link}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noreferrer" : undefined}
+                aria-label={props.text}
+              >
+                <i className={props.icon}></i>
                 <p>{props.text}</p>
               </a>
         </li>

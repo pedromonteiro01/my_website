@@ -15,9 +15,9 @@ export const data = [
   },
   {
     id: 3,
-    link: "https://www.instagram.com/pedro_monteiro_01/",
-    class: "instagram",
-    icon: "fab fa-instagram",
-    text: "Instagram"
+    link: "mailto:pmapm123@gmail.com",
+    class: "email",
+    icon: "fas fa-envelope",
+    text: "Email"
   },
 ];

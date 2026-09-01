@@ -1,8 +1,5 @@
-.navbar-icon {
-  z-index: 10;
-  position: fixed;
-  top: 40px;
-  left: 25px;
+.navbar-icon-root {
+  position: relative;
 }
 
 .backdrop {
@@ -12,53 +9,161 @@
   width: 100%;
   height: 100vh;
   z-index: 9;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  animation: navbar-backdrop-fade 0.25s ease;
+}
+
+@keyframes navbar-backdrop-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.navbar-icon {
+  z-index: 11;
+  position: fixed;
+  top: 26px;
+  left: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(15, 23, 42, 0.16) 0px 4px 16px 0px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .navbar-icon i {
-  color: gray;
-  font-size: 25px;
+  color: #1a1a1a;
+  font-size: 18px;
+  transition: color 0.25s ease;
 }
 
-.navbar-icon i:hover {
-  cursor: pointer;
+.navbar-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(2, 146, 183, 0.3) 0px 10px 22px 0px;
+}
+
+.navbar-icon:hover i {
+  color: #0292b7;
 }
 
 .navbar-scroll {
   top: 0;
   left: 0;
   position: fixed;
-  width: 14rem;
+  width: 17rem;
+  max-width: 82vw;
   height: 100vh;
-  background-color: #ccc;
+  padding: 6.5rem 1.75rem 2rem;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  box-shadow: rgba(15, 23, 42, 0.22) 0px 16px 48px 0px;
   z-index: 10;
+  overflow-y: auto;
+}
+
+.navbar-scroll-label {
+  display: block;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a8f98;
+  margin-bottom: 1.75rem;
+}
+
+.navbar-scroll-label::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #0292b7;
+  margin-top: 12px;
 }
 
 .navbar-scroll ul {
-  z-index: 10;
-  margin-top: 6rem;
-  margin-left: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .navbar-scroll ul li {
-  z-index: 11;
   list-style-type: none;
-  text-transform: uppercase;
-  margin-top: 2rem;
 }
 
 .navbar-scroll ul li a {
+  position: relative;
+  display: block;
   text-decoration: none;
-  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
+  padding: 0.85rem 1rem 0.85rem 1.15rem;
+  border-radius: 10px;
+  transition: background-color 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
+}
+
+.navbar-scroll ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  left: 0;
+  width: 3px;
+  border-radius: 3px;
+  background-color: #0292b7;
+  transform: scaleY(0);
+  transition: transform 0.25s ease;
 }
 
 .navbar-scroll ul li a:hover {
-  color: rgb(136, 112, 112);
-  transition: all 0.17s ease-in-out;
+  background-color: rgba(2, 146, 183, 0.08);
+  color: #0292b7;
+  padding-left: 1.4rem;
+}
+
+.navbar-scroll ul li a:hover::before {
+  transform: scaleY(1);
+}
+
+/* On mobile the hamburger is the only way to reach navigation, so it must
+   stay visible at all scroll positions. On desktop it should only appear
+   once the full top navbar has scrolled out of view. */
+@media all and (min-width: 961px) {
+  .navbar-icon-root--top .navbar-icon {
+    display: none;
+  }
 }
 
 @media all and (max-width: 960px) {
   .navbar-icon {
-    left: 15px;
-    top: 25px;
+    top: 18px;
+    left: 18px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .navbar-icon i {
+    font-size: 16px;
+  }
+
+  .navbar-scroll {
+    padding-top: 5.5rem;
   }
 }

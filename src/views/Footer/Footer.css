@@ -1,58 +1,63 @@
-.footer{
-    height: auto;
-    background-color: #ECECEC;
+.footer {
+    background: linear-gradient(to bottom, #16191d, #1a1a1a);
+    padding: 4rem 20px 2rem;
+    text-align: center;
 }
 
 .footer h2 {
-    font-family: Poppins;
-    font-weight: normal;
-    font-size: 26px;
-    text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    position: relative;
+}
+
+.footer h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 3px;
+    background: #0292b7;
+}
+
+.footer-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 1rem 0 2.5rem;
 }
 
 .footer ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1.7rem;
-}
-
-.icons {
+    gap: 1rem;
     list-style-type: none;
-    text-align: center;
-}
-
-.icons i {
-    font-size: 2.5em;
-    margin-bottom: 1rem;
-}
-
-.footer ul li a {
-    color: lightgray;
-}
-
-.icons li a{
-    text-decoration: none;
-}
-
-.icons li a p{
-    display: block;
-}
-
-.icons li a p {
-    visibility: hidden;
-    transition: all 0.2s ease-in-out;
+    margin: 0 0 2.75rem;
+    padding: 0;
 }
 
 .footer span {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Montserrat';
+    display: block;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    padding-bottom: 0.5rem;
-    color: #494040;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media all and (max-width: 480px) {
+    .footer {
+        padding: 3rem 20px 1.75rem;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
 }

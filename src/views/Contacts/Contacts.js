@@ -4,7 +4,6 @@ import InputField from '../../components/InputField/InputField';
 import OutlineButton from '../../components/OutlineButton/OutlineButton';
 import TextAreaField from '../../components/TextAreaField/TextAreaField';
 import './Contacts.css';
-import plane from './paper-plane.png';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ToastContainer, toast } from 'react-toastify';
@@ -87,14 +86,17 @@ const Contacts = () => {
         <div className="contacts" id="contacts">
             <div className="contacts-cv">
                 <h3>Here is my CV</h3>
+                <p className="cv-subtitle">Get the full picture of my experience and skills, available in Portuguese or English.</p>
                 <div className="cv-buttons">
-                    <DownloadButton path="/files/Pedro_Monteiro_cv.pdf" desc="Download (PT) " />
-                    <DownloadButton path="/files/Pedro_Monteiro_en_cv.pdf" desc="Download (EN) " />
+                    <DownloadButton path="/files/Pedro_Monteiro_cv.pdf" desc="Portuguese CV" />
+                    <DownloadButton path="/files/Pedro_Monteiro_en_cv.pdf" desc="English CV" />
                 </div>
             </div>
             <div className="contacts-message">
                 <AnimationOnScroll animateIn="animate__swing">
-                    <img src={plane} alt="Paper Plane" width="45px" />
+                    <div className="contact-icon-badge">
+                        <i className="fas fa-paper-plane"></i>
+                    </div>
                 </AnimationOnScroll>
                 <h3>Want to Talk?</h3>
                 <p>Feel free to send me a message.</p>
@@ -139,6 +141,7 @@ const Contacts = () => {
                         />
                         <div className='submit-button'>
                             <OutlineButton type="submit">
+                                <i className="fas fa-paper-plane"></i>
                                 Send
                             </OutlineButton>
                         </div>

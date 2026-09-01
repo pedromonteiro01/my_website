@@ -3,7 +3,7 @@ import "./ExperienceCard.css";
 const ExperienceCard = (props) => {
 
   return (
-    <div class={props.class}>
+    <div className={props.class}>
       <section>
         <div className="icon">
           {props.icon}
@@ -23,8 +23,8 @@ const ExperienceCard = (props) => {
           </div>
         )}
         <div className="bottom">
-          <span>{props.local}</span>
-          <a href={props.link} target="_blank" rel="noreferrer">
+          <span className="local">{props.local}</span>
+          <a href={props.link} target="_blank" rel="noreferrer" className="logo">
             <img src={props.img} alt="" />
           </a>
         </div>

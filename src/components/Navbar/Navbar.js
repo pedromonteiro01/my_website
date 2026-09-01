@@ -7,24 +7,18 @@ const Navbar = () => {
     const [active, setActive] = useState(true);
 
     useEffect(() => {
-        window.addEventListener('scroll', (event) => {
-            // Get scroll position
-            if (window.pageYOffset > 30) {
-                setActive(false);
-            } else {
-                setActive(true);
-            }
-        });
+        const handleScroll = () => {
+            setActive(window.pageYOffset <= 30);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
         <>
-
-        { active && <FullNavbar />}
-        { !active && 
-        <>
-        <NavbarIcon />
-        </>}
+            { active && <FullNavbar /> }
+            <NavbarIcon topOfPage={active} />
         </>
     )
 }

@@ -1,14 +1,19 @@
-.section-about {
+.section-about-wrapper {
     background-color: #F5F5F5;
+    background-image: radial-gradient(circle at 12% 20%, rgba(2, 146, 183, 0.08) 0%, rgba(2, 146, 183, 0) 45%);
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    overflow: hidden;
+}
+
+.section-about {
+    max-width: 1200px;
+    margin: 0 auto;
     color: rgb(110, 110, 110);
     display: flex;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 6rem;
     align-items: center;
-    padding: 6rem 15%;
+    padding: 6rem 20px;
 }
 
 .section-about-content-2 {
@@ -21,6 +26,7 @@
 .profile-wrapper {
     position: relative;
     width: fit-content;
+    flex-shrink: 0;
 }
 
 .img-wrapper {
@@ -28,29 +34,37 @@
     height: 380px;
     position: relative;
     z-index: 2;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(15, 23, 42, 0.18) 0px 16px 40px 0px;
 }
 
-.img-wrapper2 {
-    width: auto;
-    height: 400px;
-    position: absolute;
-    bottom: -2.5rem;
-    left: -4rem;
-    z-index: 1;
-}
-
-.img-wrapper img, .img-wrapper2 img {
+.img-wrapper img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    display: block;
+}
+
+.img-wrapper2 {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    bottom: -1.5rem;
+    left: -1.5rem;
+    z-index: 1;
+    border: 3px solid #0292b7;
+    border-radius: 16px;
+    background: rgba(2, 146, 183, 0.05);
 }
 
 .section-about h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 26px;
-    letter-spacing: 2px;
-    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
@@ -58,33 +72,34 @@
 .header-section-content h1::after {
     content: '';
     display: block;
-    width: 12%;
-    height: 3px; 
-    background-color: #0292b7; 
-    margin: 10px 0 20px 0;
+    width: 48px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #0292b7;
+    margin: 14px 0 24px 0;
 }
 
 .section-about .paragraphs {
-    font-weight: 300;
-    text-align: justify;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
 }
 
 .section-about p {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     width: 100%;
     font-size: 16px;
-    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    color: #5b6472;
+    margin: 0;
 }
 
-.section-about p:last-child {
-    margin-bottom: 0;
-}
-
-.section-about span {
-    text-align: center;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 300;
+.section-about .paragraphs p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 .header-section-content {
@@ -93,56 +108,63 @@
     justify-content: flex-end;
 }
 
-.linkedin-wrapper {
-    margin: 0;
-    padding: 0;
-    color: rgb(110, 110, 110);
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: center;
-    background-color: #F5F5F5;
-    text-align: center;
-    height: 3rem;
-}
-
-.linkedin-wrapper a {
+.about-linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    align-self: flex-start;
+    margin-top: 1.75rem;
+    padding: 0.65rem 1.4rem;
+    border-radius: 999px;
+    border: solid 2px #0292b7;
     color: #0292b7;
-    margin-left: 0.3rem;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: rgba(2, 146, 183, 0.12) 0px 2px 10px 0px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.linkedin-wrapper a:hover {
-    color: #08c5f5;
+.about-linkedin-link i {
+    font-size: 1.05em;
+}
+
+.about-linkedin-link:hover {
+    background-color: #0292b7;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: rgba(2, 146, 183, 0.3) 0px 10px 22px 0px;
 }
 
 @media all and (max-width: 960px) {
     .section-about {
-        height: auto;
         flex-direction: column;
         justify-content: center;
-        gap: 5rem;
+        gap: 3.5rem;
         width: 100%;
         text-align: center;
+        padding: 4rem 20px;
     }
 
     .section-about .paragraphs {
         max-width: 95%;
-        margin-bottom: 1.5rem;
+        margin: 0 auto;
         text-align: center;
-        width: 100%;
     }
 
     .section-about .paragraphs p {
         font-size: 16px;
-        margin: 0;
-        width: 100%;
     }
 
-    .section-about span {
-        padding: 2.5rem 0 2rem !important;
+    .section-about .paragraphs p:first-child {
+        font-size: 17px;
     }
 
-    .section-about img {
-        margin-top: 0;
+    .about-linkedin-link {
+        align-self: center;
+        margin: 1.75rem auto 0;
     }
 
     .img-wrapper {
@@ -152,41 +174,37 @@
     }
 
     .img-wrapper2 {
-        bottom: -2rem;
-        left: -3rem; 
+        width: 250px;
+        height: 310px;
+        bottom: -1.25rem;
+        left: -1.25rem;
         right: 0;
-        height: 330px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
+
+
     .section-about-content-2 {
         justify-content: center !important;
         align-items: center !important;
     }
-    .header-section-content h1::after {
-        margin: 10px auto 20px auto;
-        width: 25px;
-    }
-    .section-about .paragraphs p {
-        margin-bottom: 0.5rem;
-    }
 
-    .section-about .paragraphs p:last-child {
-        margin-bottom: 0rem;
+    .header-section-content h1::after {
+        margin: 12px auto 20px auto;
     }
 }
 
 @media all and (max-width: 600px) {
     .header-section-content h1::after {
-        margin: 10px auto 20px auto;
-        width: 25px;
+        margin: 12px auto 20px auto;
     }
 
     .section-about-content-2 {
         justify-content: center !important;
         align-items: center !important;
     }
+
     .section-about {
-        padding: 4rem 10%;
+        padding: 3rem 16px;
         text-align: center;
     }
 
@@ -198,14 +216,15 @@
     .img-wrapper {
         width: 200px;
         height: 260px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .img-wrapper2 {
-        bottom: -2rem;
-        left: -3rem;
+        width: 200px;
+        height: 260px;
+        bottom: -1rem;
+        left: -1rem;
         right: 0;
-        height: 280px;
         margin: 0 auto;
     }
 
@@ -217,15 +236,10 @@
     .section-about .paragraphs p {
         font-size: 14px;
         text-align: center;
-        margin: 0;
     }
 
-    .section-about .paragraphs p {
-        margin-bottom: 0.5rem;
+    .section-about .paragraphs p:first-child {
+        font-size: 16px;
     }
 
-    .section-about .paragraphs p:last-child {
-        margin-bottom: 0rem;
-    }
 }
-

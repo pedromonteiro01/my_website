@@ -1,14 +1,22 @@
+import { useState } from "react";
+import "./SectionHeader.css";
 import "./Skills.css";
 import { SkillsData } from "./skills-data.js";
 import ReactTyped from "react-typed";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 const Skills = () => {
+  const [revealed, setRevealed] = useState(false);
+
   return (
     <div className="skills">
-      <div className="skills-header">
-        <img src="img/coding.png" alt="" />
-        <p className="main-p">Skills</p>
-        <p className="element-p">
+      <div className="mb-header">
+        <div className="mb-icon-badge">
+          <i className="fas fa-code"></i>
+        </div>
+        <h4 className="mb-section-title">Skills</h4>
+        <p className="mb-subtitle">
           I've worked with{" "}
           <span className="element">
             <ReactTyped
@@ -39,24 +47,40 @@ const Skills = () => {
           </span>
         </p>
       </div>
-      <ul className="skills-list">
-        {SkillsData.map((item) => {
-          return (
-            <li key={item.id}>
-              <label htmlFor={item.label}>{item.language}</label>
-              <div className="progress-container">
-                <progress id={item.label} value={item.progress} max="100" />
+      <AnimationOnScroll
+        animateOnce={true}
+        animateIn="animate__animated animate__fadeIn"
+        afterAnimatedIn={() => setRevealed(true)}
+      >
+        <ul className="skills-list">
+          {SkillsData.map((item, index) => {
+            return (
+              <li key={item.id}>
+                <div className="skill-info">
+                  <span className="skill-name">{item.language}</span>
+                  <span className="skill-percent">{item.progress}%</span>
+                </div>
                 <div
-                  className="progress-circle"
-                  style={{
-                    left: `${item.progress}%`, // dynamically position the circle
-                  }}
-                ></div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+                  className="progress-track"
+                  role="progressbar"
+                  aria-label={item.language}
+                  aria-valuenow={item.progress}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                >
+                  <div
+                    className="progress-fill"
+                    style={{
+                      width: revealed ? `${item.progress}%` : "0%",
+                      transitionDelay: `${index * 90}ms`,
+                    }}
+                  ></div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </AnimationOnScroll>
     </div>
   );
 };

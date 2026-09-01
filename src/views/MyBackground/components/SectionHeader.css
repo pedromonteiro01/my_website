@@ -1,0 +1,58 @@
+.mb-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mb-icon-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(2, 146, 183, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.mb-icon-badge i {
+    font-size: 22px;
+    color: #0292b7;
+}
+
+.mb-section-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: #1a1a1a;
+    margin: 0;
+    position: relative;
+    padding-bottom: 0.85rem;
+}
+
+.mb-section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 3px;
+    border-radius: 3px;
+    background: #0292b7;
+}
+
+.mb-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #5b6472;
+    margin: 0.85rem 0 0;
+}
+
+.mb-subtitle .element {
+    color: #0292b7;
+    font-weight: 600;
+}

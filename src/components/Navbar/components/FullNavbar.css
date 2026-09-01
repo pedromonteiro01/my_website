@@ -1,37 +1,72 @@
-
 .banner-text {
     width: 100%;
     position: absolute;
     top: 0;
     z-index: 1;
+    padding: 0.5rem 0;
+    background: linear-gradient(to bottom, rgba(10, 12, 16, 0.55) 0%, rgba(10, 12, 16, 0) 100%);
 }
 
 .projects-navbar {
+  position: relative;
   height: 6rem;
-  background: linear-gradient(to bottom, #171616, #464444);
+  padding: 0;
+  background: linear-gradient(to bottom, #16191d, #1a1a1a);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .banner-text ul {
-    height: 50px;
+    height: 4.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
 .banner-text ul li {
     display: inline-block;
-    padding: 40px 15px;
 }
+
 .banner-text ul li a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
+
+.banner-text ul li a::after {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    right: 1.1rem;
+    bottom: 0.4rem;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #0292b7;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
 .banner-text ul li a:hover {
-    border-bottom: solid 3px white; 
-    transition: all 0.2s ease-out;
-    /*    background: #fff;
-    color: #000;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.banner-text ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 @media all and (max-width: 960px) {

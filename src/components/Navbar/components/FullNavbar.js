@@ -25,7 +25,6 @@ const FullNavbar = () => {
         <li><a href="#about" onClick={(e) => handleNavigation(e, "about")}>About</a></li>
         <li><a href="#background" onClick={(e) => handleNavigation(e, "background")}>My Background</a></li>
         <li><a href="#experience" onClick={(e) => handleNavigation(e, "experience")}>Experience</a></li>
-        <li><a href="#projects" onClick={(e) => handleNavigation(e, "projects")}>Projects</a></li>
         <li><a href="#contacts" onClick={(e) => handleNavigation(e, "contacts")}>Contact</a></li>
       </ul>
     </div>
