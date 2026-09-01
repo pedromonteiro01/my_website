@@ -4,6 +4,7 @@
 }
 
 .timeline h3 {
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 600;
@@ -25,141 +26,148 @@
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 50px auto;
+    max-width: 1100px;
+    margin: 3.5rem auto 0;
     padding: 0 20px;
     position: relative;
 }
 
-.wrapper .center-line {
+.timeline-line {
     position: absolute;
-    height: 100%;
+    top: 6px;
+    bottom: 6px;
+    left: 50%;
     width: 2px;
     border-radius: 2px;
+    transform: translateX(-50%);
     background: linear-gradient(
         to bottom,
-        rgba(2, 146, 183, 0) 0px,
-        rgba(2, 146, 183, 0.5) 60px,
-        rgba(2, 146, 183, 0.5) calc(100% - 60px),
+        rgba(2, 146, 183, 0) 0%,
+        rgba(2, 146, 183, 0.5) 4%,
+        rgba(2, 146, 183, 0.5) 92%,
         rgba(2, 146, 183, 0) 100%
     );
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%);
 }
 
-.wrapper .row {
-    display: flex;
-    margin-bottom: 48px;
-}
-
-.wrapper .row:last-child {
-    margin-bottom: 0;
-}
-
-.wrapper .row-1 {
-    justify-content: flex-start;
-}
-
-.wrapper .row-2 {
-    justify-content: flex-end;
-}
-
-.wrapper .row section {
-    background: #fff;
-    width: calc(50% - 40px);
-    padding: 22px 24px;
+.timeline-row {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 56px 1fr;
+    column-gap: 1.75rem;
+    align-items: start;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-row:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.timeline-row--left .experience-card {
+    grid-column: 1;
+}
+
+.timeline-row--right .experience-card {
+    grid-column: 3;
+}
+
+.timeline-marker {
+    grid-column: 2;
+    justify-self: center;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-top: 14px;
+    padding: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #eef1f4;
+    box-shadow: rgba(15, 23, 42, 0.1) 0px 2px 8px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-marker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-marker:hover {
+    transform: scale(1.12);
+    box-shadow: rgba(2, 146, 183, 0.3) 0px 10px 20px 0px;
+}
+
+.timeline-row--current .timeline-marker {
+    border-color: rgba(2, 146, 183, 0.5);
+    animation: marker-pulse 2.2s ease-out infinite;
+}
+
+@keyframes marker-pulse {
+    0% {
+        box-shadow: rgba(15, 23, 42, 0.1) 0px 2px 8px 0px, 0 0 0 0 rgba(2, 146, 183, 0.45);
+    }
+    70% {
+        box-shadow: rgba(15, 23, 42, 0.1) 0px 2px 8px 0px, 0 0 0 10px rgba(2, 146, 183, 0);
+    }
+    100% {
+        box-shadow: rgba(15, 23, 42, 0.1) 0px 2px 8px 0px, 0 0 0 0 rgba(2, 146, 183, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-row--current .timeline-marker {
+        animation: none;
+    }
+}
+
+.experience-card {
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+    padding: 22px 24px;
     border-top: solid 3px #0292b7;
     border-radius: 14px;
     box-shadow: rgba(15, 23, 42, 0.06) 0px 2px 12px 0px;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.wrapper .row section:hover {
+.experience-card:hover {
     transform: translateY(-6px);
     box-shadow: rgba(2, 146, 183, 0.2) 0px 20px 36px 0px;
 }
 
-.wrapper .row section:hover .icon {
-    transform: scale(1.2);
+.experience-card .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-family: "Montserrat", sans-serif;
 }
 
-.wrapper .row section::before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #fff;
-    top: 28px;
-    z-index: -1;
-    transform: rotate(45deg);
-}
-
-.row span {
-    display: inline-block;
-}
-
-.row-1 section::before {
-    right: -7px;
-}
-
-.row-2 section::before {
-    left: -7px;
-}
-
-.row section .icon {
-    position: absolute;
-    height: 18px;
-    width: 18px;
-    text-align: center;
-    border-radius: 50%;
-    background: #0292b7;
-    box-shadow: 0 0 0 4px #fff;
-    content: none;
-    z-index: 1;
-    transition: transform 0.35s ease;
-}
-
-.center-line .scroll-icon {
-    position: absolute;
-    background: #fff;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.3rem;
-    border-radius: 50%;
+.experience-card .details .title {
     color: #0292b7;
-    border: solid 2px #0292b7;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
 }
 
-.center-line .scroll-icon:hover {
-    transform: translateX(-50%) translateY(-3px);
-    box-shadow: rgba(2, 146, 183, 0.3) 0px 6px 14px 0px;
+.experience-card .details .local {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #5b6472;
 }
 
-.center-line .scroll-icon {
-    bottom: -40px;
-    left: 50%;
-    font-size: 25px;
-    transform: translateX(-50%);
+.experience-card .meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.7rem;
 }
 
-.row-1 section .icon {
-    top: 15px;
-    right: -50px;
-    font-size: 0;
-}
-
-.row-2 section .icon {
-    top: 15px;
-    left: -50px;
-    font-size: 0;
-}
-
-.details .date {
+.experience-card .date {
     display: inline-block;
     color: #64748b;
     background: #f1f5f9;
@@ -167,74 +175,37 @@
     font-weight: 500;
     padding: 3px 10px;
     border-radius: 20px;
-}
-
-.row section .bottom span.local {
-    font-size: 0.85em;
-    font-weight: 600;
-    color: #333;
-}
-
-.row section .details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-}
-
-.row section .details,
-.row section .bottom {
     font-family: "Montserrat", sans-serif;
-    display: flex;
+}
+
+.experience-card .current-badge {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.row section .bottom {
-    margin-top: 4px;
-}
-
-.row section .details .title {
-    font-family: "Montserrat", sans-serif;
+    gap: 0.35rem;
+    padding: 3px 10px 3px 8px;
+    border-radius: 20px;
+    background: rgba(2, 146, 183, 0.1);
     color: #0292b7;
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+    font-size: 0.72em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.row section p {
+.experience-card .current-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0292b7;
+}
+
+.experience-card p {
     font-family: "Montserrat", sans-serif;
     color: #475569;
     line-height: 1.55;
     margin: 12px 0 16px 0;
-}
-
-.row section .bottom .logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    padding: 6px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid #eef1f4;
-    box-shadow: rgba(15, 23, 42, 0.08) 0px 1px 4px 0px;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-shrink: 0;
-}
-
-.row section .bottom .logo:hover {
-    transform: scale(1.08);
-    box-shadow: rgba(2, 146, 183, 0.25) 0px 6px 14px 0px;
-}
-
-.row section .bottom .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .tech-stack {
@@ -265,36 +236,42 @@
     color: #fff;
 }
 
-.card-reveal-left,
-.card-reveal-right {
-    animation-duration: 0.75s;
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    border: 1.5px solid rgba(2, 146, 183, 0.35);
+    color: #0292b7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0292b7;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: rgba(2, 146, 183, 0.3) 0px 10px 22px 0px;
+}
+
+.card-reveal-up {
+    animation-duration: 0.7s;
     animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
     animation-fill-mode: both;
+    animation-name: card-reveal-up;
 }
 
-.card-reveal-left {
-    animation-name: card-reveal-left;
-}
-
-.card-reveal-right {
-    animation-name: card-reveal-right;
-}
-
-@keyframes card-reveal-left {
+@keyframes card-reveal-up {
     from {
         opacity: 0;
-        transform: translate3d(-28px, 18px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes card-reveal-right {
-    from {
-        opacity: 0;
-        transform: translate3d(28px, 18px, 0);
+        transform: translate3d(0, 24px, 0);
     }
     to {
         opacity: 1;
@@ -303,53 +280,73 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .card-reveal-left,
-    .card-reveal-right {
+    .card-reveal-up {
         animation: none;
     }
 }
 
-@media all and (max-width: 960px) {
-    .wrapper .center-line {
-        left: 40px;
+/* Below this width there isn't room for two columns either side of the
+   line, so the timeline collapses to a single column (markers + cards
+   both left-aligned along the line). */
+@media all and (max-width: 900px) {
+    .wrapper {
+        max-width: 760px;
     }
 
-    .wrapper .row {
-        margin: 0 0 32px 60px;
+    .timeline-line {
+        left: 42px;
+        transform: none;
     }
 
-    .wrapper .row:last-child {
-        margin-bottom: 0;
+    .timeline-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
     }
 
-    .wrapper .row section {
-        width: 100%;
+    .timeline-row--left .experience-card,
+    .timeline-row--right .experience-card {
+        grid-column: auto;
     }
 
-    .row-1 section::before {
-        left: -7px;
-    }
-
-    .row-1 section .icon {
-        left: -50px;
+    .timeline-marker {
+        grid-column: auto;
+        justify-self: auto;
+        margin-top: 18px;
     }
 }
 
-@media (max-width: 468px) {
-    .row section .details .title {
-        font-size: 14px;
+@media all and (max-width: 600px) {
+    .wrapper {
+        padding: 0 16px;
     }
 
-    .details .date {
+    .timeline-line {
+        left: 32px;
+    }
+
+    .timeline-row {
+        gap: 1rem;
+    }
+
+    .timeline-marker {
+        width: 36px;
+        height: 36px;
+        margin-top: 20px;
+        padding: 6px;
+    }
+
+    .experience-card .details .title {
+        font-size: 15px;
+    }
+
+    .experience-card .date {
         font-size: 0.7em;
     }
 
-    .row section p {
+    .experience-card p {
         font-size: 13px;
-    }
-
-    .row-1 section .icon {
-        left: -50px !important;
     }
 
     .tech-stack {
@@ -358,10 +355,5 @@
 
     .tech-stack-item {
         font-size: 0.75em;
-    }
-
-    .row section .bottom .logo {
-        width: 36px;
-        height: 36px;
     }
 }

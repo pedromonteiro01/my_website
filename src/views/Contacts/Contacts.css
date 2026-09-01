@@ -14,22 +14,6 @@
     padding: 3rem 0;
 }
 
-.contact-icon-badge {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto 1.25rem;
-    border-radius: 50%;
-    background: rgba(2, 146, 183, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-icon-badge i {
-    font-size: 22px;
-    color: #0292b7;
-}
-
 .contacts-message h3,
 .contacts-cv h3 {
     font-family: "Montserrat", sans-serif;
@@ -91,8 +75,8 @@
     margin: 0 auto;
     background: #fff;
     border: 1px solid #f1f4f7;
-    border-radius: 18px;
-    box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 24px 0px;
+    border-radius: 20px;
+    box-shadow: rgba(15, 23, 42, 0.06) 0px 8px 32px 0px;
     padding: 2.75rem 3rem;
     box-sizing: border-box;
 }
@@ -101,11 +85,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .form-item-wrapper > * {
-    flex-basis: calc(50% - 0.75rem); /* Allows for two inputs to be side by side with a small gap */
+    flex-basis: calc(50% - 1rem); /* Allows for two inputs to be side by side with a small gap */
 }
 
 /* Styling for the submit button */
@@ -127,7 +111,7 @@
     }
 
     .form-item-wrapper > * {
-        flex-basis: calc(50% - 0.75rem); /* Keep inputs side by side until smaller screens */
+        flex-basis: calc(50% - 1rem); /* Keep inputs side by side until smaller screens */
     }
 }
 

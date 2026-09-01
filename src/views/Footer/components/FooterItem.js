@@ -12,7 +12,7 @@ const FooterItem = (props) => {
                 aria-label={props.text}
               >
                 <i className={props.icon}></i>
-                <p>{props.text}</p>
+                <span className="sr-only">{props.text}</span>
               </a>
         </li>
     )

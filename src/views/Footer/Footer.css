@@ -1,6 +1,6 @@
 .footer {
     background: linear-gradient(to bottom, #16191d, #1a1a1a);
-    padding: 4rem 20px 2rem;
+    padding: 3.5rem 20px 2rem;
     text-align: center;
 }
 
@@ -37,14 +37,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.75rem;
     list-style-type: none;
-    margin: 0 0 2.75rem;
+    margin: 0 auto 2.25rem;
     padding: 0;
 }
 
 .footer span {
     display: block;
+    max-width: 280px;
+    margin: 0 auto;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 13px;

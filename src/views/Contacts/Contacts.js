@@ -4,8 +4,6 @@ import InputField from '../../components/InputField/InputField';
 import OutlineButton from '../../components/OutlineButton/OutlineButton';
 import TextAreaField from '../../components/TextAreaField/TextAreaField';
 import './Contacts.css';
-import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -93,11 +91,6 @@ const Contacts = () => {
                 </div>
             </div>
             <div className="contacts-message">
-                <AnimationOnScroll animateIn="animate__swing">
-                    <div className="contact-icon-badge">
-                        <i className="fas fa-paper-plane"></i>
-                    </div>
-                </AnimationOnScroll>
                 <h3>Want to Talk?</h3>
                 <p>Feel free to send me a message.</p>
                 <div className='contact-form-wrapper'>

@@ -26,13 +26,13 @@
     font-size: 0.95rem;
     border: 1.5px solid #e5e9ef;
     border-radius: 10px;
-    background-color: #f9fafb;
+    background-color: transparent;
     color: #1a1a1a;
     outline: none;
     box-sizing: border-box;
     min-height: 140px;
     resize: none;
-    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    transition: border-color 0.25s ease;
 }
 
 .textarea-field-textarea::placeholder {
@@ -40,11 +40,9 @@
 }
 
 .textarea-field-textarea:hover {
-    border-color: #d3dae3;
+    border-color: #c3cbd6;
 }
 
 .textarea-field-textarea:focus {
     border-color: #0292b7;
-    background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(2, 146, 183, 0.12);
 }
