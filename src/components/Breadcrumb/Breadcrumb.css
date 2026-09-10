@@ -1,0 +1,20 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--sidebar-fg-muted);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-part {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.breadcrumb-sep {
+  font-size: 0.55rem;
+  color: var(--fg-faint);
+}

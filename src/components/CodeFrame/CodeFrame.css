@@ -1,0 +1,100 @@
+.code-frame {
+  background: var(--bg-app);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.code-frame-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.code-frame-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+
+.code-frame-filename {
+  font-size: 0.85rem;
+  color: var(--sidebar-fg);
+  font-weight: 500;
+}
+
+.code-frame-lang {
+  margin-left: auto;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tok-comment);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+}
+
+.code-frame-body {
+  overflow-x: auto;
+  padding: 1.1rem 0;
+}
+
+.code-lines {
+  counter-reset: line;
+}
+
+.code-line {
+  counter-increment: line;
+  position: relative;
+  display: flex;
+  padding: 0.15rem 1.25rem 0.15rem 3.75rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--editor-fg);
+  white-space: pre-wrap;
+}
+
+.code-line::before {
+  content: counter(line);
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 2.5rem;
+  text-align: right;
+  color: var(--gutter-fg);
+  padding-right: 0.85rem;
+  user-select: none;
+  font-size: 0.8rem;
+}
+
+.code-line-content {
+  padding-left: calc(var(--indent, 0) * 1.4em);
+}
+
+.code-line-blank {
+  height: 1.2rem;
+}
+
+.tok-comment { color: var(--tok-comment); font-style: italic; }
+.tok-string { color: var(--tok-string); }
+.tok-keyword { color: var(--tok-keyword); }
+.tok-prop { color: var(--tok-prop); }
+.tok-func { color: var(--tok-func); }
+.tok-number { color: var(--tok-number); }
+.tok-type { color: var(--tok-type); }
+.tok-punct { color: var(--tok-punct); }
+.tok-plain { color: var(--editor-fg); }

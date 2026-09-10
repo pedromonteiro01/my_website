@@ -1,13 +1,204 @@
-body {
+:root {
+  /* canonical surfaces (dark / VS Code Dark+ default) */
+  --bg-app: #1e1e1e;
+  --bg-surface: #252526;
+  --bg-2: #2d2d2d;
+  --bg-3: #212122;
+  --bg-inset: #1a1a1a;
+  --bg-hover: #2a2d2e;
+  --bg-active: #37373d;
+  --border: #3c3c3c;
+
+  /* chrome (mostly aliases onto the surfaces above) */
+  --titlebar-bg: #3c3c3c;
+  --activitybar-bg: #333333;
+  --activitybar-fg: #ffffff;
+  --activitybar-fg-muted: #858585;
+  --sidebar-bg: var(--bg-surface);
+  --sidebar-fg: #cccccc;
+  --sidebar-fg-muted: #9d9d9d;
+  --sidebar-hover: var(--bg-hover);
+  --sidebar-active: var(--bg-active);
+  --tabsbar-bg: var(--bg-surface);
+  --tab-inactive-bg: var(--bg-2);
+  --tab-inactive-fg: #969696;
+  --editor-bg: var(--bg-app);
+  --editor-fg: #d4d4d4;
+  --editor-border: var(--bg-app);
+  --gutter-fg: #6a6a6a;
+  --statusbar-bg: #007acc;
+  --statusbar-fg: #ffffff;
+  --panel-border: var(--border);
+  --fg-strong: #ffffff;
+  --fg-faint: #6b6b6b;
+
+  --accent: #4fc1ff;
+  --accent-strong: #007acc;
+  --accent-hover: #0086e6;
+
+  /* syntax (VS Code Dark+) */
+  --tok-comment: #6a9955;
+  --tok-string: #ce9178;
+  --tok-keyword: #569cd6;
+  --tok-prop: #9cdcfe;
+  --tok-func: #dcdcaa;
+  --tok-number: #b5cea8;
+  --tok-type: #4ec9b0;
+  --tok-punct: #d4d4d4;
+  --tok-tag: #808080;
+
+  /* diff */
+  --diff-add: #4ec9b0;
+  --diff-add-bg: rgba(78, 201, 176, 0.12);
+  --hash-color: #e6a85c;
+
+  /* per-language file icon chips */
+  --icon-md-fg: #4fc1ff;
+  --icon-md-bg: rgba(79, 193, 255, 0.18);
+  --icon-js-fg: #dcdc8c;
+  --icon-js-bg: rgba(220, 220, 154, 0.2);
+  --icon-log-fg: #b0b0b0;
+  --icon-log-bg: rgba(158, 158, 158, 0.2);
+  --icon-json-fg: #e6a85c;
+  --icon-json-bg: rgba(230, 168, 92, 0.2);
+  --icon-sh-fg: #4ec9b0;
+  --icon-sh-bg: rgba(78, 201, 176, 0.2);
+  --icon-default-fg: #cccccc;
+  --icon-default-bg: #3c3c3c;
+
+  --shadow-color: rgba(0, 0, 0, 0.35);
+  --scrollbar-thumb: #4b4b4b;
+  --scrollbar-thumb-hover: #5f5f5f;
+
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, "Courier New", monospace;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg-app: #ffffff;
+  --bg-surface: #f3f3f3;
+  --bg-2: #ececec;
+  --bg-3: #f6f6f6;
+  --bg-inset: #e2e2e2;
+  --bg-hover: #e8e8e8;
+  --bg-active: #e0e5f0;
+  --border: #d9d9d9;
+
+  --titlebar-bg: #dddddd;
+  --activitybar-bg: #f3f3f3;
+  --activitybar-fg: #1e1e1e;
+  --activitybar-fg-muted: #6e6e6e;
+  --sidebar-fg: #3b3b3b;
+  --sidebar-fg-muted: #6e6e6e;
+  --tab-inactive-fg: #6e6e6e;
+  --editor-fg: #1e1e1e;
+  --gutter-fg: #919191;
+  --fg-strong: #000000;
+  --fg-faint: #8a8a8a;
+
+  --accent: #005fb8;
+  --accent-strong: #005a9e;
+  --accent-hover: #004c87;
+
+  --tok-comment: #008000;
+  --tok-string: #a31515;
+  --tok-keyword: #0000ff;
+  --tok-prop: #001080;
+  --tok-func: #795e26;
+  --tok-number: #098658;
+  --tok-type: #267f99;
+  --tok-punct: #1e1e1e;
+  --tok-tag: #800000;
+
+  --diff-add: #0a7d5e;
+  --diff-add-bg: rgba(10, 125, 94, 0.1);
+  --hash-color: #b35900;
+
+  --icon-md-fg: #005fb8;
+  --icon-md-bg: rgba(0, 95, 184, 0.12);
+  --icon-js-fg: #8a6d00;
+  --icon-js-bg: rgba(138, 109, 0, 0.12);
+  --icon-log-fg: #6e6e6e;
+  --icon-log-bg: rgba(110, 110, 110, 0.15);
+  --icon-json-fg: #b35900;
+  --icon-json-bg: rgba(179, 89, 0, 0.12);
+  --icon-sh-fg: #0a7d5e;
+  --icon-sh-bg: rgba(10, 125, 94, 0.12);
+  --icon-default-fg: #444444;
+  --icon-default-bg: #e6e6e6;
+
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --scrollbar-thumb: #c1c1c1;
+  --scrollbar-thumb-hover: #a6a6a6;
+
+  color-scheme: light;
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: var(--bg-app);
+  color: var(--editor-fg);
+  overflow-x: hidden;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(79, 193, 255, 0.3);
+}
+
+/* scrollbar, vscode-flavored */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border: 3px solid var(--bg-app);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
+}
+
+.Toastify__toast {
+  font-family: var(--font-mono) !important;
+  background: var(--bg-surface) !important;
+  color: var(--editor-fg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
 }

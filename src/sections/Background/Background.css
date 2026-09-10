@@ -1,0 +1,68 @@
+.background {
+  padding: 5rem clamp(1.25rem, 5vw, 4rem);
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.skill-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skill-line-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.skill-line-percent {
+  color: var(--tok-number);
+  font-size: 0.78rem;
+  min-width: 2.4rem;
+  text-align: right;
+}
+
+.also-using {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.3rem 0 0.5rem;
+}
+
+.edu-line {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.edu-logo {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+  border-radius: 3px;
+  background: #fff;
+  padding: 1px;
+  flex-shrink: 0;
+}
+
+.edu-school {
+  color: var(--tok-prop);
+}
+
+.edu-period {
+  color: var(--sidebar-fg-muted);
+  font-size: 0.85em;
+}
+
+@media (max-width: 640px) {
+  .skill-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}

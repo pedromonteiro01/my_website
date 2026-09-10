@@ -1,0 +1,59 @@
+.status-bar {
+  height: 1.6rem;
+  min-height: 1.6rem;
+  background: var(--statusbar-bg);
+  color: var(--statusbar-fg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  font-size: 0.72rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+.status-left,
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.status-item-sync i {
+  font-size: 0.68rem;
+}
+
+.status-theme-toggle,
+.status-terminal-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0 0.4rem;
+  border-radius: 3px;
+}
+
+.status-theme-toggle:hover,
+.status-terminal-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.status-terminal-toggle.is-active {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 640px) {
+  .status-item-hide-sm {
+    display: none;
+  }
+}

@@ -1,0 +1,139 @@
+.experience {
+  padding: 5rem clamp(1.25rem, 5vw, 4rem);
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+.log-header {
+  font-size: 0.9rem;
+  color: var(--sidebar-fg-muted);
+  margin-bottom: 2rem;
+}
+
+.log-prompt {
+  color: var(--diff-add);
+  margin-right: 0.5rem;
+}
+
+.commit-list {
+  --rail: 1.5rem;
+  --dot-size: 0.7rem;
+  list-style: none;
+  position: relative;
+  padding-left: var(--rail);
+}
+
+.commit-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--rail) / 2 - 1px);
+  width: 2px;
+  background: var(--border);
+}
+
+.commit {
+  position: relative;
+  padding-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.commit.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.commit:last-child {
+  padding-bottom: 0;
+}
+
+.commit-node {
+  position: absolute;
+  left: calc(-1 * (var(--rail) / 2) - (var(--dot-size) / 2));
+  top: 0.4rem;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--editor-bg);
+}
+
+.commit-body {
+  background: var(--bg-3);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+
+.commit-hash-line {
+  color: var(--hash-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.commit-hash {
+  color: var(--hash-color);
+}
+
+.commit-head {
+  color: var(--diff-add);
+}
+
+.commit-meta {
+  color: var(--sidebar-fg-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.commit-title {
+  color: var(--fg-strong);
+  font-size: 1.05rem;
+  margin: 0.9rem 0 0.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.commit-local {
+  color: var(--accent);
+}
+
+a.commit-local:hover {
+  text-decoration: underline;
+}
+
+.commit-text {
+  color: var(--editor-fg);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.commit-diff {
+  border-top: 1px dashed var(--border);
+  padding-top: 0.85rem;
+}
+
+.commit-diff-count {
+  display: block;
+  color: var(--sidebar-fg-muted);
+  font-size: 0.78rem;
+  margin-bottom: 0.5rem;
+}
+
+.commit-diff-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.commit-diff-tag {
+  font-size: 0.78rem;
+  color: var(--diff-add);
+  background: var(--diff-add-bg);
+  border: 1px solid color-mix(in srgb, var(--diff-add) 30%, transparent);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+}

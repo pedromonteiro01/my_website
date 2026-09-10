@@ -1,0 +1,38 @@
+.tabs-bar {
+  display: flex;
+  background: var(--tabsbar-bg);
+  overflow-x: auto;
+  border-bottom: 1px solid var(--bg-inset);
+  position: sticky;
+  top: 2.25rem;
+  z-index: 90;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--tab-inactive-bg);
+  border: none;
+  border-right: 1px solid var(--bg-inset);
+  color: var(--tab-inactive-fg);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.tab.is-active {
+  background: var(--bg-app);
+  color: var(--fg-strong);
+  box-shadow: inset 0 -2px 0 var(--accent-strong);
+}
+
+.tab-close {
+  color: var(--fg-faint);
+  font-size: 0.9rem;
+  margin-left: 0.15rem;
+  line-height: 1;
+}

@@ -1,0 +1,19 @@
+.file-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  font-size: 0.55rem;
+  font-weight: 700;
+  border-radius: 3px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+
+.icon-md { background: var(--icon-md-bg); color: var(--icon-md-fg); }
+.icon-js { background: var(--icon-js-bg); color: var(--icon-js-fg); }
+.icon-log { background: var(--icon-log-bg); color: var(--icon-log-fg); }
+.icon-json { background: var(--icon-json-bg); color: var(--icon-json-fg); }
+.icon-sh { background: var(--icon-sh-bg); color: var(--icon-sh-fg); }
+.icon-default { background: var(--icon-default-bg); color: var(--icon-default-fg); }

@@ -1,0 +1,33 @@
+.site-footer {
+  padding: 2.5rem clamp(1.25rem, 5vw, 4rem) 3rem;
+  max-width: 68rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  border-top: 1px dashed var(--border);
+}
+
+.site-footer-line {
+  font-size: 0.85rem;
+  color: var(--sidebar-fg-muted);
+}
+
+.site-footer-prompt {
+  color: var(--diff-add);
+}
+
+.site-footer-sep {
+  color: var(--fg-faint);
+}
+
+.site-footer-path {
+  color: var(--accent);
+}
+
+.site-footer-copy {
+  font-size: 0.75rem;
+  color: var(--fg-faint);
+}
